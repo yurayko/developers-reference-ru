@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: po 4a\n"
 "POT-Creation-Date: 2013-05-22 13:23-0400\n"
-"PO-Revision-Date: 2014-04-24 23:27+0200\n"
+"PO-Revision-Date: 2014-05-01 16:21+0200\n"
 "Last-Translator: Lev Lamberov <l.lamberov@gmail.com>\n"
 "Language-Team: ru <debian-l10n-russian@lists.debian.org>\n"
 "Language: ru\n"
@@ -9919,7 +9919,7 @@ msgstr ""
 #. type: Content of: <chapter><section><section><title>
 #: pkgs.dbk:1558
 msgid "Being kind to porters"
-msgstr ""
+msgstr "Будьте добры к тем, кто занимается переносом"
 
 #. type: Content of: <chapter><section><section><para>
 #: pkgs.dbk:1560
@@ -10097,7 +10097,7 @@ msgstr ""
 #. type: Content of: <chapter><section><section><section><title>
 #: pkgs.dbk:1700
 msgid "Recompilation or binary-only NMU"
-msgstr ""
+msgstr "Перекомпиляция или только двоичные NMU"
 
 #. type: Content of: <chapter><section><section><section><para>
 #: pkgs.dbk:1702
@@ -10174,7 +10174,7 @@ msgstr ""
 #. type: Content of: <chapter><section><section><section><title>
 #: pkgs.dbk:1752
 msgid "When to do a source NMU if you are a porter"
-msgstr ""
+msgstr "Когда следует делать NMU, если вы занимаетесь переносом"
 
 #. type: Content of: <chapter><section><section><section><para>
 #: pkgs.dbk:1754
@@ -10248,6 +10248,12 @@ msgid ""
 "these tools; see the package documentation or references for full "
 "information."
 msgstr ""
+"Имеется специальная инфраструктура и некоторые инструменты, необходимые для "
+"автоматизации переноса пакетов.  "
+"Данный раздел сдержит краткий обзор автоматизации и переноса с помощью "
+"данных инструментов; дополнительную информацию см. в документации пакетов или "
+"по "
+"другим ссылкам."
 
 #. type: Content of: <chapter><section><section><section><title>
 #: pkgs.dbk:1808
@@ -10260,6 +10266,9 @@ msgid ""
 "Web pages containing the status of each port can be found at <ulink url="
 "\"&url-debian-ports;\"></ulink>."
 msgstr ""
+"Веб-страницы, содержащие информацию о статусе каждого переноса, можно найти "
+"по адресу: <ulink url="
+"\"&url-debian-ports;\"></ulink>."
 
 #. type: Content of: <chapter><section><section><section><para>
 #: pkgs.dbk:1814
@@ -10269,6 +10278,13 @@ msgid ""
 "lists are used to coordinate porters, and to connect the users of a given "
 "port with the porters."
 msgstr ""
+"У каждого переноса Debian имеется свой список рассылки.  Список списков "
+"рассылки различных проектов по "
+"переносу может быть найден по адресу: <ulink url=\"&url-debian-port-lists;\">"
+"</ulink>.  Эти "
+"списки рассылки используются для координации работы и связи пользователей с "
+"теми, кто "
+"работает над переносом."
 
 #. type: Content of: <chapter><section><section><section><title>
 #: pkgs.dbk:1822
@@ -10282,13 +10298,12 @@ msgid ""
 "porting\"/>."
 msgstr ""
 "Описания некоторых инструментов переноса могут быть найдены в разделе <xref "
-"linkend=\"tools-"
-"porting\"/>."
+"linkend=\"tools-porting\"/>."
 
 #. type: Content of: <chapter><section><section><section><title>
 #: pkgs.dbk:1830
 msgid "<systemitem role=\"package\">wanna-build</systemitem>"
-msgstr ""
+msgstr "<systemitem role=\"package\">wanna-build</systemitem>"
 
 #. type: Content of: <chapter><section><section><section><para>
 #: pkgs.dbk:1832
@@ -10301,6 +10316,17 @@ msgid ""
 "build</systemitem> system to receive a list of packages that need to be "
 "built."
 msgstr ""
+"Система <systemitem role=\"package\">wanna-build</systemitem> используется "
+"как "
+"распределённая клиент-серверная система сборки дистрибутива.  Обычно она "
+"используется "
+"вместе со сборочными службами, запускающими программу <systemitem "
+"role=\"package"
+"\">buildd</systemitem>. <literal>Сборочные службы</literal> являются "
+"``подчинёнными'' узлами, они связываются с центральной системой <systemitem "
+"role=\"package\">wanna-"
+"build</systemitem> для получения списка пакетов, которые следует "
+"собрать."
 
 #. type: Content of: <chapter><section><section><section><para>
 #: pkgs.dbk:1840
@@ -10313,6 +10339,16 @@ msgid ""
 "packaged version is not the same as the one used on build daemons, but it is "
 "close enough to reproduce problems."
 msgstr ""
+"Система <systemitem role=\"package\">wanna-build</systemitem> пока недоступна "
+"в виде "
+"пакета; тем не менее, она используется для переноса Debian в режиме "
+"автоматической сборки пакетов.  Инструмент, используемый для создания "
+"фактических сборок пакетов, "
+"<systemitem role=\"package\">sbuild</systemitem>, доступен в виде пакета, "
+"см. его описание в <xref linkend=\"sbuild\"/>.  Заметьте, что "
+"версия в пакете отличается от той, что используется в сборочных службах, но "
+"она "
+"достаточно близка к ней и поэтому подходит для воспроизведения проблем."
 
 #. type: Content of: <chapter><section><section><section><para>
 #: pkgs.dbk:1849
@@ -10322,6 +10358,13 @@ msgid ""
 "<ulink url=\"&url-buildd;\"></ulink>.  This data includes nightly updated "
 "statistics, queueing information and logs for build attempts."
 msgstr ""
+"Большая часть данных, создаваемых системой <systemitem role=\"package\">"
+"wanna-build</"
+"systemitem>, которая обычно бывает полезна для тех, кто занимается переносом, "
+"доступна на следующей веб-странице: "
+"<ulink url=\"&url-buildd;\"></ulink>.  Эта информация включает в себя "
+"обновляемую каждую ночь "
+"статистику, информацию об очереди и журналы попыток сборки."
 
 #. type: Content of: <chapter><section><section><section><para>
 #: pkgs.dbk:1855
@@ -10332,6 +10375,15 @@ msgid ""
 "a flavor of Debian built with <command>gcc</command> bounds checking).  It "
 "will also enable Debian to recompile entire distributions quickly."
 msgstr ""
+"Мы очень гордимся этой системой, поскольку у неё так много возможных "
+"пользователей.  "
+"Независимые от разработки группы могут использовать данную систему для "
+"подготовки различных вариантов "
+"Debian, которые иногда могут быть интересы и более широкому кругу "
+"пользователей (например, "
+"вариант Debian, собранный с поддержкой проверки связывания средствами <"
+"command>gcc</command>).  Кроме того, "
+"она позволяет довольно быстро заново собрать целый выпуск Debian."
 
 #. type: Content of: <chapter><section><section><section><para>
 #: pkgs.dbk:1862
@@ -10341,6 +10393,13 @@ msgid ""
 "build team, release team) and how (mail, BTS)  to contact, refer to <ulink "
 "url=\"&url-wb-team;\"></ulink>."
 msgstr ""
+"Связаться с командой wanna-build, ответственной за службы buildd, можно по "
+"адресу: "
+"<literal>debian-wb-team@lists.debian.org</literal>.  Для того, чтобы "
+"определить, с кем (команда wanna-"
+"build, команда выпуска) и как (почта, BTS)  следует связаться в конкретном "
+"случае, см. <ulink "
+"url=\"&url-wb-team;\"></ulink>."
 
 #. type: Content of: <chapter><section><section><section><para>
 #: pkgs.dbk:1869
@@ -10352,7 +10411,7 @@ msgstr ""
 #. type: Content of: <chapter><section><section><title>
 #: pkgs.dbk:1878
 msgid "When your package is <emphasis>not</emphasis> portable"
-msgstr ""
+msgstr "Если ваш пакет <emphasis>не</emphasis> может быть перенесён"
 
 #. type: Content of: <chapter><section><section><para>
 #: pkgs.dbk:1880
@@ -10429,6 +10488,12 @@ msgid ""
 "could disapprove).  To enable a package to be build you need to perform the "
 "following steps:"
 msgstr ""
+"По умолчанию пакеты из раздела <literal>non-free</literal> не "
+"собираются сетью автоматической сборки (по большей части из-за того, что это "
+"может быть запрещено "
+"лицензией пакета).  Чтобы разрешить сборку пакета, вам следует предпринять "
+"следующие "
+"шаги:"
 
 #. type: Content of: <chapter><section><section><orderedlist><listitem><para>
 #: pkgs.dbk:1939
@@ -10436,6 +10501,8 @@ msgid ""
 "Check whether it is legally allowed and technically possible to auto-build "
 "the package;"
 msgstr ""
+"Проверьте, законно ли и возможно ли технически автоматически собирать "
+"данный пакет;"
 
 #. type: Content of: <chapter><section><section><orderedlist><listitem><para>
 #: pkgs.dbk:1945
@@ -10443,6 +10510,8 @@ msgid ""
 "Add <literal>XS-Autobuild: yes</literal> into the header part of "
 "<filename>debian/control</filename>;"
 msgstr ""
+"Добавьте <literal>XS-Autobuild: yes</literal> в заголовок файла "
+"<filename>debian/control</filename>;"
 
 #. type: Content of: <chapter><section><section><orderedlist><listitem><para>
 #: pkgs.dbk:1951
@@ -10450,6 +10519,10 @@ msgid ""
 "Send an email to &email-nonfree-release; and explain why the package can "
 "legitimately and technically be auto-built."
 msgstr ""
+"Отправьте сообщение по электронной почте на адрес &email-nonfree-release;, "
+"объясните, почему пакет "
+"можно собрать как с правовой, так и с технической точки зрения с помощью "
+"автоматической сборки."
 
 #. type: Content of: <chapter><section><title>
 #: pkgs.dbk:1960
@@ -10466,6 +10539,16 @@ msgid ""
 "maintainer needs help to respond to issues.  Such uploads are called "
 "<emphasis>Non-Maintainer Uploads (NMU)</emphasis>."
 msgstr ""
+"Каждый пакет имеет одного или нескольких сопровождающих. Обычно это люди, "
+"которые работают над пакетом и выполняют загрузки новых версий. В некоторых "
+"ситуациях бывает полезно, "
+"если и другие разработчики смогут загрузить новую версию, например, "
+"если они хотят исправить ошибку в пакете, сопровождением которого они не "
+"занимаются, и если "
+"сопровождающий нуждается в помощи для решения проблем с пакетом.  Такие "
+"загрузки называются "
+"<emphasis>загрузки не-сопровождающими, Non-Maintainer Uploads (NMU)</emphasis>"
+"."
 
 #. type: Content of: <chapter><section><section><title>
 #: pkgs.dbk:1971
@@ -10475,7 +10558,7 @@ msgstr "Когда и как делать NMU"
 #. type: Content of: <chapter><section><section><para>
 #: pkgs.dbk:1974
 msgid "Before doing an NMU, consider the following questions:"
-msgstr ""
+msgstr "До выполнения NMU, ответьте на следующие вопросы:"
 
 #. type: Content of: <chapter><section><section><itemizedlist><listitem><para>
 #: pkgs.dbk:1979
@@ -10483,6 +10566,9 @@ msgid ""
 "Does your NMU really fix bugs? Fixing cosmetic issues or changing the "
 "packaging style in NMUs is discouraged."
 msgstr ""
+"Действительно ли NMU исправляет ошибки? Исправление косметических проблем или "
+"изменению стиля "
+"создания пакета не приветствуется для NMU."
 
 #. type: Content of: <chapter><section><section><itemizedlist><listitem><para>
 #: pkgs.dbk:1985
@@ -10491,6 +10577,11 @@ msgid ""
 "BTS? Being busy for a week or two isn't unusual.  Is the bug so severe that "
 "it needs to be fixed right now, or can it wait a few more days?"
 msgstr ""
+"Даёте ли вы достаточное количество времени сопровождающему? Когда в BTS было "
+"прислано "
+"сообщение об ошибке? Человек может быть занят одну или две недели, в этом не "
+"ничего необычного.  Так ли серьёзная ошибка, что "
+"её необходимо исправить прямо сейчас, можно ли подождать ещё несколько дней?"
 
 #. type: Content of: <chapter><section><section><itemizedlist><listitem><para>
 #: pkgs.dbk:1992
@@ -10502,6 +10593,14 @@ msgid ""
 "might be a good idea to seek advice from others. Remember that if you break "
 "something in your NMU, many people will be very unhappy about it."
 msgstr ""
+"Насколько вы уверены в своих изменениях? Помните клятву "
+"Гиппократа: \"Не навреди.\" Лучше оставить пакет даже с самой серьёзной "
+"ошибкой, чем применять к нему неработающую заплату, либо заплату, которая "
+"скорее "
+"скрывает ошибку, а не решает её. Если вы не уверены на 100% в том, что вы "
+"делаете, лучше "
+"будет попросить совета у других. Помните, что если вы что-то сломаете "
+"во время NMU, многие люди будут недовольны."
 
 #. type: Content of: <chapter><section><section><itemizedlist><listitem><para>
 #: pkgs.dbk:2002
@@ -10510,6 +10609,10 @@ msgid ""
 "also a good idea to try to contact the maintainer by other means (private "
 "email, IRC)."
 msgstr ""
+"Выразили ли вы ясно ваше намерение сделать NMU, по меньшей мере в BTS? Также "
+"хорошо бы связаться с сопровождающим с помощью каких-то других средств "
+"(частный "
+"адрес электронной почты, IRC)."
 
 #. type: Content of: <chapter><section><section><itemizedlist><listitem><para>
 #: pkgs.dbk:2009
@@ -10522,6 +10625,17 @@ msgid ""
 "everyone's time if the maintainer is given an opportunity to upload a fix on "
 "their own."
 msgstr ""
+"Если сопровождающий обычно активен и отзывчив, попытались ли вы "
+"с ним связаться? Вообще же предпочтительно, чтобы сопровождающие "
+"самостоятельно "
+"решали проблемы в своих пакетах, нужно дать им возможность "
+"проверить вашу заплату и при необходимости исправить её, поскольку они скорее "
+"всего лучше "
+"осведомлены о потенциальных проблемах, которые могут быть упущены в ходе NMU. "
+"Часто время каждого "
+"используется значительно лучше, если у сопровождающего будет возможность "
+"самому загрузить "
+"исправление."
 
 #. type: Content of: <chapter><section><section><para>
 #: pkgs.dbk:2019
@@ -10532,6 +10646,13 @@ msgid ""
 "script in the <systemitem role=\"package\">devscripts</systemitem> package "
 "might be helpful."
 msgstr ""
+"Если вы выполняете NMU, вам для начала следует убедиться, что ваше намерение "
+"сделать NMU "
+"ясно и понятно.  Затем вам необходимо отправить заплату с различиями между "
+"текущим "
+"пакетом и предполагаемой NMU в BTS. Сцераний <command>nmudiff</command> "
+"из пакета <systemitem role=\"package\">devscripts</systemitem> может "
+"вам в этом помочь."
 
 #. type: Content of: <chapter><section><section><para>
 #: pkgs.dbk:2026
@@ -10544,6 +10665,16 @@ msgid ""
 "practices is <ulink url=\"&url-debian-policy;ch-source.html#s-readmesource"
 "\"><filename>debian/README.source</filename></ulink>."
 msgstr ""
+"Во время подготовки заплаты вам следует хорошо разобраться с практикой "
+"создания данного "
+"пакета. Если вы будете это учитывать, что это "
+"уменьшит бремя интеграции ваших изменений в обычный "
+"ход работы над пакетом и, таким образом, увеличит шансы на то, что "
+"ваши изменения будут в дальнейшем интегрированы. О практиках сборки данного "
+"пакета "
+"можно прочитать в файле <ulink url=\"&url-debian-policy;ch-source.html#s-readm"
+"esource"
+"\"><filename>debian/README.source</filename></ulink>."
 
 #. type: Content of: <chapter><section><section><para>
 #: pkgs.dbk:2034
@@ -10553,6 +10684,11 @@ msgid ""
 "<literal>DELAYED</literal> queue).  Here are some recommended values to use "
 "for delays:"
 msgstr ""
+"Если у вас нет каких-либо веских причин не давать сопровождающему время для "
+"самостоятельной работы, "
+"вам следует дать последнему это время (например, загрузив пакет в "
+"очередь <literal>DELAYED</literal>).  Для задержек рекомендуется использовать "
+"следующие значения:"
 
 #. type: Content of: <chapter><section><section><itemizedlist><listitem><para>
 #: pkgs.dbk:2041
@@ -10561,21 +10697,29 @@ msgid ""
 "maintainer activity on the bug for 7 days and no indication that a fix is in "
 "progress: 0 days"
 msgstr ""
+"Загрузка исправлений критичных для выпуска ошибок, о которых было сообщено "
+"более 7 дней назад, сопровождающий "
+"не проявлял активности в течении 7 дней, нет никакого указания на то, что "
+"исправление находится "
+"в стадии подготовки: 0 дней"
 
 #. type: Content of: <chapter><section><section><itemizedlist><listitem><para>
 #: pkgs.dbk:2046
 msgid "Upload fixing only release-critical bugs older than 7 days: 2 days"
 msgstr ""
+"Загрузка исправления только критичных для выпуска ошибок, о которых было "
+"сообщено более 7 дней назад: 2 дня"
 
 #. type: Content of: <chapter><section><section><itemizedlist><listitem><para>
 #: pkgs.dbk:2051
 msgid "Upload fixing only release-critical and important bugs: 5 days"
 msgstr ""
+"Исправление только критичных для выпуска ошибок и важных ошибок: 5 дней"
 
 #. type: Content of: <chapter><section><section><itemizedlist><listitem><para>
 #: pkgs.dbk:2056
 msgid "Other NMUs: 10 days"
-msgstr ""
+msgstr "Другие NMU: 10 дней"
 
 #. type: Content of: <chapter><section><section><para>
 #: pkgs.dbk:2062
@@ -10584,6 +10728,12 @@ msgid ""
 "security issues, or fixes for trivial bugs that blocking a transition, it is "
 "desirable that the fixed package reaches <literal>unstable</literal> sooner."
 msgstr ""
+"Эти задержки являются лишь примерами. В некоторых случаях, таких как загрузка "
+"исправлений "
+"безопасности, либо исправлений тривиальных ошибок, блокирующий перемещение "
+"пакета, желательно, "
+"чтобы исправленный пакет попал в <literal>нестабильный выпуск</literal> как "
+"можно скорее."
 
 #. type: Content of: <chapter><section><section><para>
 #: pkgs.dbk:2068
@@ -10597,6 +10747,17 @@ msgid ""
 "wasn't available in the BTS before, or if you know that the maintainer is "
 "generally active."
 msgstr ""
+"Иногда управляющие выпуском принимают решение разрешить NMU с более короткими "
+"задержками для "
+"некоторого подмножества ошибок (напр., для критичных для выпуска ошибок, о "
+"которых было сообщено более 7 дней назад). Кроме того, некоторые "
+"сопровождающие добавляют себя в <ulink url=\"&url-low-threshold-nmu;"
+"\">список NMU с низким порогом</ulink> и разрешают загружать NMU без "
+"какой-либо задержки. Но даже в этих случаях лучше всего дать сопровождающему "
+"несколько дней на самостоятельную работу и только потом осуществлять "
+"загрузку, особенно если заплата "
+"ранее не была доступна в BTS, либо если вы знаете, что сопровождающий "
+"в принципе активен."
 
 #. type: Content of: <chapter><section><section><para>
 #: pkgs.dbk:2078
@@ -10605,6 +10766,10 @@ msgid ""
 "you might have introduced. You must keep an eye on the package (subscribing "
 "to the package on the PTS is a good way to achieve this)."
 msgstr ""
+"После загрузки NMU вы становитесь ответственным за возможные проблемы, "
+"которые вы могли создать. Вам необходимо следить за пакетом (чтобы сделать "
+"это, подпишитесь "
+"на пакет в PTS)."
 
 #. type: Content of: <chapter><section><section><para>
 #: pkgs.dbk:2084
@@ -10615,11 +10780,18 @@ msgid ""
 "upload might be a cause of conflict with the maintainer.  You should always "
 "be prepared to defend the wisdom of any NMU you perform on its own merits."
 msgstr ""
+"Не разрешается бездумно выполнять NMU.  Если вы выполняете NMU, и "
+"ясно, что сопровождающие активны и приняли бы заплату "
+"немного позже, либо если вы игнорируете рекомендации, приведённые в данном "
+"документе, ваша "
+"загрузка может привести к конфликту с сопровождающим.  Вам всегда следует "
+"быть готовым к отстаиванию своего решения относительно любой загрузки NMU, "
+"которую вы выполняете."
 
 #. type: Content of: <chapter><section><section><title>
 #: pkgs.dbk:2094
 msgid "NMUs and <filename>debian/changelog</filename>"
-msgstr ""
+msgstr "NMU и файл <filename>debian/changelog</filename>"
 
 #. type: Content of: <chapter><section><section><para>
 #: pkgs.dbk:2096
@@ -10629,17 +10801,24 @@ msgid ""
 "upload.  The first line of this entry must explicitely mention that this "
 "upload is an NMU, e.g.:"
 msgstr ""
+"Как и во время любой другой загрузки (исходного кода) при выполнении NMU "
+"следует добавить запись в "
+"файл <filename>debian/changelog</filename>, сообщающую о том, что было "
+"изменено в "
+"данной загрузке.  В первой строке записи должно быть явно указано, что это "
+"загрузка NMU, напр.:"
 
 #. type: Content of: <chapter><section><section><screen>
 #: pkgs.dbk:2101
 #, no-wrap
 msgid "  * Non-maintainer upload.\n"
-msgstr ""
+msgstr "  * Non-maintainer upload.\n"
 
 #. type: Content of: <chapter><section><section><para>
 #: pkgs.dbk:2105
 msgid "The way to version NMUs differs for native and non-native packages."
 msgstr ""
+"Присваивание версий при выполнении NMU разница для родных и неродных пакетов."
 
 #. type: Content of: <chapter><section><section><para>
 #: pkgs.dbk:2108
@@ -10652,6 +10831,16 @@ msgid ""
 "the current version is <literal>1.5</literal>, then an NMU would get version "
 "<literal>1.5+nmu1</literal>."
 msgstr ""
+"Если пакет является родным пакетом (без номера ревизии Debian в номере "
+"версии), версия должны совпадать с версией загрузки её последним "
+"сопровождающим, плюс "
+"<literal>+nmu<replaceable>X</replaceable></literal>, где <replaceable>X</"
+"replaceable> представляет собой счётчик, начинающийся с <literal>1</literal>. "
+" Если последняя "
+"загрузка также была NMU, то счётчик следует увеличить.  Например, если "
+"текущая версия пакета равна <literal>1.5</literal>, то загрузка NMU должна "
+"получить версию "
+"<literal>1.5+nmu1</literal>."
 
 #. type: Content of: <chapter><section><section><para>
 #: pkgs.dbk:2118
@@ -10664,6 +10853,16 @@ msgid ""
 "packaged in the NMU, the Debian revision is set to <literal>0</literal>, for "
 "example <literal>1.6-0.1</literal>."
 msgstr ""
+"Если пакет не является родным пакетом, вам следует добавить минорный номер "
+"версии к части о ревизии Debian номера версии (та часть, которая идёт после "
+"последнего знака тире). Этот дополнительный номер должен начинаться с <"
+"literal>1</literal>.  Например, "
+"если текущей версией является <literal>1.5-2</literal>, то загрузка NMU "
+"должна иметь версию <literal>1.5-2.1</literal>. Если в ходе NMU создаётся "
+"пакет для новой "
+"версии из основной ветки разработки, то номер ревизии Debian устанавливается "
+"в <literal>0</literal>, например, "
+"<literal>1.6-0.1</literal>."
 
 #. type: Content of: <chapter><section><section><para>
 #: pkgs.dbk:2127
@@ -10673,6 +10872,12 @@ msgid ""
 "literal> (a native package which has already been NMUed), the NMU would get "
 "version <literal>1.5+nmu4</literal>."
 msgstr ""
+"В обоих случаях если последняя загрузка также была загрузкой NMU, счётчик "
+"должен быть "
+"увеличен. Например, если текущей версией является <literal>1.5+nmu3</"
+"literal> (родной пакет, для которого уже была выполнена загрузка NMU в "
+"прошлый раз), загрузка NMU должна получить "
+"версию <literal>1.5+nmu4</literal>."
 
 #. type: Content of: <chapter><section><section><para>
 #: pkgs.dbk:2133
@@ -10684,6 +10889,14 @@ msgid ""
 "making it visually clear that a package in the archive was not made by the "
 "official maintainer."
 msgstr ""
+"Специальная схема версий требуется для того, чтобы избежать срыва "
+"работы сопровождающего, поскольку использование целого числа для ревизии "
+"Debian потенциально "
+"может привести к конфликту с загрузкой, которая уже находится в стадии "
+"подготовки самим сопровождающим в то время, как вы выполняете "
+"NMU, либо даже уже включена в очередь NEW на ftp.  Кроме того, это полезно "
+"для визуального выделения того, что пакет в архиве был подготовлен "
+"не тем, кто является его официальным сопровождающим."
 
 #. type: Content of: <chapter><section><section><para>
 #: pkgs.dbk:2142
@@ -10699,6 +10912,22 @@ msgid ""
 "<literal>1.5-3+deb7u1</literal>, whereas a security NMU to Jessie would get "
 "version <literal>1.5-3+deb8u1</literal>."
 msgstr ""
+"Если вы загружаете пакет в тестируемый или стабильный выпуски, иногда вам "
+"необходимо выполнить \"разветвление\" "
+"древа номера версии. Это делается, например, в случае подготовки загрузок с "
+"исправлениями "
+"безопасности.  Для этого следует использовать версию вида <literal>+deb<"
+"replaceable>X</"
+"replaceable>u<replaceable>Y</replaceable></literal>, где "
+"<replaceable>X</replaceable> представляет собой мажорный номер версии, а "
+"<replaceable>Y</replaceable> является счётчиком, начинающимся с <literal>1<"
+"/literal>.  "
+"Например, поскольку Wheezy (Debian 7.0) является стабильным выпуском, "
+"загрузка NMU для исправления проблем безопасности стабильного выпуска "
+"для пакета, имеющего версию <literal>1.5-3</literal> будет иметь версию "
+"<literal>1.5-3+deb7u1</literal>, а загрузка NMU с исправлением безопасности "
+"для Jessie будет иметь "
+"версию <literal>1.5-3+deb8u1</literal>."
 
 #. type: Content of: <chapter><section><section><title>
 #: pkgs.dbk:2156
