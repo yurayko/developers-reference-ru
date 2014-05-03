@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: po 4a\n"
 "POT-Creation-Date: 2013-05-22 13:23-0400\n"
-"PO-Revision-Date: 2014-05-01 16:21+0200\n"
+"PO-Revision-Date: 2014-05-03 15:50+0200\n"
 "Last-Translator: Lev Lamberov <l.lamberov@gmail.com>\n"
 "Language-Team: ru <debian-l10n-russian@lists.debian.org>\n"
 "Language: ru\n"
@@ -10947,6 +10947,20 @@ msgid ""
 "that they have 7 days to react.  During this time, the maintainer can ask "
 "you to delay the upload some more, or cancel your upload."
 msgstr ""
+"Ожидание ответа на ваш запрос разрешения выполнить NMU "
+"не эффективно, так как это предполагает, что тот, кто выполняет NMU, должен "
+"будет отвлечься от проблемы, а затем снова "
+"вернутся к ней.  Очередь <literal>DELAYED</literal> (см. <xref "
+"linkend=\"delayed-"
+"incoming\"/>)  позволяет разработчику, занимающемуся NMU,  в то же самое "
+"время выполнять все "
+"необходимые задачи. Например, вместо того, чтобы сообщить "
+"сопровождающему о том, что вы собираетесь загрузить обновлённый пакет в "
+"течении 7 дней, вам следует "
+"загрузить пакет в <literal>DELAYED/7</literal> и сообщить сопровождающему, "
+"что у него имеется 7 дней для того, чтобы отреагировать на это.  В течении "
+"этого времени сопровождающий может попросить "
+"вас ещё немного задержать загрузку, либо отменить её."
 
 #. type: Content of: <chapter><section><section><para>
 #: pkgs.dbk:2173
@@ -10956,6 +10970,12 @@ msgid ""
 "available to cancel or delay the upload before the delay expires since the "
 "maintainer cannot cancel the upload themselves."
 msgstr ""
+"Очередь <literal>DELAYED</literal> не должна использоваться для "
+"дополнительного "
+"давления на сопровождающего. В частности, важно, что у вас имеется "
+"возможность отметить или задержать загрузку ещё немного до того момента, как "
+"срок изначальной задержки закончиться, так как "
+"сопровождающий не может сам отметить вашу загрузку."
 
 #. type: Content of: <chapter><section><section><para>
 #: pkgs.dbk:2180
@@ -10966,11 +10986,19 @@ msgid ""
 "will take care to include your proposed changes (or at least a solution for "
 "the problems they address) in that upload."
 msgstr ""
+"Если вы выполняете NMU в <literal>DELAYED</literal>, а сопровождающий "
+"обновляет "
+"пакет до того, как закончится срок задержки, ваша загрузку будет отклонена, "
+"поскольку "
+"в архиве уже будет доступна более новая версия.  В идеале сопровождающий "
+"позаботится о включении предлагаемых вами изменений (или по меньшей мере о "
+"решении "
+"проблем, для решения который предназначаются ваши изменения) в своей загрузке."
 
 #. type: Content of: <chapter><section><section><title>
 #: pkgs.dbk:2190
 msgid "NMUs from the maintainer's point of view"
-msgstr ""
+msgstr "NMU с точки зрения сопровождающего"
 
 #. type: Content of: <chapter><section><section><para>
 #: pkgs.dbk:2193
@@ -10981,6 +11009,14 @@ msgid ""
 "on a package is not a bad thing; it just means that the package is "
 "interesting enough for other people to work on it."
 msgstr ""
+"Когда кто-то выполняет NMU для вашего пакета, то это означает, что он хочет "
+"помочь вам поддерживать "
+"пакет в хорошей форме.  Это позволяет пользователям быстрее получать "
+"исправленные пакеты.  Вы можете попросить "
+"того, кто выполнил NMU, стать помощником сопровождающего для данного пакета.  "
+"Когда кто-то выполнил NMU "
+"для вашего пакета, это вовсе не плохо; это лишь означает, что пакет интересен "
+"достаточному количеству людей, которые готовы работать над ним."
 
 #. type: Content of: <chapter><section><section><para>
 #: pkgs.dbk:2202
@@ -10990,11 +11026,17 @@ msgid ""
 "changelog entry in your changelog, the bugs will remain closed in the BTS "
 "but will be listed as affecting your maintainer version of the package."
 msgstr ""
+"Для подтверждения NMU, добавьте предлагаемые изменения и запись журнала "
+"изменений в вашу "
+"собственную загрузку.  Если вы не подтвердите NMU, добавив запись из "
+"журнала изменений NMU в ваш журнал изменений, сообщения об ошибках в BTS "
+"останутся закрытыми, "
+"но будут указаны как актуальные для версии пакета, которую загрузите вы."
 
 #. type: Content of: <chapter><section><section><title>
 #: pkgs.dbk:2211
 msgid "Source NMUs vs Binary-only NMUs (binNMUs)"
-msgstr ""
+msgstr "NMU исходного кода и двоичные NMU (binNMU)"
 
 #. type: Content of: <chapter><section><section><para>
 #: pkgs.dbk:2214
@@ -11004,6 +11046,13 @@ msgid ""
 "<emphasis>binNMU</emphasis>.  A binNMU is also a package upload by someone "
 "other than the package's maintainer.  However, it is a binary-only upload."
 msgstr ""
+"Полностью NMU называется <emphasis>NMU исходного кода</emphasis>.  Есть и "
+"другой "
+"тип NMU, а именно <emphasis>двоичные NMU</emphasis> или "
+"<emphasis>binNMU</emphasis>.  BinNMU также представляет собой загрузку пакета "
+"тем, что не "
+"является его сопровождающим.  Тем не менее, это загрузка исключительно "
+"двоичного кода."
 
 #. type: Content of: <chapter><section><section><para>
 #: pkgs.dbk:2221
@@ -11012,6 +11061,11 @@ msgid ""
 "need to be rebuilt.  Since no changes to the source are needed, the same "
 "source package is used."
 msgstr ""
+"При обновлении библиотеки (либо другой зависимости) пакеты, использующие её "
+"вероятно "
+"потребуется собрать заново.  Поскольку изменения исходного кода не требуются, "
+"используется "
+"тот же самый пакет с исходным кодом."
 
 #. type: Content of: <chapter><section><section><para>
 #: pkgs.dbk:2227
@@ -11021,6 +11075,12 @@ msgid ""
 "was needed and increasing the version number as described in <xref linkend="
 "\"binary-only-nmu\"/>.  This entry should not be included in the next upload."
 msgstr ""
+"BinNMU обычно выполняются на buildd по инструкции wanna-build.  В файл "
+"<filename>debian/changelog</filename> добавляется запись, объясняющая то, "
+"почему "
+"потребовалась загрузка, номер версии увеличивается в соответствии с тем, как "
+"это описано в <xref linkend="
+"\"binary-only-nmu\"/>.  Эту запись не следует включать в следующую загрузку."
 
 #. type: Content of: <chapter><section><section><para>
 #: pkgs.dbk:2235
@@ -11030,11 +11090,15 @@ msgid ""
 "normally called NMU, and they don't add an entry to <filename>debian/"
 "changelog</filename>."
 msgstr ""
+"Buildd загружает пакеты для своей архитектуры в архив как двоичные "
+"загрузки.  Строго говоря, они являются binNMU.  Тем не менее, обычно они не "
+"называются NMU, они не добавляют запись в <filename>debian/"
+"changelog</filename>."
 
 #. type: Content of: <chapter><section><section><title>
 #: pkgs.dbk:2243
 msgid "NMUs vs QA uploads"
-msgstr ""
+msgstr "NMU и загрузки командой контроля качества"
 
 #. type: Content of: <chapter><section><section><para>
 #: pkgs.dbk:2246
@@ -11043,6 +11107,12 @@ msgid ""
 "maintainer.  There is another type of upload where the uploaded package is "
 "not yours: QA uploads. QA uploads are uploads of orphaned packages."
 msgstr ""
+"NMU представляют собой загрузки пакетов теми, кто не является сопровождающим "
+"этих "
+"пакетов.  Существует также другой тип загрузок, когда загружаемый пакет "
+"не является вашим: это загрузки команды контроля качества. Загрузки, "
+"выполняемые командой контроля качества, являются загрузками осиротевших "
+"пакетов."
 
 #. type: Content of: <chapter><section><section><para>
 #: pkgs.dbk:2253
@@ -11053,12 +11123,21 @@ msgid ""
 "as the <literal>Maintainer</literal> or <literal>Uploader</literal> for the "
 "package.  Also, the changelog entry of a QA upload has a special first line:"
 msgstr ""
+"Загрузки, выполняемые командой контроля качества, очень похожи на загрузки "
+"обычных сопровождающих: они могут исправлять "
+"всё, что угодно, даже незначительные проблемы; присвоение номера версии "
+"происходит обычным путём, также нет "
+"необходимости использовать задержку при загрузке.  Отличие состоит в том, что "
+"вы не указаны "
+"в полях <literal>Maintainer</literal> и <literal>Uploader</literal> данного "
+"пакета.  Кроме того, запись журнала изменений при загрузке, выполняемой "
+"командой контроля качества, содержит специальную первую строку:"
 
 #. type: Content of: <chapter><section><section><screen>
 #: pkgs.dbk:2261
 #, no-wrap
 msgid " * QA upload.\n"
-msgstr ""
+msgstr " * QA upload.\n"
 
 #. type: Content of: <chapter><section><section><para>
 #: pkgs.dbk:2265
@@ -11071,6 +11150,19 @@ msgid ""
 "packages which did not yet have a QA upload still have their old maintainer "
 "set.  There is a list of them at <ulink url=\"&url-orphaned-not-qa;\"/>."
 msgstr ""
+"Если вы хотите выполнить NMU, и у вас складывается впечатление, что "
+"сопровождающий не активен, "
+"вам следует проверить, является ли данный пакет осиротевшим пакетом (эта "
+"информация отображается на "
+"странице пакета в системе отслеживания пакетов).  При выполнении первой "
+"загрузки командой "
+"контроля качества в качестве сопровождающего устанавливается "
+"<literal>Debian QA Group &lt;packages@qa.debian.org&gt;</literal>.  Для "
+"осиротевших "
+"пакетов, загрузка которых командой контроля качества ещё не выполнялась, в "
+"качестве сопровождающего "
+"имеют своего старого сопровождающего.  Имеется список таких пакетов: <ulink "
+"url=\"&url-orphaned-not-qa;\"/>."
 
 #. type: Content of: <chapter><section><section><para>
 #: pkgs.dbk:2276
@@ -11080,11 +11172,17 @@ msgid ""
 "adopt an orphaned package, you can just set yourself as maintainer and "
 "upload the new version (see <xref linkend=\"adopting\"/>)."
 msgstr ""
+"Вместо выполнения загрузки командой контроля качестве, вы можете усыновить "
+"пакет и "
+"стать его сопровождающим.  Вам не нужно разрешение кого бы то ни было для "
+"того, чтобы усыновить осиротевший пакет, вы можете установить себя его "
+"сопровождающим и "
+"загрузить новую версию (см. <xref linkend=\"adopting\"/>)."
 
 #. type: Content of: <chapter><section><section><title>
 #: pkgs.dbk:2285
 msgid "NMUs vs team uploads"
-msgstr ""
+msgstr "NMU и командные загрузки"
 
 #. type: Content of: <chapter><section><section><para>
 #: pkgs.dbk:2288
@@ -11099,12 +11197,26 @@ msgid ""
 "literal>. In that case, you should start your changelog entry with the "
 "following line:"
 msgstr ""
+"Иногда вы занимаетесь исправлением и/или загрузкой пакета потому, что вы "
+"являетесь членом "
+"команды по созданию пакетов (команда использует адрес списка рассылки в "
+"качестве значения <literal>Maintainer</literal> "
+"или <literal>Uploader</literal>, см. <xref linkend=\"collaborative-maint\"/>"
+"), "
+"но вы не хотите добавлять себя в поле <literal>Uploaders</literal>, поскольку "
+"вы не планируете постоянно участвовать в поддержке данного конкретного "
+"пакета. Если это "
+"соответствует политике вашей команды, вы можете выполнить обычную загрузку, "
+"не "
+"указывая себя в полях <literal>Maintainer</literal> или <literal>Uploader</"
+"literal>. В этом случае вам следует начать вашу запись в журнале изменения со "
+"следующей строки:"
 
 #. type: Content of: <chapter><section><section><screen>
 #: pkgs.dbk:2298
 #, no-wrap
 msgid " * Team upload.\n"
-msgstr ""
+msgstr " * Team upload.\n"
 
 #. type: Content of: <chapter><section><title>
 #: pkgs.dbk:2306
@@ -11121,6 +11233,16 @@ msgid ""
 "of <literal>standard</literal> or which are part of the base set have co-"
 "maintainers."
 msgstr ""
+"Совместное сопровождение представляет собой термин, описывающий разделение "
+"обязанностей по сопровождению "
+"пакета Debian между несколькими людьми.  Эта совместная работа почти всегда "
+"является "
+"отличной идеей, поскольку её результатом обычно является более высокое "
+"качество пакета и более быстрое "
+"исправление ошибок.  Настоятельно рекомендуется, чтобы пакет с приоритетом "
+"<literal>standard</literal>, а также пакеты, являющиеся частью базового "
+"набора пакетов, имели "
+"несколько сопровождающих."
 
 #. type: Content of: <chapter><section><para>
 #: pkgs.dbk:2316
@@ -11132,6 +11254,13 @@ msgid ""
 "listed in the <literal>Uploaders</literal> field of the <filename>debian/"
 "control</filename> file."
 msgstr ""
+"Обычно имеется главный сопровождающий и один или больше помощников.  Главный "
+"сопровождающий является тем, чьё имя указано в поле "
+"<literal>Maintainer</literal> файла <filename>debian/control</"
+"filename>.  Помощники сопровождающего — это все остальные сопровождающие, "
+"обычно "
+"они указаны в поле <literal>Uploaders</literal> файла <filename>debian/"
+"control</filename>."
 
 #. type: Content of: <chapter><section><para>
 #: pkgs.dbk:2324
@@ -11139,6 +11268,8 @@ msgid ""
 "In its most basic form, the process of adding a new co-maintainer is quite "
 "easy:"
 msgstr ""
+"В наиболее простом виде процесс добавления новых помощников сопровождающий "
+"крайне лёгок:"
 
 #. type: Content of: <chapter><section><itemizedlist><listitem><para>
 #: pkgs.dbk:2330
