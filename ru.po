@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: po 4a\n"
 "POT-Creation-Date: 2013-05-22 13:23-0400\n"
-"PO-Revision-Date: 2014-05-03 15:50+0200\n"
+"PO-Revision-Date: 2014-05-05 22:27+0200\n"
 "Last-Translator: Lev Lamberov <l.lamberov@gmail.com>\n"
 "Language-Team: ru <debian-l10n-russian@lists.debian.org>\n"
 "Language: ru\n"
@@ -11280,6 +11280,15 @@ msgid ""
 "literal>.  Alioth (see <xref linkend=\"alioth\"/>) provides such tools, "
 "amongst others."
 msgstr ""
+"Предоставьте помощнику сопровождающего доступ к исходному коду, из которого "
+"вы "
+"собираете ваш пакет.  Обычно это предполагает, что вы используете систему "
+"контроля версий, "
+"поддерживающую работу в сети, такую как <literal>CVS</literal> или <literal>"
+"Subversion</"
+"literal>.  Alioth (см. <xref linkend=\"alioth\"/>) предоставляет помимо "
+"прочего и такие "
+"инструменты."
 
 #. type: Content of: <chapter><section><itemizedlist><listitem><para>
 #: pkgs.dbk:2338
@@ -11288,6 +11297,9 @@ msgid ""
 "<literal>Uploaders</literal> field in the first paragraph of the "
 "<filename>debian/control</filename> file."
 msgstr ""
+"Добавьте имя и адрес электронной почты вашего помощника в "
+"поле <literal>Uploaders</literal> из первого раздела "
+"файла <filename>debian/control</filename>."
 
 #. type: Content of: <chapter><section><itemizedlist><listitem><screen>
 #: pkgs.dbk:2343
@@ -11305,6 +11317,10 @@ msgid ""
 "Using the PTS (<xref linkend=\"pkg-tracking-system\"/>), the co-maintainers "
 "should subscribe themselves to the appropriate source package."
 msgstr ""
+"Используя систему отслеживания пакетов (<xref "
+"linkend=\"pkg-tracking-system\"/>), помощники "
+"сопровождающего должны оформить подписку на соответствующий пакет с исходным "
+"кодом."
 
 #. type: Content of: <chapter><section><para>
 #: pkgs.dbk:2354
@@ -11315,6 +11331,13 @@ msgid ""
 "<literal>Uploaders</literal> field of each package must be managed with "
 "care.  It is recommended to choose between one of the two following schemes:"
 msgstr ""
+"Другой формой совместного сопровождения является командное сопровождение, "
+"которое "
+"рекомендуется в случае если вы сопровождаете несколько пакетов вместе группой "
+"одних и тех же "
+"разработчиков.  В этом случае на поля <literal>Maintainer</literal> и "
+"<literal>Uploaders</literal> каждого пакеты следует обратить особое "
+"внимание.  Рекомендуется выбрать одну из двух следующих схем:"
 
 #. type: Content of: <chapter><section><orderedlist><listitem><para>
 #: pkgs.dbk:2363
@@ -11323,6 +11346,10 @@ msgid ""
 "<literal>Maintainer</literal> field.  In the <literal>Uploaders</literal>, "
 "put the mailing list address, and the team members who care for the package."
 msgstr ""
+"Поместите в поле <literal>Maintainer</literal> члена команды, который будет "
+"ответственен за данный пакет.  В поле <literal>Uploaders</literal> "
+"поместите адрес списка рассылки, а также тех членов команды, которые также "
+"будут следить за пакетов."
 
 #. type: Content of: <chapter><section><orderedlist><listitem><para>
 #: pkgs.dbk:2370
@@ -11332,6 +11359,13 @@ msgid ""
 "the package.  In this case, you must make sure the mailing list accept bug "
 "reports without any human interaction (like moderation for non-subscribers)."
 msgstr ""
+"Поместите адрес списка рассылки в поле <literal>Maintainer</literal>.  В "
+"поле <literal>Uploaders</literal> поместите членов команды, которые будут "
+"следить "
+"за пакетом.  В этом случае убедитесь, что список рассылки принимает сообщения "
+"об "
+"ошибках без какого-либо дополнительного взаимодействия (типа модерации для "
+"отправителей, не являющихся членами списка рассылки)."
 
 #. type: Content of: <chapter><section><para>
 #: pkgs.dbk:2379
@@ -11347,6 +11381,20 @@ msgid ""
 "mailing list address as a <literal>Maintainer</literal> and no "
 "<literal>Uploaders</literal>."
 msgstr ""
+"В любом случае не следует помещать всех членов команды в "
+"поле <literal>Uploaders</literal>. Это приводит к путанице — в обзорный "
+"список пакетов "
+"разработчика (см. <xref linkend=\"ddpo\"/>) попадают пакеты, о который данный "
+"разработчик "
+"фактически не заботится, и создаёт у пользователей ложное чувство того, что "
+"пакет хорошо сопровождается. По той же самой причине "
+"члены команды не должны добавлять себя в поле "
+"<literal>Uploaders</literal> только потому, что они загрузили "
+"данный пакет один раз, они могут выполнить “командную загрузку” (см. <xref "
+"linkend=\"nmu-team-"
+"upload\"/>). И наоборот, не следует оставлять пакет только с одним адресом "
+"списка рассылки в поле <literal>Maintainer</literal>, когда поле "
+"<literal>Uploaders</literal> пусто."
 
 #. type: Content of: <chapter><section><title>
 #: pkgs.dbk:2392
@@ -11365,6 +11413,9 @@ msgid ""
 "distribution after they have undergone some degree of <literal>testing</"
 "literal> in <literal>unstable</literal>."
 msgstr ""
+"Пакеты обычно устанавливаются в <literal>тестируемый</literal> "
+"выпуск после того, как они прошли некоторую <literal>проверку</"
+"literal> в <literal>нестабильном</literal> выпуске."
 
 #. type: Content of: <chapter><section><section><para>
 #: pkgs.dbk:2401
@@ -11375,6 +11426,14 @@ msgid ""
 "literal>.  This way, <literal>testing</literal> should always be close to "
 "being a release candidate.  Please see below for details."
 msgstr ""
+"На всех архитектурах должна быть доступна одна и та же версия пакета, у "
+"пакета не должно быть "
+"зависимостей, которые помешают установить этот пакет; также они не должны "
+"иметь на момент установки "
+"в <literal>тестируемый</literal> выпуск известных критичных для выпуска "
+"ошибок.  Таким образом, <literal>тестируемый</literal> выпуск всегда должен "
+"быть близок "
+"кандидату на выпуск.  Подробности см. ниже."
 
 #. type: Content of: <chapter><section><section><title>
 #: pkgs.dbk:2410
@@ -11391,6 +11450,13 @@ msgid ""
 "distribution, but they do so in an intelligent manner; they try to avoid any "
 "inconsistency and to use only non-buggy packages."
 msgstr ""
+"Сценарии, обновляющие <literal>тестируемый</literal> выпуск, запускаются "
+"дважды каждый день, сразу же после установки обновлённых пакетов; эти "
+"сценарии имеют имя <literal>britney</literal>.  Они создают файлы "
+"<filename>Packages</filename> для <literal>тестируемого</literal> "
+"выпуска, но делают они это разумным способом; они пытаются избежать "
+"противоречивости "
+"и использовать только те пакеты, которые не имеют ошибок."
 
 #. type: Content of: <chapter><section><section><para>
 #: pkgs.dbk:2420
@@ -11398,6 +11464,8 @@ msgid ""
 "The inclusion of a package from <literal>unstable</literal> is conditional "
 "on the following:"
 msgstr ""
+"Включение пакета из <literal>нестабильного</literal> выпуска выполняется "
+"в соответствии со следующими условиями:"
 
 #. type: Content of: <chapter><section><section><itemizedlist><listitem><para>
 #: pkgs.dbk:2426
@@ -11407,6 +11475,13 @@ msgid ""
 "that the urgency is sticky, meaning that the highest urgency uploaded since "
 "the previous <literal>testing</literal> transition is taken into account;"
 msgstr ""
+"Пакет должен быть доступен в <literal>нестабильном</literal> выпуске в "
+"течении 2, 5 "
+"или 10 дней в зависимости от его срочности (высокая, средняя или низкая).  "
+"Заметьте, "
+"что учитывается также и срочность прошлых загрузок, точнее учитывается "
+"наивысшая срочность загрузки с "
+"момента последнего перехода пакета в <literal>тестируемый</literal> выпуск;"
 
 #. type: Content of: <chapter><section><section><itemizedlist><listitem><para>
 #: pkgs.dbk:2434
@@ -11415,6 +11490,11 @@ msgid ""
 "available in <literal>unstable</literal>, but not affecting the version in "
 "<literal>testing</literal>);"
 msgstr ""
+"Пакет не должен иметь новых ошибок, критичных для выпуска (то есть, критичных "
+"для выпуска ошибок в версии "
+"пакета, доступной в <literal>нестабильном</literal> выпуске, но отсутствующих "
+"в версии из "
+"<literal>тестируемого</literal> выпуска);"
 
 #. type: Content of: <chapter><section><section><itemizedlist><listitem><para>
 #: pkgs.dbk:2441
@@ -11423,6 +11503,10 @@ msgid ""
 "built in <literal>unstable</literal>. <link linkend=\"dak-ls\">dak ls</link> "
 "may be of interest to check that information;"
 msgstr ""
+"Пакет должен быть доступен на всех архитектурах, на которых он ранее "
+"был собран в <literal>нестабильном</literal> выпуске. <link "
+"linkend=\"dak-ls\">dak ls</link> "
+"может помочь проверить эту информацию;"
 
 #. type: Content of: <chapter><section><section><itemizedlist><listitem><para>
 #: pkgs.dbk:2448
@@ -11430,6 +11514,9 @@ msgid ""
 "It must not break any dependency of a package which is already available in "
 "<literal>testing</literal>;"
 msgstr ""
+"Пакет не должен ломать зависимости какого-либо уже доступного в <literal>"
+"тестируемом</literal> "
+"выпуске пакета;"
 
 #. type: Content of: <chapter><section><section><itemizedlist><listitem><para>
 #: pkgs.dbk:2454
@@ -11439,6 +11526,12 @@ msgid ""
 "literal> at the same time (and they will be if they fulfill all the "
 "necessary criteria);"
 msgstr ""
+"Пакеты, от которых зависит данный пакет, должны либо быть доступны в "
+"<literal>тестируемом</literal> выпуске, либо должны быть приняты в <literal>"
+"тестируемый</"
+"literal> выпуск одновременно с этим пакетом (эти пакеты будут приняты в "
+"случае, если они удовлетворяют "
+"всем необходимым критериям);"
 
 #. type: Content of: <chapter><section><section><itemizedlist><listitem><para>
 #: pkgs.dbk:2462
@@ -11447,6 +11540,9 @@ msgid ""
 "the <emphasis>freeze</emphasis> of the <literal>testing</literal> "
 "distribution."
 msgstr ""
+"Фаза проекта.  Напр., автоматические переходы отключаются во время "
+"<emphasis>заморозки</emphasis> <literal>тестируемого</literal> "
+"выпуска."
 
 #. type: Content of: <chapter><section><section><para>
 #: pkgs.dbk:2468
@@ -11460,6 +11556,18 @@ msgid ""
 "<manvolnum>5</manvolnum> </citerefentry> to keep yourself informed of the "
 "progression of your packages into <literal>testing</literal>."
 msgstr ""
+"Чтобы узнать, продвигается пакет к переходу в <literal>тестируемый</literal> "
+"выпуск или нет, см. вывод сценария <literal>тестируемого</literal> выпуска на "
+"<ulink url="
+"\"&url-testing-maint;\">веб-странице тестируемого выпуска</ulink>, либо "
+"используйте "
+"программу <command>grep-excuses</command>, которая является частью пакета <"
+"systemitem role="
+"\"package\">devscripts</systemitem>.  Данная утилита легко может "
+"использоваться в <citerefentry> <refentrytitle>crontab</refentrytitle> "
+"<manvolnum>5</manvolnum> </citerefentry> для того, чтобы у вас всегда имелась "
+"информация "
+"о продвижении ваших пакетов в <literal>тестируемый</literal> выпуск."
 
 #. type: Content of: <chapter><section><section><para>
 #: pkgs.dbk:2479
@@ -11470,6 +11578,14 @@ msgid ""
 "<ulink url=\"&url-testing-maint;\">testing web page</ulink> gives some more "
 "information about the usual problems which may be causing such troubles."
 msgstr ""
+"Файл <filename>update_excuses</filename> не всегда содержит "
+"точную причину того, почему пакет был отклонён; вам может потребоваться "
+"выяснить "
+"это самостоятельно, проверяя, что может сломаться из-за добавления вашего "
+"пакета.  "
+"<ulink url=\"&url-testing-maint;\">Веб-страница тестируемого выпуска</ulink> "
+"содержит немного больше "
+"информации об обычных проблемах, которые могут вызывать подобные затруднения."
 
 #. type: Content of: <chapter><section><section><para>
 #: pkgs.dbk:2486
@@ -11478,6 +11594,10 @@ msgid ""
 "set of interrelationship is too complicated and cannot be sorted out by the "
 "scripts.  See below for details."
 msgstr ""
+"Бывает так, что некоторые пакет никогда не включаются в <literal>тестируемый<"
+"/literal> выпуск из-за того, что "
+"набор взаимных зависимостей слишком сложен и не может быть разобран "
+"сценариями.  Подробности см. ниже."
 
 #. type: Content of: <chapter><section><section><para>
 #: pkgs.dbk:2491
@@ -11486,15 +11606,21 @@ msgid ""
 "debian.org/migration/\"></ulink> — but be warned, this page also shows build "
 "dependencies which are not considered by britney."
 msgstr ""
+"Некоторый дополнительный анализ зависимостей доступен по адресу <ulink "
+"url=\"http://release."
+"debian.org/migration/\"></ulink> — но предупреждаем, эта страница также "
+"содержит сборочные "
+"зависимости, которые не были рассмотрены britney."
 
 #. type: Content of: <chapter><section><section><section><title>
 #: pkgs.dbk:2496
 msgid "Out-of-date"
-msgstr ""
+msgstr "Устаревание"
 
 #.  FIXME: better rename this file than document rampant professionalism?
 #. type: Content of: <chapter><section><section><section><para>
 #: pkgs.dbk:2499
+#, fuzzy
 msgid ""
 "For the <literal>testing</literal> migration script, outdated means: There "
 "are different versions in <literal>unstable</literal> for the release "
@@ -11503,6 +11629,15 @@ msgid ""
 "filename>), but currently, it's empty).  outdated has nothing whatsoever to "
 "do with the architectures this package has in <literal>testing</literal>."
 msgstr ""
+"Для сценария миграции в <literal>тестируемый</literal> выпуск устаревание "
+"означает следующее: в "
+"<literal>нестабильном</literal> выпуске имеются разные версии для выпускаемых "
+"архитектур (за исключением архитектур из fuckedarches; fuckedarches "
+"представляет "
+"собой список архитектур, которые не поддерживаются (в <filename>"
+"update_out.py</"
+"filename>), но в настоящее время он пуст).  Устаревание не касается "
+"архитектур данного пакета, имеющихся в <literal>тестируемом</literal> выпуске."
 
 #. type: Content of: <chapter><section><section><section><para>
 #: pkgs.dbk:2507
@@ -11553,6 +11688,13 @@ msgid ""
 "<literal>alpha</literal>, and will not propagate to <literal>testing</"
 "literal>."
 msgstr ""
+"Пакет является устаревшим на архитектуре <literal>alpha</literal> в <literal>"
+"нестабильном</"
+"literal> выпуске, и он не попадёт в <literal>тестируемый</literal> выпуск. "
+"Удаление "
+"пакета не поможет, пакет всё равно считается устаревшим на архитектуре "
+"<literal>alpha</literal>, и он не будет перемещён в <literal>тестируемый</"
+"literal> выпуск."
 
 #. type: Content of: <chapter><section><section><section><para>
 #: pkgs.dbk:2539
@@ -11560,6 +11702,9 @@ msgid ""
 "However, if ftp-master removes a package in <literal>unstable</literal> "
 "(here on <literal>arm</literal>):"
 msgstr ""
+"Тем не менее, если сопровождающий ftp удаляет пакет в <literal>нестабильном<"
+"/literal> "
+"выпуске (здесь — на архитектуре <literal>arm</literal>):"
 
 #. type: Content of: <chapter><section><section><section><informaltable><tgroup><thead><row><entry>
 #: pkgs.dbk:2549
@@ -11573,6 +11718,10 @@ msgid ""
 "<literal>unstable</literal> (and the extra <literal>hurd-i386</literal> "
 "doesn't matter, as it's not a release architecture)."
 msgstr ""
+"В этом случае пакет считается обновлённым на всех выпускаемых архитектурах в "
+"<literal>нестабильном</literal> выпуске (дополнительная архитектура <literal>"
+"hurd-i386</literal> "
+"не имеет значения, поскольку она не является выпускаемой архитектурой)."
 
 #. type: Content of: <chapter><section><section><section><para>
 #: pkgs.dbk:2574
@@ -11581,6 +11730,11 @@ msgid ""
 "that are not yet built on all architectures: No.  Just plainly no.  (Except "
 "if you maintain glibc or so.)"
 msgstr ""
+"Время от времени возникает вопрос о том, можно ли разрешить переход пакетов, "
+"которые "
+"ещё не были собраны на всех архитектурах.  Нет.  Просто нет и всё.  (За "
+"исключением случая, если "
+"вы сопровождаете glibc или что-то подобное.)"
 
 #. type: Content of: <chapter><section><section><section><title>
 #: pkgs.dbk:2581
@@ -11596,6 +11750,15 @@ msgid ""
 "installed with the new version of <literal>b</literal>; then <literal>a</"
 "literal> may be removed to allow <literal>b</literal> in."
 msgstr ""
+"Иногда какой-то пакет удаляется для того, чтобы был осуществлён переход "
+"другого пакета.  Это происходит "
+"только для того, чтобы позволить <emphasis>другому</emphasis> пакету "
+"осуществить переход в случае, если он "
+"уже готов.  Допустим, напр., что пакет <literal>a</literal> не может быть "
+"установлен вместе с новой версией пакета <literal>b</literal>; тогда пакет <"
+"literal>a</"
+"literal> может быть удалён для того, чтобы был осуществлён переход пакета <"
+"literal>b</literal>."
 
 #. type: Content of: <chapter><section><section><section><para>
 #: pkgs.dbk:2590
@@ -11604,6 +11767,10 @@ msgid ""
 "<literal>testing</literal>: It's just too buggy (and having a single RC-bug "
 "is enough to be in this state)."
 msgstr ""
+"Конечно, имеется и другая причина для удаления пакета из "
+"<literal>тестируемого</literal> выпуска.  Он имеет слишком много ошибок (хотя "
+"даже одной критичной "
+"для выпуска ошибки достаточно)."
 
 #. type: Content of: <chapter><section><section><section><para>
 #: pkgs.dbk:2595
@@ -11612,6 +11779,11 @@ msgid ""
 "and no package in <literal>testing</literal> depends on it any more, then it "
 "will automatically be removed."
 msgstr ""
+"Более того, если пакет был удалён из <literal>нестабильного</literal> "
+"выпуска, "
+"и ни один пакет в <literal>тестируемом</literal> выпуске не зависит от него, "
+"то этот пакет "
+"будет автоматически удалён."
 
 #. type: Content of: <chapter><section><section><section><title>
 #: pkgs.dbk:2602
@@ -11625,6 +11797,10 @@ msgid ""
 "<literal>a</literal> depends on the new version of package <literal>b</"
 "literal>, and vice versa."
 msgstr ""
+"Ситуация, которая не может быть правильно обработана britney, заключает в "
+"том, что пакет "
+"<literal>a</literal> зависит от новой версии пакета <literal>b</"
+"literal>, и наоборот."
 
 #. type: Content of: <chapter><section><section><section><para>
 #: pkgs.dbk:2609
@@ -11667,6 +11843,8 @@ msgid ""
 "Neither package <literal>a</literal> nor package <literal>b</literal> is "
 "considered for update."
 msgstr ""
+"Ни пакет <literal>a</literal>, ни пакет <literal>b</literal> не "
+"рассматриваются для обновления."
 
 #. type: Content of: <chapter><section><section><section><para>
 #: pkgs.dbk:2639
@@ -11675,6 +11853,11 @@ msgid ""
 "contact them by sending mail to &email-debian-release; if this happens to "
 "one of your packages."
 msgstr ""
+"В настоящее время такая ситуация требует вмешательства выпускающей команды.  "
+"Свяжитесь "
+"с ними, отправив сообщение по адресу &email-debian-release;, если такая "
+"ситуация возникла для "
+"одного из ваших пакетов."
 
 #. type: Content of: <chapter><section><section><section><title>
 #: pkgs.dbk:2646
@@ -11696,6 +11879,23 @@ msgid ""
 "arch present in <literal>unstable</literal> at all during the "
 "<literal>testing</literal> migration."
 msgstr ""
+"Вообще же, статус пакета в <literal>тестируемом</literal> выпуске "
+"ничего не значит для перехода следующей версии этого пакета из "
+"<literal>нестабильного</literal> выпуска в <literal>тестируемый</literal>, с "
+"двумя "
+"исключениями.  Во-первых, если у пакета уменьшается количество критичных для "
+"выпуска ошибок, то он может "
+"осуществить переход даже в том случае, если у него всё ещё остаются критичные "
+"для выпуска ошибки.  Во-вторых, если версия "
+"пакета в <literal>тестируемом</literal> выпуске не синхронизирована на разных "
+"архитектурах.  Тогда любая архитектура может быть обновлена до версии пакета "
+"с исходным "
+"кодом; тем не менее, это может произойти только в том случае, если пакет "
+"ранее был перемещён "
+"вручную, данная архитектура входит в список fuckedarches, либо для данной "
+"архитектуры не было двоичного "
+"пакета в <literal>нестабильном</literal> выпуске во время "
+"перехода в <literal>тестируемый</literal> выпуск."
 
 #. type: Content of: <chapter><section><section><section><para>
 #: pkgs.dbk:2660
@@ -11704,6 +11904,10 @@ msgid ""
 "<literal>testing</literal> has on a new version of the same package is that "
 "the new version might go in easier."
 msgstr ""
+"Короче говоря, это означает следующее: единственный фактор, на который влияет "
+"нахождение пакета в "
+"<literal>тестируемом</literal> выпуске, состоит в том, что новая версия "
+"этого пакета может быть проще добавлена."
 
 #. type: Content of: <chapter><section><section><section><title>
 #: pkgs.dbk:2667
@@ -11713,7 +11917,7 @@ msgstr "Подробности"
 #. type: Content of: <chapter><section><section><section><para>
 #: pkgs.dbk:2669
 msgid "If you are interested in details, this is how britney works:"
-msgstr ""
+msgstr "Если вам интересны подробности, то britney работает следующим образом:"
 
 #. type: Content of: <chapter><section><section><section><para>
 #: pkgs.dbk:2672
@@ -11809,6 +12013,7 @@ msgstr ""
 #: pkgs.dbk:2739
 msgid "Please make sure you didn't miss any of these items in your upload:"
 msgstr ""
+"Убедитесь, что в вашей загрузке вы ничего не пропустили из следующего списка:"
 
 #. type: Content of: <chapter><section><section><itemizedlist><listitem><para>
 #: pkgs.dbk:2744
