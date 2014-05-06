@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: po 4a\n"
 "POT-Creation-Date: 2013-05-22 13:23-0400\n"
-"PO-Revision-Date: 2014-05-05 22:27+0200\n"
+"PO-Revision-Date: 2014-05-07 00:14+0200\n"
 "Last-Translator: Lev Lamberov <l.lamberov@gmail.com>\n"
 "Language-Team: ru <debian-l10n-russian@lists.debian.org>\n"
 "Language: ru\n"
@@ -11928,6 +11928,15 @@ msgid ""
 "this part of britney, the release managers have hammers of various sizes, "
 "called hints (see below), to force britney to consider a package."
 msgstr ""
+"Просматриваются пакеты на предмет выявления того, являются они корректными "
+"кандидатами или нет.  "
+"Это даёт нам список оснований для отказа в обновлении.  Наиболее частыми "
+"основаниями того, почему пакет не "
+"рассматривается для обновления, являются то, что он слишком нов, имеет "
+"критичные для выпуска ошибки, устарел на каких-то архитектурах.  Для "
+"этой части britney у управляющих выпуском имеются различные инструменты, "
+"называемые подсказками (см. ниже), которые используются для того, чтобы "
+"заставить britney рассмотреть данный пакет."
 
 #. type: Content of: <chapter><section><section><section><para>
 #: pkgs.dbk:2679
@@ -11942,6 +11951,19 @@ msgid ""
 "release team are processed before or after this main run, depending on the "
 "exact type."
 msgstr ""
+"Далее начинается более сложная часть. Britney пытается обновить "
+"<literal>тестируемый</literal> выпуск путём установки корректных кандидатов. "
+"Для этого britney "
+"пытается добавить каждого корректного кандидата в тестируемый выпуск. Если "
+"число "
+"неустанавливаемых пакетов в <literal>тестируемом</literal> выпуске не "
+"увеличивается, "
+"то пакет принимается. С этой точки зрения принятый пакет считается "
+"частью <literal>тестируемого</literal> выпуска, такой частью, что все "
+"последующий проверки установок будут включать в себя этот пакет.  Подсказки "
+"выпускающей "
+"команды обрабатываются после или до этой основной работы в зависимости от "
+"типа подсказок."
 
 #. type: Content of: <chapter><section><section><section><para>
 #: pkgs.dbk:2689
@@ -11949,6 +11971,9 @@ msgid ""
 "If you want to see more details, you can look it up on <ulink url=\"http://"
 "&ftp-master-host;/testing/update_output/\"></ulink>."
 msgstr ""
+"Если вы хотите ознакомиться с дополнительными подробностями, вы можете "
+"прочитать <ulink url=\"http://"
+"&ftp-master-host;/testing/update_output/\"></ulink>."
 
 #. type: Content of: <chapter><section><section><section><para>
 #: pkgs.dbk:2693
@@ -11961,6 +11986,15 @@ msgid ""
 "<literal>testing</literal>, approve uploads to <link linkend=\"t-p-u"
 "\">testing-proposed-updates</link> or override the urgency."
 msgstr ""
+"Подсказки доступны в <ulink url=\"http://&ftp-master-host;/testing/"
+"hints/\"></ulink>, также там вы можете найти <ulink url=\"http://&ftp-master-"
+"host;/testing/hints/README\">описание</ulink>.  При помощи подсказок "
+"выпускающая команда Debian может блокировать или разблокировать пакеты, "
+"замедлять или ускорять "
+"переход пакетов в <literal>тестируемый</literal> выпуск, удалять пакеты из "
+"<literal>тестируемого</literal> выпуска, принимать загрузки в <link "
+"linkend=\"t-p-u"
+"\">testing-proposed-updates</link>, либо изменять срочность загрузки."
 
 #. type: Content of: <chapter><section><section><title>
 #: pkgs.dbk:2707
@@ -11976,6 +12010,14 @@ msgid ""
 "<literal>testing</literal>.  For that, you may want to upload to "
 "<literal>testing-proposed-updates</literal>."
 msgstr ""
+"<literal>Тестируемый</literal> выпуск получает пакеты из "
+"<literal>нестабильного</literal> выпуска в соответствии с описанными ранее "
+"правилами.  "
+"Тем не менее, в некоторых случаях необходимо загружать пакеты, собранные "
+"только для "
+"<literal>тестируемого</literal> выпуска.  Для этого вы можете использовать "
+"загрузку в "
+"<literal>testing-proposed-updates</literal>."
 
 #. type: Content of: <chapter><section><section><para>
 #: pkgs.dbk:2716
@@ -11986,6 +12028,13 @@ msgid ""
 "in the release managers' eyes, you should read the instructions that they "
 "regularly give on &email-debian-devel-announce;."
 msgstr ""
+"Помните, что пакеты, загруженные туда, не обрабатываются автоматически, "
+"они должны пройти через руки управляющего выпуском.  Поэтому для того, чтобы "
+"загружать свои пакеты туда, вам следует иметь для этого хорошее основание.  "
+"Для того, чтобы знать, что управляющие "
+"выпуском считаются хорошим основанием, вам следует прочитать инструкции, "
+"которые "
+"они регулярно публикуют в &email-debian-devel-announce;."
 
 #. type: Content of: <chapter><section><section><para>
 #: pkgs.dbk:2723
@@ -11999,6 +12048,19 @@ msgid ""
 "possible, if the upload via <literal>unstable</literal> does not pull in any "
 "new dependencies."
 msgstr ""
+"Вам не следует загружать в <literal>testing-proposed-updates</literal>, если "
+"вы можете обновить ваши пакеты через <literal>нестабильный</literal> выпуск.  "
+"Если вы "
+"не можете этого сделать (например, из-за того, что у вас имеется более новая "
+"версия в "
+"<literal>нестабильном</literal> выпуске), вы можете использовать эту "
+"возможность.  Однако "
+"рекомендуется сначала попросить на это разрешение у управляющего выпуском.  "
+"Даже если пакет заморожен обновления через <literal>нестабильный</literal> "
+"выпуск "
+"всё равно возможны, если загрузка через <literal>нестабильный</literal> "
+"выпуск не тянет за собой "
+"какие-либо новые зависимости."
 
 #. type: Content of: <chapter><section><section><para>
 #: pkgs.dbk:2732
@@ -12008,6 +12070,10 @@ msgid ""
 "<literal>1.2squeeze1</literal> for the first upload through <literal>testing-"
 "proposed-updates</literal> of package version <literal>1.2</literal>."
 msgstr ""
+"Номера версий обычно формируются путём добавления кодового имени "
+"<literal>тестируемого</literal> выпуска и порядкового номера, например, "
+"<literal>1.2squeeze1</literal> для первой загрузки через <literal>testing-"
+"proposed-updates</literal> пакета с ПО версии <literal>1.2</literal>."
 
 #. type: Content of: <chapter><section><section><para>
 #: pkgs.dbk:2739
@@ -12021,17 +12087,22 @@ msgid ""
 "Make sure that your package really needs to go through <literal>testing-"
 "proposed-updates</literal>, and can't go through <literal>unstable</literal>;"
 msgstr ""
+"Убедитесь, что ваш пакет действительно должен пройти через <literal>testing-"
+"proposed-updates</literal>, и что он не может пройти через <literal>"
+"нестабильный</literal> выпуск;"
 
 #. type: Content of: <chapter><section><section><itemizedlist><listitem><para>
 #: pkgs.dbk:2751
 msgid "Make sure that you included only the minimal amount of changes;"
-msgstr ""
+msgstr "Убедитесь, что вы включили в пакет лишь минимальное число изменений;"
 
 #. type: Content of: <chapter><section><section><itemizedlist><listitem><para>
 #: pkgs.dbk:2756
 msgid ""
 "Make sure that you included an appropriate explanation in the changelog;"
 msgstr ""
+"Убедитесь, что вы включили соответствующее объяснение в журнал изменений "
+"пакета;"
 
 #. type: Content of: <chapter><section><section><itemizedlist><listitem><para>
 #: pkgs.dbk:2761
@@ -12039,6 +12110,9 @@ msgid ""
 "Make sure that you've written <literal>testing</literal> or <literal>testing-"
 "proposed-updates</literal> into your target distribution;"
 msgstr ""
+"Убедитесь, что вы указали <literal>тестируемый</literal> выпуск или <literal>"
+"testing-"
+"proposed-updates</literal> в списке целевых выпусков;"
 
 #. type: Content of: <chapter><section><section><itemizedlist><listitem><para>
 #: pkgs.dbk:2767
@@ -12046,6 +12120,8 @@ msgid ""
 "Make sure that you've built and tested your package in <literal>testing</"
 "literal>, not in <literal>unstable</literal>;"
 msgstr ""
+"Убедитесь, что вы собрали и протестировали ваш пакет в <literal>тестируемом</"
+"literal>, а не в <literal>нестабильном</literal> выпуске;"
 
 #. type: Content of: <chapter><section><section><itemizedlist><listitem><para>
 #: pkgs.dbk:2773
@@ -12054,6 +12130,10 @@ msgid ""
 "<literal>testing</literal> and <literal>testing-proposed-updates</literal>, "
 "and lower than in <literal>unstable</literal>;"
 msgstr ""
+"Убедитесь, что номер версии пакета выше номера версии, входящей в "
+"<literal>тестируемый</literal> выпуск и в <literal>testing-proposed-updates<"
+"/literal>, "
+"а также ниже, чем в <literal>нестабильном</literal> выпуске;"
 
 #. type: Content of: <chapter><section><section><itemizedlist><listitem><para>
 #: pkgs.dbk:2780
@@ -12061,16 +12141,19 @@ msgid ""
 "After uploading and successful build on all platforms, contact the release "
 "team at &email-debian-release; and ask them to approve your upload."
 msgstr ""
+"После загрузки и успешной сборки на всех платформах, свяжитесь с выпускающей "
+"командой по адресу &email-debian-release; и попросите их одобрить вашу "
+"загрузку."
 
 #. type: Content of: <chapter><section><section><title>
 #: pkgs.dbk:2788
 msgid "Frequently asked questions"
-msgstr ""
+msgstr "Часто задаваемые вопросы"
 
 #. type: Content of: <chapter><section><section><section><title>
 #: pkgs.dbk:2790
 msgid "What are release-critical bugs, and how do they get counted?"
-msgstr ""
+msgstr "Что такое критичные для выпуска ошибки, как производится их подсчёт?"
 
 #. type: Content of: <chapter><section><section><section><para>
 #: pkgs.dbk:2792
@@ -12079,6 +12162,10 @@ msgid ""
 "critical; currently, these are <literal>critical</literal>, <literal>grave</"
 "literal> and <literal>serious</literal> bugs."
 msgstr ""
+"Все ошибки, имеющие высокую важность, по умолчанию считаются критичными "
+"для выпуска; в настоящее время это ошибки с важностью <literal>critical<"
+"/literal>, <literal>grave</"
+"literal> и <literal>serious</literal>."
 
 #. type: Content of: <chapter><section><section><section><para>
 #: pkgs.dbk:2797
@@ -12089,6 +12176,13 @@ msgid ""
 "get into <literal>testing</literal>, and consequently won't be released in "
 "<literal>stable</literal>."
 msgstr ""
+"Предполагается, что такие ошибки влияют на шансы того, будет пакет выпущен "
+"в составе <literal>стабильного</literal> выпуска Debian или нет.  В общем "
+"случае, "
+"если пакет имеет открытые сообщения о критичных для выпуска ошибках, он не "
+"попадёт в <literal>тестируемый</literal> выпуск и, соответственно, не будет "
+"выпущен в составе "
+"<literal>стабильного</literal> выпуска."
 
 #. type: Content of: <chapter><section><section><section><para>
 #: pkgs.dbk:2804
@@ -12099,6 +12193,14 @@ msgid ""
 "unstable for a release architecture. The <literal>testing</literal> bug "
 "count is defined analogously."
 msgstr ""
+"Число ошибок в пакетах <literal>нестабильного</literal> выпуска представляет "
+"собой все критичные для выпуска "
+"ошибки, которые помечены как применимые к комбинациям <replaceable>пакет<"
+"/replaceable>/"
+"<replaceable>версия</replaceable>, доступным в "
+"нестабильном выпуске для выпускаемой архитектуры. Число ошибок в пакетах <"
+"literal>тестируемого</literal> "
+"выпуска определяется аналогичным образом."
 
 #. type: Content of: <chapter><section><section><section><title>
 #: pkgs.dbk:2812
@@ -12106,6 +12208,8 @@ msgid ""
 "How could installing a package into <literal>testing</literal> possibly "
 "break other packages?"
 msgstr ""
+"Как установка какого-то пакета в <literal>тестируемый</literal> выпуск "
+"может сломать другие пакеты?"
 
 #. type: Content of: <chapter><section><section><section><para>
 #: pkgs.dbk:2815
@@ -12117,6 +12221,14 @@ msgid ""
 "bin</literal>, <literal>acme-bar-bin</literal>, <literal>libacme-foo1</"
 "literal> and <literal>libacme-foo-dev</literal>, the old version is removed."
 msgstr ""
+"Структура архивов выпусков такова, что они могут содержать только одну "
+"версию пакета; пакет определяется его именем.  Поэтому, когда "
+"пакет с исходным кодом <literal>acmefoo</literal> устанавливается в "
+"<literal>тестируемый</literal> выпуск вместе с соответствующими двоичными "
+"пакетами <literal>acme-foo-"
+"bin</literal>, <literal>acme-bar-bin</literal>, <literal>libacme-foo1</"
+"literal> и <literal>libacme-foo-dev</literal>, старая версии пакетов "
+"удаляются."
 
 #. type: Content of: <chapter><section><section><section><para>
 #: pkgs.dbk:2823
@@ -12126,6 +12238,12 @@ msgid ""
 "old <literal>acmefoo</literal> will remove <literal>libacme-foo0</literal>, "
 "which will break any packages which depend on it."
 msgstr ""
+"Тем не менее, старая версия может предоставлять двоичный пакет со старой "
+"библиотекой с тем же именем, такой как <literal>libacme-foo0</literal>.  "
+"Удаление "
+"старого пакета <literal>acmefoo</literal> приведёт к удалению <literal>"
+"libacme-foo0</literal>, "
+"что в свою очередь приведёт к удалению всех зависящих от неё пакетов."
 
 #. type: Content of: <chapter><section><section><section><para>
 #: pkgs.dbk:2829
@@ -12135,6 +12253,12 @@ msgid ""
 "it will also affect packages upon which versioned dependencies have been "
 "declared of the ==, &lt;=, or &lt;&lt; varieties."
 msgstr ""
+"Очевидно, эта ситуация касается пакетов, которые в своих разных версиях "
+"предоставляют разные наборы "
+"двоичных пакетов (в основном библиотеки).  Тем не менее, "
+"она также касается пакетов, которые имеют зависимости от конкретных версий, "
+"задаваемые "
+"через ==, &lt;= или &lt;&lt;."
 
 #. type: Content of: <chapter><section><section><section><para>
 #: pkgs.dbk:2835
@@ -12149,6 +12273,20 @@ msgid ""
 "manual intervention by the release manager or an assistant is normally "
 "required."
 msgstr ""
+"Если набор двоичных пакетов, предоставляемый пакетом с исходным кодом, "
+"меняется "
+"подобным образом, все пакеты, которые зависят от старых двоичных пакетов "
+"должны быть "
+"обновлены таким образом, что они должны зависеть от новых двоичных пакетов.  "
+"Поскольку установка такого "
+"пакета с исходным кодом в <literal>тестируемый</literal> выпуск ломает все "
+"пакеты, которые "
+"зависят от него в <literal>тестируемом</literal> выпуске, следует быть "
+"немного более внимательным: "
+"все зависящие пакеты сами должны быть обновлены и готовы к установке, "
+"так чтобы они не сломалось, и когда всё будет готово, "
+"обычно требуется ручное вмешательство управляющего выпуском "
+"или его ассистента."
 
 #. type: Content of: <chapter><section><section><section><para>
 #: pkgs.dbk:2846
@@ -12156,6 +12294,8 @@ msgid ""
 "If you are having problems with complicated groups of packages like this, "
 "contact &email-debian-devel; or &email-debian-release; for help."
 msgstr ""
+"Если у вас имеются подобные проблемы со сложной группой пакетов, свяжитесь с "
+"&email-debian-devel; or &email-debian-release; for help."
 
 #. type: Content of: <chapter><title>
 #: resources.dbk:7
@@ -12170,6 +12310,12 @@ msgid ""
 "all the other resources that are available to help you in your maintainer "
 "work."
 msgstr ""
+"В данной главе вы найдёте очень краткую дорожную карту списков рассылки "
+"Debian, "
+"машин Debian, которые доступны вам как разработчику, а также "
+"всех других ресурсов, доступных вам, которые могут помочь вам в вашей работе "
+"в качестве "
+"сопровождающего."
 
 #. type: Content of: <chapter><section><title>
 #: resources.dbk:14
@@ -12189,6 +12335,20 @@ msgid ""
 "only cover aspects of mailing lists that are of particular interest to "
 "developers."
 msgstr ""
+"Большая часть общения между разработчиками Debian (а также пользователями) "
+"происходит "
+"в списках рассылки, которые расположены по адресу <literal><ulink url="
+"\"http://&lists-host;/\">&lists-host;</ulink></literal>.  Чтобы узнать о том, "
+"как "
+"подписаться или отписаться, как отправлять сообщения и как не отправлять их, "
+"где "
+"искать старые сообщения и как осуществлять поиск по ним, как связаться с "
+"сопровождающими данного списка рассылки и как просмотреть другую информацию о "
+"данном списке рассылки, "
+"прочтите <ulink url=\"&url-debian-lists;\"></ulink>.  В данном разделе "
+"приводятся лишь некоторые аспекты списков рассылки, которые особенно "
+"интересны "
+"разработчикам."
 
 #. type: Content of: <chapter><section><section><title>
 #: resources.dbk:27
@@ -12197,12 +12357,19 @@ msgstr "Базовые правила"
 
 #. type: Content of: <chapter><section><section><para>
 #: resources.dbk:29
+#, fuzzy
 msgid ""
 "When replying to messages on the mailing list, please do not send a carbon "
 "copy (<literal>CC</literal>) to the original poster unless they explicitly "
 "request to be copied.  Anyone who posts to a mailing list should read it to "
 "see the responses."
 msgstr ""
+"При ответе на сообщения в списке рассылки не отправляйте "
+"копию сообщения (<literal>CC</literal>) автору сообщения, на которое вы "
+"отвечаете, если он об этом "
+"не попросил явным образом.  Всякий, кто отправляет сообщения в список "
+"рассылки, должен прочитать сообщения в списке для "
+"того, чтобы видеть ответы."
 
 #. type: Content of: <chapter><section><section><para>
 #: resources.dbk:35
@@ -12211,6 +12378,12 @@ msgid ""
 "As ever on the net, please trim down the quoting of articles you're replying "
 "to.  In general, please adhere to the usual conventions for posting messages."
 msgstr ""
+"Отправление нескольких одинаковых сообщений в разные списки рассылки не "
+"желательно.  "
+"Как это обычно делается при работе в сети, сокращайте цитаты из сообщений, на "
+"которые вы "
+"отвечаете.  В общем придерживайтесь обычных договорённостей по отправке "
+"сообщений."
 
 #. type: Content of: <chapter><section><section><para>
 #: resources.dbk:40
@@ -12219,6 +12392,11 @@ msgid ""
 "conduct</ulink> for more information. The <ulink url=\"&url-dcg;\">Debian "
 "Community Guidelines</ulink> are also worth reading."
 msgstr ""
+"Для получения дополнительной информации ознакомьтесь с <ulink "
+"url=\"&url-debian-lists;#codeofconduct\">нормами "
+"поведения</ulink>. Также стоит прочитать <ulink url=\"&url-dcg;\">Руководство "
+"по взаимодействию "
+"в сообществе Debian</ulink>."
 
 #. type: Content of: <chapter><section><section><title>
 #: resources.dbk:48
@@ -12238,8 +12416,8 @@ msgid ""
 "developers.  All developers are expected to be subscribed to this list."
 msgstr ""
 "&email-debian-devel-announce; используется для анонсирования важной "
-"информации для "
-"разработчиков.  Ожидается, что все разработчики подписаны на этот список "
+"информации "
+"для разработчиков.  Ожидается, что все разработчики подписаны на этот список "
 "рассылки."
 
 #. type: Content of: <chapter><section><section><itemizedlist><listitem><para>
@@ -12249,8 +12427,7 @@ msgid ""
 "issues."
 msgstr ""
 "&email-debian-devel; используется для обсуждения различных вопросов "
-"разработки, связанных с "
-"техническими проблемами."
+"разработки, связанных с техническими проблемами."
 
 #. type: Content of: <chapter><section><section><itemizedlist><listitem><para>
 #: resources.dbk:68
@@ -12267,8 +12444,7 @@ msgid ""
 "to the project."
 msgstr ""
 "&email-debian-project; используется для обсуждения различных не-технических "
-"проблем, связанных "
-"с Проектом."
+"проблем, связанных с Проектом."
 
 #. type: Content of: <chapter><section><section><para>
 #: resources.dbk:80
@@ -12297,6 +12473,23 @@ msgid ""
 "<literal>&master-host;</literal> and looking in the <filename>&file-debian-"
 "private-archive;</filename> directory."
 msgstr ""
+"&email-debian-private; представляет собой специальный список рассылки для "
+"частных "
+"дискуссий между разработчиками Debian.  Предполагается, что он будет "
+"использоваться для сообщений, которые "
+"по какой-либо причине не должны быть доступны широкой публике.  Как таковой "
+"это небольшой "
+"список рассылки, пользователям рекомендуется не использовать "
+"&email-debian-private;, если только "
+"это не является действительно необходимым.  Более того, <emphasis>не<"
+"/emphasis> пересылайте сообщения "
+"из этого списка кому бы то ни было.  Архивы данного списка не доступны в сети "
+"по "
+"очевидным причинам, но вы можете просмотреть их, используя вашу учётную "
+"запись для командной оболочки на "
+"<literal>&master-host;</literal>, архив находится в каталоге <filename>"
+"&file-debian-"
+"private-archive;</filename>."
 
 #. type: Content of: <chapter><section><section><para>
 #: resources.dbk:100
@@ -12306,11 +12499,18 @@ msgid ""
 "bugs, etc.  or discussing the project with others where it might be useful "
 "to have the discussion archived somewhere."
 msgstr ""
+"&email-debian-email; представляет собой специальный список рассылки, "
+"используемый для сбора связанной с Debian "
+"корреспонденции, такой как взаимодействие с авторами основной ветки "
+"разработки по поводу лицензий, "
+"ошибок и т. д., либо для обсуждения Проекта с другими пользователями и "
+"разработчиками, если сохранение этого обсуждения "
+"может оказаться полезным."
 
 #. type: Content of: <chapter><section><section><title>
 #: resources.dbk:108
 msgid "Requesting new development-related lists"
-msgstr "Запрос новых связанных с разработкой списков рассылки"
+msgstr "Запрос новых списков рассылки, связанных с разработкой"
 
 #. type: Content of: <chapter><section><section><para>
 #: resources.dbk:110
@@ -12322,6 +12522,16 @@ msgid ""
 "address) or a self-managed mailing list on <link linkend=\"alioth\">Alioth</"
 "link> is more appropriate."
 msgstr ""
+"До отправки запроса по поводу списка рассылки, связанного с разработкой "
+"пакета (или небольшой группы связанных пакетов) подходит ли для этого "
+"использование "
+"псевдонима (через файл .forward-aliasname на master.debian.org, который "
+"переводит "
+"адрес в довольно хороший адрес <replaceable>you-aliasname@debian.org<"
+"/replaceable>), "
+"либо самостоятельно управляемого списка рассылки на <link linkend=\"alioth\">"
+"Alioth</"
+"link>."
 
 #. type: Content of: <chapter><section><section><para>
 #: resources.dbk:118
@@ -12330,6 +12540,9 @@ msgid ""
 "want, go ahead and fill in a request, following <ulink url=\"&url-debian-"
 "lists-new;\">the HOWTO</ulink>."
 msgstr ""
+"Если вы решили, что обычный список рассылки на &lists-host; — это то, что вы "
+"хотите, то заполните запрос, следуя <ulink url=\"&url-debian-"
+"lists-new;\">данному руководству</ulink>."
 
 #. type: Content of: <chapter><section><title>
 #: resources.dbk:127
@@ -12344,6 +12557,11 @@ msgid ""
 "(OFTC)</ulink> network.  The <literal>irc.debian.org</literal> DNS entry is "
 "an alias to <literal>irc.oftc.net</literal>."
 msgstr ""
+"Несколько каналов IRC специально посвящены разработке Debian.  В основном они "
+"размещены в сети <ulink url=\"&url-oftc;\">сообщества открытых и свободных "
+"технологий "
+"(OFTC)</ulink>.  Запись DNS <literal>irc.debian.org</literal> является "
+"псевдонимом для <literal>irc.oftc.net</literal>."
 
 #. type: Content of: <chapter><section><para>
 #: resources.dbk:135
@@ -12355,6 +12573,16 @@ msgid ""
 "literal>, <literal>#debian-br</literal> and other similarly named channels "
 "for speakers of other languages."
 msgstr ""
+"Основным общим каналом для Debian является <literal>#debian</literal>.  Это "
+"большой канал общего назначения, где пользователи могут найти свежие новости "
+"о "
+"Проекте, этот канал обслуживается роботами.  <literal>#debian</literal> "
+"предназначен для "
+"говорящих на английском языке; также имеются <literal>#debian.de</literal>, <"
+"literal>#debian-fr</"
+"literal>, <literal>#debian-br</literal> и другие каналы со сходными "
+"названиями для "
+"тех, кто говорит на других языках."
 
 #. type: Content of: <chapter><section><para>
 #: resources.dbk:143
@@ -12366,6 +12594,15 @@ msgid ""
 "that).  It is however open to anyone who wants to lurk (and learn).  Its "
 "topic is commonly full of interesting information for developers."
 msgstr ""
+"Основным каналом по вопросам разработки Debian является <literal>"
+"#debian-devel</"
+"literal>.  Это довольно активный канал; обычно на нём присутствует не менее "
+"150 человек в любое время дня.  Это канал для тех, кто хочет работать над "
+"Debian, это не канал поддержки (это этого используется канал "
+"<literal>#debian</literal>).  Тем не менее, этот канал открыт для всех, кто "
+"хочет затаиться (и научиться).  Его "
+"тематика состоит в обсуждении любой информации, которая интересна "
+"разработчикам."
 
 #. type: Content of: <chapter><section><para>
 #: resources.dbk:152
@@ -12376,6 +12613,12 @@ msgid ""
 "literal> and it's protected by a key.  This key is available at "
 "<filename>master.debian.org:&file-debian-private-key;</filename>."
 msgstr ""
+"Поскольку <literal>#debian-devel</literal> является открытым каналом, вам не "
+"следует "
+"обсуждать в нём то, что обсуждается в &email-debian-private;.  Для этого цели "
+"имеется другой канал, который имеет имя <literal>#debian-private</"
+"literal>, он защищён ключом.  Ключ доступен по адресу "
+"<filename>master.debian.org:&file-debian-private-key;</filename>."
 
 #. type: Content of: <chapter><section><para>
 #: resources.dbk:160
@@ -12390,6 +12633,20 @@ msgid ""
 "<literal>#debian-jr</literal>, <literal>#debian-edu</literal>, "
 "<literal>#debian-oo</literal> (OpenOffice.org package)..."
 msgstr ""
+"Имеются и другие дополнительные каналы, специально предназначенные для "
+"конкретных тем.  "
+"<literal>#debian-bugs</literal> используется для координации вечеринок по "
+"исправлению "
+"ошибок.  <literal>#debian-boot</literal> используется для координации работы "
+"над "
+"программой установки Debian.  <literal>#debian-doc</literal> время от времени "
+"используется "
+"для разговоров по поводу документации, например, для обсуждения документации, "
+"которую вы читаете в настоящий момент.  Другие "
+"каналы выделены для архитектур или наборов пакетов: "
+"<literal>#debian-kde</literal>, <literal>#debian-dpkg</literal>, "
+"<literal>#debian-jr</literal>, <literal>#debian-edu</literal>, "
+"<literal>#debian-oo</literal> (пакет OpenOffice.org)..."
 
 #. type: Content of: <chapter><section><para>
 #: resources.dbk:171
@@ -12398,6 +12655,11 @@ msgid ""
 "<literal>#debian-devel-fr</literal> for French speaking people interested in "
 "Debian's development."
 msgstr ""
+"Существуют также некоторые каналы для разработчиков, родным языком которые не "
+"является английский, например "
+"<literal>#debian-devel-fr</literal> для людей, говорящих на французском языке "
+"и заинтересованных в "
+"разработке Debian."
 
 #. type: Content of: <chapter><section><para>
 #: resources.dbk:176
@@ -12407,6 +12669,11 @@ msgid ""
 "was pointed at by the <literal>irc.debian.org</literal> alias until 4th June "
 "2006."
 msgstr ""
+"В других сетях IRC также существуют каналы, посвящённые Debia, в частности в "
+"IRC сети <ulink url=\"&url-openprojects;\">freenode</ulink>, на который для 4 "
+"июня 2006 года "
+"работало перенаправление с псевдонима "
+"<literal>irc.debian.org</literal>."
 
 #. type: Content of: <chapter><section><para>
 #: resources.dbk:182
