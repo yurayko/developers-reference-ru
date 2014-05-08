@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: po 4a\n"
 "POT-Creation-Date: 2013-05-22 13:23-0400\n"
-"PO-Revision-Date: 2014-05-07 00:14+0200\n"
+"PO-Revision-Date: 2014-05-08 23:20+0200\n"
 "Last-Translator: Lev Lamberov <l.lamberov@gmail.com>\n"
 "Language-Team: ru <debian-l10n-russian@lists.debian.org>\n"
 "Language: ru\n"
@@ -12671,8 +12671,7 @@ msgid ""
 msgstr ""
 "В других сетях IRC также существуют каналы, посвящённые Debia, в частности в "
 "IRC сети <ulink url=\"&url-openprojects;\">freenode</ulink>, на который для 4 "
-"июня 2006 года "
-"работало перенаправление с псевдонима "
+"июня 2006 года работало перенаправление с псевдонима "
 "<literal>irc.debian.org</literal>."
 
 #. type: Content of: <chapter><section><para>
@@ -12696,6 +12695,13 @@ msgid ""
 "Corner</ulink>.  Take the time to browse all the links, you will learn many "
 "more things."
 msgstr ""
+"Данный документ содержит большое количество полезной разработчикам Debian "
+"информации, но он не может содержать всё.  Ссылки на большинство других "
+"интересных "
+"документов приведены в <ulink url=\"&url-devel-docs;\">Уголке "
+"разработчика</ulink>.  Потратьте некоторое время на то, чтобы ознакомиться с "
+"ними, вы обязательно узнаете много "
+"нового."
 
 #. type: Content of: <chapter><section><title>
 #: resources.dbk:204
@@ -12709,6 +12715,12 @@ msgid ""
 "critical functions in the Debian project.  Most of the machines are used for "
 "porting activities, and they all have a permanent connection to the Internet."
 msgstr ""
+"У Debian имеется несколько компьютеров, которые работают в качестве серверов, "
+"большинство из них "
+"обслуживают критически важные функции в Проекте Debian.  Большая часть машин "
+"используется "
+"для переноса пакетов, все эти машины имеют постоянное подключение в сети "
+"Интернет."
 
 #. type: Content of: <chapter><section><para>
 #: resources.dbk:211
@@ -12717,6 +12729,10 @@ msgid ""
 "as the developers follow the rules set forth in the <ulink url=\"&url-dmup;"
 "\">Debian Machine Usage Policies</ulink>."
 msgstr ""
+"Некоторые машины доступны для использования отдельными разработчиками до тех "
+"пор, "
+"пока эти разработчики соблюдают правила, приведённые в <ulink url=\"&url-dmup;"
+"\">Политике использования машин Debian</ulink>."
 
 #. type: Content of: <chapter><section><para>
 #: resources.dbk:216
@@ -12727,6 +12743,15 @@ msgid ""
 "the approval of the system administrators.  Usually these machines are run "
 "by volunteers."
 msgstr ""
+"Вообще говоря, вы можете использовать эти машины для связанных с Debian "
+"целей, "
+"если это кажется вам подходящим.  Пожалуйста, будьте добры с системными "
+"администраторами, не используйте "
+"большое количество места на диске, пропускной способности сети, либо "
+"процессорного времени без "
+"предварительного разрешения системных администраторов.  Обычно эти машины "
+"предоставляются "
+"добровольцами."
 
 #. type: Content of: <chapter><section><para>
 #: resources.dbk:223
@@ -12735,6 +12760,10 @@ msgid ""
 "Debian machines.  Avoid login or upload methods which send passwords over "
 "the Internet in the clear, such as Telnet, FTP, POP etc."
 msgstr ""
+"Позаботьтесь о защите ваших паролей Debian и ключей SSH, установленных на "
+"машинах Debian.  Избегайте входа или методов загрузки, которые пересылают "
+"пароли по сети "
+"Интернет в открытом виде, такие как Telnet, FTP, POP и т. д."
 
 #. type: Content of: <chapter><section><para>
 #: resources.dbk:228
@@ -12743,8 +12772,7 @@ msgid ""
 "servers, unless you have prior permission."
 msgstr ""
 "Пожалуйста, на размещайте какой-либо материал, не связанный с Debian, на "
-"серверах "
-"Debian в случае, если у вас нет на это соответствующего разрешения."
+"серверах Debian в случае, если у вас нет на это соответствующего разрешения."
 
 #. type: Content of: <chapter><section><para>
 #: resources.dbk:232
@@ -12753,6 +12781,10 @@ msgid ""
 "machines;\"></ulink>.  That web page contains machine names, contact "
 "information, information about who can log in, SSH keys etc."
 msgstr ""
+"Текущий список машин Debian доступен по адресу: <ulink url=\"&url-devel-"
+"machines;\"></ulink>.  Эта веб-страница содержит имена машин, контактную "
+"информацию, "
+"информацию о том, кто может входить на данную машину, ключи SSH и т. д."
 
 #. type: Content of: <chapter><section><para>
 #: resources.dbk:238
@@ -12765,6 +12797,16 @@ msgid ""
 "filename>).  To report a new problem, simply send a mail to &email-rt-dsa; "
 "and make sure to put the string \"Debian RT\" somewhere in the subject."
 msgstr ""
+"Если у вас имеются проблемы с работой сервера Debian, и вы считаете, что "
+"системные операторы должны быть извещены об этой проблеме, вы можете "
+"обратиться к списку открытых проблем в очереди DSA в нашей системе "
+"отслеживания билетов <ulink "
+"url=\"&url-rt;\" /> (вы можете войти под пользователем \"debian\", пароль же "
+"доступен "
+"по адресу: <filename>master.debian.org:&file-debian-rt-password;</"
+"filename>).  Чтобы сообщить о новой проблеме, вам нужно лишь отправить "
+"сообщение по адресу &email-rt-dsa; "
+"и убедиться, что в теме вы указали \"Debian RT\"."
 
 #. type: Content of: <chapter><section><para>
 #: resources.dbk:247
@@ -12775,6 +12817,13 @@ msgid ""
 "package''.  See <xref linkend=\"submit-bug\"/> for information on how to "
 "submit bugs."
 msgstr ""
+"Если у вас имеются проблемы с конкретной службой, которые не связаны с "
+"администрированием "
+"системы (такие как пакеты, которые следует удалить из архива, предложения для "
+"веб-сайта и т. д.), вам следует отправить сообщение об ошибке в псевдопакете "
+"``pseudo-"
+"package''.  Информацию о том, как отправлять такие сообщения об ошибках, см. "
+"<xref linkend=\"submit-bug\"/>."
 
 #. type: Content of: <chapter><section><para>
 #: resources.dbk:254
