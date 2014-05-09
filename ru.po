@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: po 4a\n"
 "POT-Creation-Date: 2013-05-22 13:23-0400\n"
-"PO-Revision-Date: 2014-05-08 23:20+0200\n"
+"PO-Revision-Date: 2014-05-09 23:24+0200\n"
 "Last-Translator: Lev Lamberov <l.lamberov@gmail.com>\n"
 "Language-Team: ru <debian-l10n-russian@lists.debian.org>\n"
 "Language: ru\n"
@@ -6957,7 +6957,7 @@ msgstr ""
 "можете запустить "
 "<command>lintian</command> следующим образом: <literal>lintian -v "
 "<replaceable>версия-пакета</replaceable>.changes</literal>.  Эта команда "
-"проверит исходный пакет, наряду с двоичным пакетом.  Если вы не "
+"проверит пакет с исходным кодом, наряду с двоичным пакетом.  Если вы не "
 "понимаете вывод, предоставляемый вам <command>lintian</command>, попробуйте "
 "добавить "
 "опцию <literal>-i</literal>, это приведёт к тому, что <command>lintian</"
@@ -7017,7 +7017,8 @@ msgid ""
 "of it, or if it relies on permissions being preserved on the files shipped "
 "inside the <filename>.diff.gz</filename> file."
 msgstr ""
-"Скопируйте исходный пакет в другой каталог и попытайтесь распаковать и "
+"Скопируйте пакет с исходным кодом в другой каталог и попытайтесь распаковать "
+"и "
 "собрать его заново.  Это позволит проверить то, зависит ли пакет от "
 "существующих файлов, которые не были добавлены "
 "в сам пакет, а также проверить то, зависит ли он от того, сохраняются ли "
@@ -7027,12 +7028,12 @@ msgstr ""
 #. type: Content of: <chapter><section><title>
 #: pkgs.dbk:213
 msgid "Layout of the source package"
-msgstr "Схема исходного пакета"
+msgstr "Схема пакета с исходным кодом"
 
 #. type: Content of: <chapter><section><para>
 #: pkgs.dbk:215
 msgid "There are two types of Debian source packages:"
-msgstr "Имеется два типа исходных пакетов Debian:"
+msgstr "Имеется два типа пакетов Debian с исходным кодом:"
 
 #. type: Content of: <chapter><section><itemizedlist><listitem><para>
 #: pkgs.dbk:220
@@ -7063,16 +7064,16 @@ msgid ""
 "filename> for the source format “1.0” or <filename>.debian.tar.{gz,bz2,xz}</"
 "filename> for the source format “3.0 (quilt)”)."
 msgstr ""
-"У родных пакетов исходные пакеты включают в себя исходный файл "
+"У родных пакетов пакеты с исходным кодом включают в себя исходный файл "
 "контроля (<filename>.dsc</filename>) и исходный архив в виде tarball (<"
 "filename>.tar.{gz,"
-"bz2,xz}</filename>). Исходный пакет неродного пакета включает в себя "
+"bz2,xz}</filename>). Пакет с исходным кодом неродного пакета включает в себя "
 "исходный файл контроля, оригинальный исходный файл в виде tarball (<filename>"
 ".orig.tar."
 "{gz,bz2,xz}</filename>) и специфичные изменения Debian (<filename>.diff.gz</"
-"filename> для формата исходного пакета “1.0” или <filename>"
+"filename> для формата пакета с исходным кодом “1.0” или <filename>"
 ".debian.tar.{gz,bz2,xz}</"
-"filename> для формата исходного пакета “3.0 (quilt)”)."
+"filename> для формата пакета с исходным кодом “3.0 (quilt)”)."
 
 #. type: Content of: <chapter><section><para>
 #: pkgs.dbk:241
@@ -13109,7 +13110,8 @@ msgid ""
 "documentation and installation disk images)."
 msgstr ""
 "Дистрибутив &debian-formal; состоит из огромного числа пакетов (в настоящее "
-"время около &number-of-pkgs; исходных пакетов) и нескольких дополнительных "
+"время около &number-of-pkgs; пакетов с исходным кодом) и нескольких "
+"дополнительных "
 "файлов (таких как "
 "документация и образы установочных дисков)."
 
@@ -13142,6 +13144,9 @@ msgid ""
 "<filename>main</filename>, <filename>contrib</filename>, and <filename>non-"
 "free</filename>."
 msgstr ""
+"<filename>dists/stable</filename> содержит три каталога, а именно "
+"<filename>main</filename>, <filename>contrib</filename> и <filename>non-"
+"free</filename>."
 
 #. type: Content of: <chapter><section><para>
 #: resources.dbk:453
@@ -13151,6 +13156,10 @@ msgid ""
 "architecture (<filename>binary-i386</filename>, <filename>binary-amd64</"
 "filename>, etc.)."
 msgstr ""
+"В каждом из них имеется каталог для пакетов с исходным кодом "
+"(<filename>source</filename>) и каталог для каждой поддерживаемой "
+"архитектуры (<filename>binary-i386</filename>, <filename>binary-amd64</"
+"filename> и т. д.)."
 
 #. type: Content of: <chapter><section><para>
 #: resources.dbk:458
@@ -13160,6 +13169,10 @@ msgid ""
 "installing the Debian distribution on a specific architecture "
 "(<filename>disks-i386</filename>, <filename>disks-amd64</filename>, etc.)."
 msgstr ""
+"Каталог <filename>main</filename> содержит дополнительные каталоги, в которых "
+"хранятся образы дисков и некоторые важные части документации, требующиеся для "
+"установки дистрибутива Debian на конкретную архитектуру "
+"(<filename>disks-i386</filename>, <filename>disks-amd64</filename> и т. д.)."
 
 #. type: Content of: <chapter><section><section><title>
 #: resources.dbk:464
@@ -13176,6 +13189,14 @@ msgid ""
 "different degrees; as such, they are <emphasis role=\"strong\">not</"
 "emphasis> officially part of &debian-formal;."
 msgstr ""
+"Раздел <literal>main</literal> архива Debian &mdash; то, что является "
+"<emphasis role=\"strong\">официальным дистрибутивом &debian-formal;</"
+"emphasis>.  Раздел <literal>main</literal> является официальным потому, что "
+"он полностью "
+"соответствует всем нашим рекомендациям.  Другие два раздела не соответствуют "
+"им в той "
+"или иной степени; как таковые они <emphasis role=\"strong\">не</"
+"emphasis> являются официальной частью &debian-formal;."
 
 #. type: Content of: <chapter><section><section><para>
 #: resources.dbk:474
@@ -13186,6 +13207,14 @@ msgid ""
 "policy;\">Debian Policy Manual</ulink>.  The DFSG is our definition of “free "
 "software.” Check out the Debian Policy Manual for details."
 msgstr ""
+"Каждый пакет из основного раздела должен полностью соответствовать <ulink url="
+"\"&url-dfsg;\">Критериям Debian по определению Свободного ПО</ulink> (DFSG), "
+"а также всем "
+"другим правилам, описываемым в <ulink url=\"&url-debian-"
+"policy;\">Руководстве по политике Debian</ulink>.  DFSG представляет собой "
+"наше определение понятия “свободное "
+"ПО.” Для получения дополнительной информации ознакомьтесь с Руководством по "
+"политике Debian."
 
 #. type: Content of: <chapter><section><section><para>
 #: resources.dbk:482
@@ -13194,6 +13223,10 @@ msgid ""
 "DFSG, but may fail other requirements.  For instance, they may depend on non-"
 "free packages."
 msgstr ""
+"Пакеты из раздела <literal>contrib</literal> должны соответствовать "
+"DFSG, но могут не отвечать другим требованиями.  Например, они могут зависеть "
+"от несвободных "
+"пакетов."
 
 #. type: Content of: <chapter><section><section><para>
 #: resources.dbk:487
@@ -13204,6 +13237,13 @@ msgid ""
 "infrastructure (such as our bug-tracking system and mailing lists) for non-"
 "free software packages."
 msgstr ""
+"Пакеты, которые не соответствуют DFSG, помещаются в раздел <literal>non-"
+"free</literal>.  Эти пакеты не считаются частью "
+"дистрибутива Debian, хотя мы даём возможность их использовать, а также "
+"предоставляем "
+"нашу инфраструктуру (например, нашу систему отслеживания ошибок, а также "
+"списки рассылки) под пакеты "
+"с несвободным ПО."
 
 #. type: Content of: <chapter><section><section><para>
 #: resources.dbk:494
@@ -13212,6 +13252,11 @@ msgid ""
 "a more exact definition of the three sections.  The above discussion is just "
 "an introduction."
 msgstr ""
+"<ulink url=\"&url-debian-policy;\">Руководство по политике Debian</ulink> "
+"содержит "
+"более точное определение этих трёх разделов.  Приведённое выше определение "
+"является лишь "
+"вводным."
 
 #. type: Content of: <chapter><section><section><para>
 #: resources.dbk:499
@@ -13223,15 +13268,30 @@ msgid ""
 "avoid any legal risks.  Some packages in the <literal>non-free</literal> "
 "section do not allow commercial distribution, for example."
 msgstr ""
+"Разделение этих трёх разделов на верхнем уровне архива является "
+"важным для всех людей, которые хотят распространять Debian, через FTP "
+"серверы в Интернет или на CD-ROM: распространяя только разделы "
+"<literal>main</literal> и <literal>contrib</literal>, можно "
+"избежать правовых рисков.  Например, некоторые пакеты в разделе <literal>"
+"non-free</literal> "
+"не разрешают их коммерческое распространение."
 
 #. type: Content of: <chapter><section><section><para>
 #: resources.dbk:507
+#, fuzzy
 msgid ""
 "On the other hand, a CD-ROM vendor could easily check the individual package "
 "licenses of the packages in <literal>non-free</literal> and include as many "
 "on the CD-ROMs as it's allowed to.  (Since this varies greatly from vendor "
 "to vendor, this job can't be done by the Debian developers.)"
 msgstr ""
+"С другой стороны, производитель CD-ROM легко может проверить лицензию "
+"отдельно взятого "
+"пакета в разделе <literal>non-free</literal> и добавить столько пакетов из "
+"этого раздела "
+"на CD-ROM, сколько это разрешено их лицензиями.  (Поскольку это отличается от "
+"производителя к производителю, "
+"данная работа не может быть проделана разработчиками Debian.)"
 
 #. type: Content of: <chapter><section><section><para>
 #: resources.dbk:513
@@ -13243,6 +13303,12 @@ msgid ""
 "form of subdirectories within the Debian archive.  Nowadays, these exist "
 "only in the Section header fields of packages."
 msgstr ""
+"Заметьте, понятие раздела также используется для указания категорий, которые "
+"упрощают организацию и просмотр доступных пакетов, напр.  "
+"<literal>admin</literal>, <literal>net</literal>, <literal>utils</literal> "
+"и т. д.  Когда-то давно эти разделы (скорее подразделы) существовали в "
+"виде подкаталогов внутри архива Debian.  Сегодня же они существуют "
+"только в поле Section пакета."
 
 #. type: Content of: <chapter><section><section><title>
 #: resources.dbk:523
@@ -13259,6 +13325,13 @@ msgid ""
 "decided to build some ports based on other Unix kernels, like <literal>hurd</"
 "literal> and <literal>kfreebsd</literal>."
 msgstr ""
+"В начале ядро Linux было доступно только для платформ Intel i386 (или "
+"выше), поэтому и Debian был доступен только для этой платформы.  Но когда "
+"Linux стал всё более и более "
+"популярным, ядро было перенесено на другие архитектуры, и Debian начал "
+"их поддерживать. И если этой поддержки оборудования было недостаточно, Debian "
+"решал собрать некоторые переносы на основе ядер Unix, например <literal>hurd</"
+"literal> и <literal>kfreebsd</literal>."
 
 #. type: Content of: <chapter><section><section><para>
 #: resources.dbk:533
@@ -13275,6 +13348,18 @@ msgid ""
 "kFreeBSD architectures (<literal>kfreebsd-i386</literal> and "
 "<literal>kfreebsd-amd64</literal>)."
 msgstr ""
+"&debian-formal; 1.3 был доступен только для <literal>i386</literal>.  Debian "
+"2.0 поставлялся для архитектур <literal>i386</literal> и "
+"<literal>m68k</literal>.  Debian 2.1 поставлялся для архитектур <literal>"
+"i386</literal>, "
+"<literal>m68k</literal>, <literal>alpha</literal> и <literal>sparc</"
+"literal>.  Затем Debian очень сильно вырос.  Debian 6 "
+"всего поддерживает девять архитектур Linux (<literal>amd64</literal>, "
+"<literal>armel</literal>, <literal>i386</literal>, <literal>ia64</literal>, "
+"<literal>mips</literal>, <literal>mipsel</literal>, <literal>powerpc</"
+"literal>, <literal>s390</literal>, <literal>sparc</literal>) и две "
+"архитектуры kFreeBSD (<literal>kfreebsd-i386</literal> и "
+"<literal>kfreebsd-amd64</literal>)."
 
 #. type: Content of: <chapter><section><section><para>
 #: resources.dbk:546
@@ -13296,6 +13381,9 @@ msgid ""
 "There are two types of Debian packages, namely <literal>source</literal> and "
 "<literal>binary</literal> packages."
 msgstr ""
+"Имеется два типа пакетов Debian, а именно пакеты <literal>с исходным кодом<"
+"/literal> и "
+"<literal>двоичные</literal> пакеты."
 
 #. type: Content of: <chapter><section><section><para>
 #: resources.dbk:558
@@ -13303,6 +13391,9 @@ msgid ""
 "Depending on the format of the source package, it will consist of one or "
 "more files in addition to the mandatory <filename>.dsc</filename> file:"
 msgstr ""
+"В зависимости от формата пакета с исходным кодом, он состоит из одного или "
+"нескольких файлов в дополнение к обязательному файлу <filename>.dsc</filename>"
+":"
 
 #. type: Content of: <chapter><section><section><para><itemizedlist><listitem><para>
 #: resources.dbk:562
@@ -13311,6 +13402,9 @@ msgid ""
 "an <filename>.orig.tar.gz</filename> and a <filename>.diff.gz</filename> "
 "file;"
 msgstr ""
+"формат “1.0” содержит либо файл <filename>.tar.gz</filename>, либо "
+"файл <filename>.orig.tar.gz</filename> и файл "
+"<filename>.diff.gz</filename>;"
 
 #. type: Content of: <chapter><section><section><para><itemizedlist><listitem><para>
 #: resources.dbk:565
@@ -13321,6 +13415,13 @@ msgid ""
 "upstream tarballs and a mandatory <filename>debian.tar.{gz,bz2,xz}</"
 "filename> debian tarball;"
 msgstr ""
+"формат “3.0 (quilt)” содержит обязательный tar-архив из основной ветки "
+"разработки <filename>.orig.tar.{gz,bz2,xz}"
+"</filename>, множество необязательных дополнительных tar-архивов из основной "
+"ветки разработки <filename>.orig-"
+"<replaceable>компонент</replaceable>.tar.{gz,bz2,xz}</filename> и "
+"обязательный tar-архив debian doc "
+"<filename>debian.tar.{gz,bz2,xz}</filename>;"
 
 #. type: Content of: <chapter><section><section><para><itemizedlist><listitem><para>
 #: resources.dbk:571
@@ -13328,6 +13429,9 @@ msgid ""
 "with format “3.0 (native)”, it has only a single <filename>.tar.{gz,bz2,xz}</"
 "filename> tarball."
 msgstr ""
+"формат “3.0 (native)” содержит только один tar-архив <filename>"
+".tar.{gz,bz2,xz}</"
+"filename>."
 
 #. type: Content of: <chapter><section><section><para>
 #: resources.dbk:576
@@ -13342,6 +13446,18 @@ msgid ""
 "In this case, the <filename>.diff.gz</filename> or the <filename>debian.tar."
 "{gz,bz2,xz}</filename> contains the changes made by the Debian maintainer."
 msgstr ""
+"Если пакет разработан специально для Debian и не распространяется за "
+"пределами Debian, то в нём содержится только один файл <filename>"
+".tar.{gz,bz2,xz}</filename>, "
+"содержащий исходный код программы, такой пакет называется “родным” "
+"пакетом с исходным кодом.  Если пакет распространяется где-либо ещё, файл <"
+"filename>."
+"orig.tar.{gz,bz2,xz}</filename> содержит так называемый <literal>исходный код "
+"из основной "
+"ветки разработки</literal>, то есть исходный код, распространяемый "
+"<literal>сопровождающим основной ветки</literal> (часто это автор ПО). "
+"В этом случае файл <filename>.diff.gz</filename> или <filename>debian.tar."
+"{gz,bz2,xz}</filename> содержит изменения, сделанные сопровождающим Debian."
 
 #. type: Content of: <chapter><section><section><para>
 #: resources.dbk:589
@@ -13350,6 +13466,11 @@ msgid ""
 "together with checksums (<command>md5sums</command>) and some additional "
 "info about the package (maintainer, version, etc.)."
 msgstr ""
+"Файл <filename>.dsc</filename> содержит список всех файлов в пакете с "
+"исходным кодом, а "
+"также их контрольные суммы (<command>md5sums</command>) и некоторую "
+"дополнительную "
+"информацию о пакете (сопровождающий, версия и т. д.)."
 
 #. type: Content of: <chapter><section><section><title>
 #: resources.dbk:596
@@ -13358,12 +13479,17 @@ msgstr "Выпуски"
 
 #. type: Content of: <chapter><section><section><para>
 #: resources.dbk:598
+#, fuzzy
 msgid ""
 "The directory system described in the previous chapter is itself contained "
 "within <literal>distribution directories</literal>.  Each distribution is "
 "actually contained in the <filename>pool</filename> directory in the top-"
 "level of the Debian archive itself."
 msgstr ""
+"Система каталогов, описанная в предыдущей главе, сама по себе содержится "
+"в <literal>каталогах выпусков</literal>.  Каждый выпуск фактически "
+"содержит каталог <filename>pool</filename> на верхнем уровне "
+"архива Debian."
 
 #. type: Content of: <chapter><section><section><para>
 #: resources.dbk:604
@@ -13374,6 +13500,13 @@ msgid ""
 "debian\">/debian</ulink>, which is a common location (another is <filename>/"
 "pub/debian</filename>)."
 msgstr ""
+"Подводя итог, скажем, что корневой каталог архива Debian расположен на "
+"сервере FTP.  "
+"Например, на зеркальном сайте, <literal>ftp.us.debian.org</literal>, сам "
+"архив Debian содержится в <ulink url=\"ftp://ftp.us.debian.org/"
+"debian\">/debian</ulink>, что является его обычным расположением (другое "
+"расположение &mdash; <filename>/"
+"pub/debian</filename>)."
 
 #. type: Content of: <chapter><section><section><para>
 #: resources.dbk:611
@@ -13385,6 +13518,13 @@ msgid ""
 "latter are kept in the <filename>dists/</filename> directory of the archive "
 "(for backwards compatibility)."
 msgstr ""
+"Выпуск включает в себя исходный код Debian и двоичные пакеты, а также "
+"соответствующие индексные файлы <filename>Sources</filename> и <filename>"
+"Packages</filename>, "
+"содержащие заголовочную информацию всех пакетов.  Первый файл "
+"хранится в каталоге <filename>pool/</filename>, а последний &mdash; "
+"в каталоге <filename>dists/</filename> архива "
+"(для обратной совместимости)."
 
 #. type: Content of: <chapter><section><section><section><title>
 #: resources.dbk:619
@@ -13400,6 +13540,14 @@ msgid ""
 "(residing in <filename>dists/unstable</filename>).  This reflects the "
 "development process of the Debian project."
 msgstr ""
+"Всегда имеются выпуски, называемые <literal>стабильным</literal> выпуск (он "
+"расположен в "
+"<filename>dists/stable</filename>), <literal>тестируемый</literal> выпуск (он "
+"расположен в "
+"<filename>dists/testing</filename>), а также <literal>нестабильный</literal> "
+"выпуск "
+"(он расположен в <filename>dists/unstable</filename>).  Эта иерархия отражает "
+"процесс разработки Проекта Debian."
 
 #. type: Content of: <chapter><section><section><section><para>
 #: resources.dbk:628
@@ -13412,6 +13560,13 @@ msgid ""
 "everything in this distribution is working properly, it is sometimes "
 "literally unstable."
 msgstr ""
+"Активная разработка выполняется в <literal>нестабильном</literal> выпуске "
+"(вот почему этот выпуск иногда называется <literal>разрабатываемым "
+"выпуском</literal>).  Каждый разработчик Debian может загружать свои пакеты "
+"в этот выпуск в любое время.  Таким образом, содержимое этого выпуска "
+"меняется день ото дня.  Поскольку для того, чтобы убедится, что этот выпуск "
+"работает нормально, иногда он в буквальном смысле "
+"бывает нестабильным."
 
 #. type: Content of: <chapter><section><section><section><para>
 #: resources.dbk:637
@@ -13863,7 +14018,8 @@ msgid ""
 msgstr ""
 "Система отслеживания пакетов (PTS) представляет собой построенный на базе "
 "электронной почты инструмент для "
-"отслеживания активности исходного пакета.  В действительности, это означает, "
+"отслеживания активности пакета с исходным кодом.  В действительности, это "
+"означает, "
 "что вы можете получать ту же электронную "
 "почту, которую получает сопровождающий, просто подписавшись на "
 "пакет в PTS."
@@ -13919,8 +14075,8 @@ msgid ""
 "The email notification from <command>dak</command> when an uploaded source "
 "package is accepted."
 msgstr ""
-"Сообщения от <command>dak</command> о том, что загруженный исходный "
-"пакет был принят."
+"Сообщения от <command>dak</command> о том, что загруженный "
+"пакет с исходным кодом был принят."
 
 #. type: Content of: <chapter><section><variablelist><varlistentry><term>
 #: resources.dbk:1038
@@ -13970,7 +14126,8 @@ msgstr ""
 "которые желают связаться с "
 "подписчиками данного пакета.  Это может быть сделано путём отправки почты по "
 "адресу "
-"<literal><replaceable>исходный пакет</replaceable>@&pts-host;</literal>.  Для "
+"<literal><replaceable>пакет с исходным кодом</replaceable>@&pts-host;<"
+"/literal>.  Для "
 "того, чтобы предотвратить отправку спама, все сообщения, отправляющиеся по "
 "этим адресам, должны содержать "
 "заголовок <literal>X-PTS-Approved</literal> с непустым значением."
