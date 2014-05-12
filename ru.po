@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: po 4a\n"
 "POT-Creation-Date: 2013-05-22 13:23-0400\n"
-"PO-Revision-Date: 2014-05-09 23:24+0200\n"
+"PO-Revision-Date: 2014-05-12 22:16+0200\n"
 "Last-Translator: Lev Lamberov <l.lamberov@gmail.com>\n"
 "Language-Team: ru <debian-l10n-russian@lists.debian.org>\n"
 "Language: ru\n"
@@ -13578,6 +13578,15 @@ msgid ""
 "literal> is launched twice each day, right after the new packages have been "
 "installed.  See <xref linkend=\"testing\"/>."
 msgstr ""
+"<link linkend=\"testing\">Тестируемый</link> выпуск создаётся "
+"автоматически путём принятия пакетов из <literal>нестабильного</literal> "
+"выпуска, если они "
+"удовлетворяют определённым критериям.  Эти критерии должны гарантировать "
+"хорошее качестве "
+"пакетов в <literal>тестируемом</literal> выпуске.  Обновление <literal>"
+"тестируемого</"
+"literal> выпуска запускается дважды в день, сразу после установки новых "
+"пакетов.  См. <xref linkend=\"testing\"/>."
 
 #. type: Content of: <chapter><section><section><section><para>
 #: resources.dbk:645
@@ -13598,6 +13607,33 @@ msgid ""
 "literal> and stays there until it is finally archived.  On archiving, the "
 "contents are moved to <literal>&archive-host;</literal>."
 msgstr ""
+"После периода разработки, когда управляющий выпуском решает, что время "
+"подходящее, "
+"<literal>тестируемый</literal> выпуск замораживается, что означает, что "
+"правила, "
+"управляющие тем, как пакеты переходят из <literal>нестабильного</literal> "
+"выпуска в "
+"<literal>тестируемый</literal> ужесточаются.  Удаляются пакеты с большим "
+"количеством "
+"ошибок.  Запрещается изменять что-либо в <literal>тестируемом</literal> "
+"выпуске за исключением "
+"исправления ошибок.  Через некоторое время, в зависимости от хода всего "
+"процесса, "
+"<literal>тестируемый</literal> выпуск переходит на вторую стадию заморозки.  "
+"Подробности "
+"работы с тестируемым выпуском публикуются выпускающей командой в "
+"списоке рассылки debian-devel-announce.  Когда открытые проблемы будут решены "
+"так, что выпускающая команда будет удовлетворена, осуществляется выпуск "
+"дистрибутива.  Это "
+"предполагает, что <literal>тестируемый</literal> выпуск переименовывается в <"
+"literal>стабильный</"
+"literal> выпуск, создаётся его копия для нового <literal>тестируемого<"
+"/literal> "
+"выпуска, а предыдущий <literal>стабильный</literal> переименовывается в <"
+"literal>предыдущий стабильный</"
+"literal> выпуск и остаётся им до тех пор пока наконец не будет архивирован.  "
+"Во время архивирования "
+"его содержимое перемещается на <literal>&archive-host;</literal>."
 
 #. type: Content of: <chapter><section><section><section><para>
 #: resources.dbk:662
@@ -13617,14 +13653,39 @@ msgid ""
 "forth).  Please refer to <link linkend=\"upload-stable\">uploads to the "
 "<literal>stable</literal> distribution</link> for details."
 msgstr ""
+"Этот цикл разработки основывается на допущении, что "
+"<literal>нестабильный</literal> выпуск становится <literal>стабильным<"
+"/literal> "
+"после периода <literal>тестирования</literal>.  Даже если "
+"выпуск считается стабильным, в нём всё равно присутствуют ошибки — вот почему "
+"стабильный выпуск продолжает обновляться.  Тем не менее, эти "
+"обновления довольно тщательно тестируются до их включения в архив и "
+"добавляются по одному для того, чтобы снизить риск добавления новых ошибок.  "
+"Вы можете найти "
+"предлагаемые дополнения к <literal>стабильному</literal> выпуску в каталоге <"
+"filename>proposed-"
+"updates</filename>.  Те пакеты из <filename>proposed-updates</"
+"filename>, которые прошли проверку, периодически перемещаются в составе "
+"группы других пакетов в стабильный "
+"выпуск, а номер редакции стабильного выпуска "
+"увеличивается (напр., ‘6.0’ становится ‘6.0.1’, ‘5.0.7’ становится ‘5.0.8’ и "
+"т. "
+"д.).  За подробностями обратитесь к разделу <link linkend=\"upload-stable\">"
+"загрузки в "
+"<literal>стабильный</literal> выпуск</link>."
 
 #. type: Content of: <chapter><section><section><section><para>
 #: resources.dbk:679
+#, fuzzy
 msgid ""
 "Note that development under <literal>unstable</literal> continues during the "
 "freeze period, since the <literal>unstable</literal> distribution remains in "
 "place in parallel with <literal>testing</literal>."
 msgstr ""
+"Заметьте, что разработка <literal>нестабильного</literal> выпуска "
+"продолжается во время "
+"периода заморозки, поскольку <literal>нестабильный</literal> выпуск остаётся "
+"параллельным <literal>тестируемому</literal> выпуску."
 
 #. type: Content of: <chapter><section><section><section><title>
 #: resources.dbk:686
@@ -13638,6 +13699,9 @@ msgid ""
 "distribution after they have undergone some degree of testing in "
 "<literal>unstable</literal>."
 msgstr ""
+"Обычно пакеты устанавливаются в <literal>тестируемый</literal> "
+"выпуск после того, как они пройдут некоторое тестирование в "
+"<literal>нестабильном</literal> выпуске."
 
 #. type: Content of: <chapter><section><section><section><para>
 #: resources.dbk:692
@@ -13646,8 +13710,7 @@ msgid ""
 "the testing distribution</link>."
 msgstr ""
 "Для получения дополнительных сведений обратитесь к <link linkend=\"testing\">"
-"информации о "
-"тестируемом выпуске</link>."
+"информации о тестируемом выпуске</link>."
 
 #. type: Content of: <chapter><section><section><section><title>
 #: resources.dbk:698
@@ -13668,6 +13731,21 @@ msgid ""
 "are expected to have been duly warned.  In short, all bets are off for the "
 "<literal>experimental</literal> distribution."
 msgstr ""
+"<literal>Экспериментальный</literal> выпуск является специальным выпуском.  "
+"Это не полный выпуск в том же смысле как являются полными <literal>"
+"стабильный</"
+"literal>, <literal>тестируемый</literal> и <literal>нестабильный</literal> "
+"выпуски.  "
+"Наоборот, это лишь временное место для экспериментального "
+"ПО, которое вполне может сломать ваше "
+"систему, либо для ПО, которое пока ещё недостаточно стабильно для того, чтобы "
+"помещать его в <literal>нестабильный</"
+"literal> выпуск (но всё равно имеются причины для создания такого пакета).  "
+"Ожидается, что пользователи, которые скачивают и устанавливают пакеты из <"
+"literal>экспериментального</literal> "
+"выпуска, предупреждены о возможных проблемах.  Короче, для "
+"<literal>экспериментального</literal> выпуска мы не даём никаких гарантий, "
+"вся ответственность исключительно на вас."
 
 #. type: Content of: <chapter><section><section><section><para>
 #: resources.dbk:712
@@ -13702,6 +13780,13 @@ msgid ""
 "instance, an experimental compressed file system should probably go into "
 "<literal>experimental</literal>."
 msgstr ""
+"Если имеется возможность того, что ПО может нанести непоправимый вред "
+"системе, "
+"лучше всего поместить его в <literal>экпериментальный</literal> выпуск.  "
+"Например, "
+"поддержка экспериментальной файловой системы с сжатием должна, вероятно, "
+"войти в "
+"<literal>экспериментальный</literal> выпуск."
 
 #. type: Content of: <chapter><section><section><section><para>
 #: resources.dbk:727
@@ -13715,6 +13800,19 @@ msgid ""
 "<literal>experimental</literal> as a staging area, so that testers can get "
 "early access."
 msgstr ""
+"Если имеется новая версия пакета из основной ветки разработки, которая "
+"добавляет "
+"новые возможности, но приводит к поломке старых возможностей, она либо не "
+"должна быть загружена, либо "
+"должна быть загружена в <literal>экспериментальный</literal> выпуск.  Новая "
+"бета версия "
+"некоторого ПО, использующая совершенно другую настройку, может войти в "
+"<literal>экспериментальный</literal> выпуск решению сопровождающего.  Если вы "
+"работаете над несовместимой или сложной ситуацией по обновлению пакета, вы "
+"также можете "
+"использовать <literal>экспериментальный</literal> выпуск для тестирования, "
+"так чтобы те, кто будут тестировать "
+"ваш пакет, могли раньше получить к нему доступ."
 
 #. type: Content of: <chapter><section><section><section><para>
 #: resources.dbk:737
@@ -13728,6 +13826,19 @@ msgid ""
 "periodically removed once you upload the package in <literal>unstable</"
 "literal> with a higher version number."
 msgstr ""
+"Некоторое экспериментальное ПО может войти и в <literal>нестабильный</literal>"
+" "
+"выпуск, если в описание вы добавите предупреждение, но это не рекомендуется, "
+"поскольку "
+"пакеты предполагается, что пакеты из <literal>нестабильного</literal> выпуска "
+"будут перемещены в "
+"<literal>тестируемый</literal> выпуск, а затем в <literal>стабильный</literal>"
+".  Вам "
+"не следует бояться использовать <literal>экспериментальный</literal> выпуск, "
+"поскольку он "
+"не доставляет проблем сопровождающим ftp, экспериментальные пакеты "
+"периодически удаляются как только вы загрузите в <literal>нестабильный</"
+"literal> выпуск пакет, имеющий более высокий номер версии."
 
 #. type: Content of: <chapter><section><section><section><para>
 #: resources.dbk:747
@@ -13736,8 +13847,7 @@ msgid ""
 "<literal>unstable</literal>."
 msgstr ""
 "Новое ПО, которое скорее всего не повредит систему, может быть сразу "
-"добавлено в "
-"<literal>unstable</literal>."
+"добавлено в <literal>нестабильный</literal> выпуск."
 
 #. type: Content of: <chapter><section><section><section><para>
 #: resources.dbk:751
@@ -13745,6 +13855,8 @@ msgid ""
 "An alternative to <literal>experimental</literal> is to use your personal "
 "web space on <literal>people.debian.org</literal>."
 msgstr ""
+"Альтернативой <literal>экспериментальному</literal> выпуску является ваше "
+"личное пространство на <literal>people.debian.org</literal>."
 
 #. type: Content of: <chapter><section><section><title>
 #: resources.dbk:759
@@ -13771,6 +13883,24 @@ msgid ""
 "released by Debian.  These architectures are planned to be integrated into "
 "the mainstream distribution at some future date."
 msgstr ""
+"Каждый выпущенный дистрибутив Debian имеет <literal>кодовое имя</literal>: "
+"Debian 1.1 называется <literal>buzz</literal>; Debian 1.2, <literal>rex</"
+"literal>; Debian 1.3, <literal>bo</literal>; Debian 2.0, <literal>hamm</"
+"literal>; Debian 2.1, <literal>slink</literal>; Debian 2.2, <literal>potato</"
+"literal>; Debian 3.0, <literal>woody</literal>; Debian 3.1, <literal>sarge</"
+"literal>; Debian 4.0, <literal>etch</literal>; Debian 5.0, <literal>lenny</"
+"literal>; Debian 6.0, <literal>squeeze</literal>, следующий выпуск будет "
+"назван <literal>wheezy</literal>.  Также имеется ``псевдовыпуск'', "
+"называемый <literal>sid</literal>, который является текущим "
+"<literal>нестабильным</literal> выпуском; поскольку пакеты перемещаются из "
+"<literal>нестабильного</literal> выпуска в <literal>тестируемый</literal> "
+"выпуске по мере "
+"того, как они приближаются к стабильности, сам <literal>sid</literal> никогда "
+"не будет выпущен.  Помимо "
+"обычного содержимого выпуска Debian, <literal>sid</literal> содержит "
+"пакеты для архитектур, которые пока официально не поддерживаются, или ещё не "
+"были выпущены Debian.  Эти архитектуры планируется включить в "
+"основную ветку дистрибутива в некотором будущем."
 
 #. type: Content of: <chapter><section><section><para>
 #: resources.dbk:780
@@ -13784,6 +13914,17 @@ msgid ""
 "the version is released, which would cause all FTP mirrors to re-retrieve "
 "the whole distribution (which is quite large)."
 msgstr ""
+"Поскольку Debian следует открытой модели разработки (т. е., всякий может "
+"участвовать и "
+"следить за разработкой), даже <literal>нестабильный</literal> и "
+"<literal>тестируемый</literal> выпуски распространяются в Интернет "
+"через сеть FTP и HTTP серверов Debian. Таким образом, если мы назвали "
+"каталог, содержащий версию, рассматриваемую в качестве кандидата на выпуск, <"
+"literal>testing</"
+"literal>, то мы переименуем его в <literal>stable</literal>, когда "
+"эта версия будет выпущена, что приведёт к тому, что все FTP зеркала заново "
+"загрузят "
+"весь дистрибутив (который довольно велик)."
 
 #. type: Content of: <chapter><section><section><para>
 #: resources.dbk:790
@@ -13795,6 +13936,13 @@ msgid ""
 "version.  That's the reason why the first official Debian release was 1.1, "
 "and not 1.0.)"
 msgstr ""
+"С другой стороны, если мы с самого начала назовём каталоги выпусков <literal>"
+"Debian-"
+"x.y</literal>, люди будут полагать, что доступен выпуск Debian версии "
+"<literal>x.y</literal>.  (Такое было в прошлом, когда производитель CD-"
+"ROM собрал CD-ROM Debian 1.0 на основе разрабатываемой версии "
+"pre-1.0.  Вот почему первым официальным выпуском Debian был 1.1, "
+"а не 1.0.)"
 
 #. type: Content of: <chapter><section><section><para>
 #: resources.dbk:798
@@ -13808,6 +13956,15 @@ msgid ""
 "<literal>stable</literal>, <literal>testing</literal>, and "
 "<literal>unstable</literal> point to the appropriate release directories."
 msgstr ""
+"Таким образом, имена каталогов для выпусков в архиве соответствуют "
+"кодовым именам выпусков, а не статусу выпуска (напр., "
+"`squeeze'). Эти имена остаются одними и теми же в период разработки в после "
+"выпуска; символические ссылки, которые легко могут быть изменены, обозначают "
+"текущий стабильный выпуск.  Вот почему фактические каталоги "
+"используют <literal>кодовые имена</literal>, а символические ссылки для "
+"<literal>стабильного</literal>, <literal>тестируемого</literal> и "
+"<literal>нестабильного</literal> выпусков указывают на соответствующие "
+"каталоги выпусков."
 
 #. type: Content of: <chapter><section><title>
 #: resources.dbk:812
@@ -13827,6 +13984,20 @@ msgid ""
 "mirrors is as up-to-date as it can be since they update when triggered from "
 "the internal sites (we call this push mirroring)."
 msgstr ""
+"Разные архивы для скачивания и веб-сайт имеют несколько зеркал "
+"для того, чтобы освободить наши каноничные серверы от тяжёлой нагрузки.  "
+"Фактически, "
+"некоторые каноничные серверы не доступны публично — вместо этого первый ряд "
+"зеркал "
+"занимается балансировкой нагрузки.  Так, пользователи всегда получают доступ "
+"к зеркалу и "
+"привыкают использовать их, что позволяет Debian лучше разделять пропускную "
+"способность между несколькими серверами и сетями и вообще позволяет "
+"пользователям "
+"избежать обращения к основному серверу.  Заметьте, что первый ряд "
+"серверов является наиболее актуальными, поскольку они обновляются по запросу "
+"с "
+"внутренних сайтов (мы называем это проталкивающим зеркалированием)."
 
 #. type: Content of: <chapter><section><para>
 #: resources.dbk:825
@@ -13837,6 +14008,14 @@ msgid ""
 "be helpful if you are interested in setting up your own mirror, either for "
 "internal or public access."
 msgstr ""
+"Все информация о зеркалах Debian, включая список доступных "
+"публично FTP/HTTP серверов, может быть найдена на <ulink "
+"url=\"&url-debian-mirrors;"
+"\"></ulink>.  Эта полезная страница содержит информацию и инструменты, "
+"которые могут "
+"быть вам полезны, если вы заинтересованы в настройке собственного зеркала, "
+"как для "
+"внутренних нужд, так и с публичным доступом."
 
 #. type: Content of: <chapter><section><para>
 #: resources.dbk:832
@@ -13845,11 +14024,16 @@ msgid ""
 "helping Debian.  As such, developers generally do not have accounts on these "
 "machines."
 msgstr ""
+"Заметьте, что зеркала обычно обслуживаются третьими лицами, которые "
+"заинтересованы в "
+"оказании помощи Debian.  Как таковые, разработчики обычно не имеют учётных "
+"записей на "
+"этих машинах."
 
 #. type: Content of: <chapter><section><title>
 #: resources.dbk:839
 msgid "The Incoming system"
-msgstr ""
+msgstr "Система входящих пакетов"
 
 #. type: Content of: <chapter><section><para>
 #: resources.dbk:841
@@ -13858,6 +14042,9 @@ msgid ""
 "installing them in the Debian archive.  It consists of a set of directories "
 "and scripts that are installed on <literal>&ftp-master-host;</literal>."
 msgstr ""
+"Система входящих пакетов ответственна за сбор обновлённых пакетов и "
+"их установку в архив Debian.  Она состоит из набора каталогов "
+"и сценариев, которые установлены на <literal>&ftp-master-host;</literal>."
 
 #. type: Content of: <chapter><section><para>
 #: resources.dbk:846
@@ -13881,6 +14068,29 @@ msgid ""
 "detected, the package is refused and is moved to the <filename>reject</"
 "filename> directory."
 msgstr ""
+"Пакеты загружаются сопровождающими в каталог с названием "
+"<filename>UploadQueue</filename>.  Этот каталог сканируется каждые несколько "
+"минут службой, названой <command>queued</command>, выполняются файлы <"
+"filename>*.command</"
+"filename>, а оставшиеся и корректно подписанные файлы <filename>*."
+"changes</filename> перемещаются вместе с соответствующими их файлами "
+"в каталог <filename>unchecked</filename>.  Этот каталог невидим "
+"для большинства разработчиков, поскольку доступ у главному ftp ограничен; он "
+"сканируется "
+"каждые 15 минут сценарием <command>dak process-upload</command>, который "
+"проверяет целостность загруженных пакетов и их криптографические "
+"подписи.  Если пакет считается готовым к установке, он перемещается "
+"в каталог <filename>done</filename>.  Если это первая загрузка "
+"данного пакета (либо в ней содержаться новые двоичные пакеты), пакет "
+"перемещается в "
+"каталог <filename>new</filename>, где он должен ожидать подтверждения "
+"от сопровождающих ftp.  Если пакет содержит файлы, которые должны быть "
+"установлены вручную, "
+"он перемещается в каталог <filename>byhand</filename>, где он ожидает "
+"ручной установки, выполняемой сопровождающими ftp.  В противном случае, если "
+"была обнаружена какая-либо "
+"ошибка, пакет получает отказ и перемещается в каталог <filename>reject</"
+"filename>."
 
 #. type: Content of: <chapter><section><para>
 #: resources.dbk:865
@@ -13897,6 +14107,21 @@ msgid ""
 "been made, a special script is called to ask all the primary mirrors to "
 "update themselves."
 msgstr ""
+"Когда пакет будет принят, система отправляет сообщение с подтверждением этого "
+"сопровождающему и закрывает все ошибки, которые были отмечены как "
+"исправленные в данной загрузке, тогда "
+"ПО для автоматической сборки может начать их перекомпиляцию.  Теперь пакет "
+"доступен публично "
+"в <ulink url=\"&url-incoming;\"></ulink>, она остаётся там до фактической "
+"установки в архив Debian.  Это происходит четыре раза в день (и также "
+"по историческим причинам называется `dinstall run'); затем пакет "
+"удаляется из входящих и устанавливается в пул вместе со всеми другими "
+"пакетами.  Когда все другие обновления (создающие, например, индексные файлы "
+"<filename>Packages</"
+"filename> и <filename>Sources</filename>) будут "
+"произведены, вызывается специальный сценарий, которые просит все первичные "
+"зеркала "
+"запустить обновление."
 
 #. type: Content of: <chapter><section><para>
 #: resources.dbk:877
@@ -13910,6 +14135,16 @@ msgid ""
 "<literal>experimental</literal>, the announcement will be posted to &email-"
 "debian-devel-changes; instead."
 msgstr ""
+"ПО для сопровождения архива также отправит подписанный с помощью "
+"OpenPGP/GnuPG "
+"файл <filename>.changes</filename>, который вы загрузили, в соответствующий "
+"список рассылки.  Если у пакета поле <literal>Distribution</"
+"literal> имеет значение <literal>stable</literal>, то анонс отправляется в "
+"&email-debian-changes;.  Если у пакета поле "
+"<literal>Distribution</literal> имеет значение <literal>unstable</literal> "
+"или "
+"<literal>experimental</literal>, то анонс будет отправлен в &email-"
+"debian-devel-changes;."
 
 #. type: Content of: <chapter><section><para>
 #: resources.dbk:887
@@ -13917,6 +14152,8 @@ msgid ""
 "Though ftp-master is restricted, a copy of the installation is available to "
 "all developers on <literal>&ftp-master-mirror;</literal>."
 msgstr ""
+"Хотя доступ к главному ftp ограничен, копия установки доступна "
+"всем разработчикам по адресу <literal>&ftp-master-mirror;</literal>."
 
 #. type: Content of: <chapter><section><title>
 #: resources.dbk:950
@@ -13937,6 +14174,12 @@ msgid ""
 "links to a page which provides information, including the package "
 "description, the dependencies, and package download links."
 msgstr ""
+"Каждый пакет имеет несколько выделенных для него веб-страниц.  <literal>"
+"http://&packages-"
+"host;/<replaceable>имя-пакета</replaceable></literal> отображает каждую "
+"версию пакета, доступную в различных выпусках.  Каждая версия представляет "
+"собой ссылку на страницу, предоставляющую информацию, включая описание "
+"пакета, зависимости и ссылки для скачивания пакета."
 
 #. type: Content of: <chapter><section><section><para>
 #: resources.dbk:961
@@ -13946,8 +14189,8 @@ msgid ""
 "<replaceable>package-name</replaceable></literal>."
 msgstr ""
 "Система отслеживания ошибок отслеживает ошибки каждого пакета.  Вы можете "
-"просмотреть ошибки "
-"любого данного пакета по адресу <literal>http://&bugs-host;/"
+"просмотреть ошибки любого данного пакета по адресу <literal>"
+"http://&bugs-host;/"
 "<replaceable>имя-пакета</replaceable></literal>."
 
 #. type: Content of: <chapter><section><section><title>
@@ -13965,6 +14208,13 @@ msgid ""
 "uses a single argument corresponding to a package name. An example will "
 "explain it better:"
 msgstr ""
+"<command>dak ls</command> является частью набора инструментов dak, она "
+"выводит список доступных версий пакета для всех известных выпусков и "
+"архитектур.  "
+"Инструмент <command>dak</command> доступен на <literal>&ftp-master-host;</"
+"literal>, а также на зеркале <literal>&ftp-master-mirror;</literal>.  Он "
+"используется единственный аргумент, соответствующий имени пакета. Пример "
+"объяснит это лучше:"
 
 #. type: Content of: <chapter><section><section><screen>
 #: resources.dbk:978
@@ -14002,6 +14252,10 @@ msgid ""
 "been a binary-only NMU of the package for all architectures.  Each version "
 "of the package has been recompiled on all architectures."
 msgstr ""
+"В этом примере вы можете видеть, что версия в <literal>нестабильном</literal> "
+"выпуске отличается от версии в <literal>тестируемом</literal> выпуске, и что "
+"была сделана binNMU этого пакета для всех архитектур.  Каждая версия "
+"пакета была заново скомпилирована на всех архитектурах."
 
 #. type: Content of: <chapter><section><title>
 #: resources.dbk:997
@@ -14017,10 +14271,9 @@ msgid ""
 "package in the PTS."
 msgstr ""
 "Система отслеживания пакетов (PTS) представляет собой построенный на базе "
-"электронной почты инструмент для "
-"отслеживания активности пакета с исходным кодом.  В действительности, это "
-"означает, "
-"что вы можете получать ту же электронную "
+"электронной почты инструмент для отслеживания активности пакета с исходным "
+"кодом.  В действительности, это "
+"означает, что вы можете получать ту же электронную "
 "почту, которую получает сопровождающий, просто подписавшись на "
 "пакет в PTS."
 
@@ -14031,9 +14284,8 @@ msgid ""
 "listed below.  This will let you select the mails that you want to receive."
 msgstr ""
 "Каждое сообщение электронной почты, отправляемое через PTS классифицируется "
-"по одному из ключевых слов, "
-"приведённых ниже.  Это позволит вам выбирать сообщения, которые вы хотите "
-"получить."
+"о одному из ключевых слов, приведённых ниже.  Это позволит вам выбирать "
+"сообщения, которые вы хотите получить."
 
 #. type: Content of: <chapter><section><para>
 #: resources.dbk:1008
@@ -14267,8 +14519,8 @@ msgstr ""
 #: resources.dbk:1150
 msgid "<literal>subscribe &lt;sourcepackage&gt; [&lt;email&gt;]</literal>"
 msgstr ""
-"<literal>subscribe &lt;пакет с исходным кодом&gt; [&lt;электронная "
-"почта&gt;]</literal>"
+"<literal>subscribe &lt;пакет-с-исходным-кодом&gt; [&lt;адрес-электронной-"
+"почты&gt;]</literal>"
 
 #. type: Content of: <chapter><section><section><variablelist><varlistentry><listitem><para>
 #: resources.dbk:1153
@@ -14280,13 +14532,24 @@ msgid ""
 "if it's a valid binary package, the PTS will subscribe you to the "
 "corresponding source package."
 msgstr ""
+"Подписывает <replaceable>адрес-электронной-почты</replaceable> на сообщения. "
+"связанные с "
+"пакетом с исходным кодом <replaceable>пакет-с-исходным-кодом</replaceable>.  "
+"Адрес отправителя "
+"используется в том случае, если второй аргумент отсутствует.  Если <"
+"replaceable>пакет-с-исходным-кодом</"
+"replaceable> не является корректным пакетом с исходным кодом, вы получите "
+"предупреждение.  Тем не менее, "
+"если это корректный двоичный пакет, систем отслеживания пакетов подпишет вас "
+"на "
+"соответствующий пакет с исходным кодом."
 
 #. type: Content of: <chapter><section><section><variablelist><varlistentry><term>
 #: resources.dbk:1163
 msgid "<literal>unsubscribe &lt;sourcepackage&gt; [&lt;email&gt;]</literal>"
 msgstr ""
-"<literal>unsubscribe &lt;пакет с исходным кодом&gt; [&lt;электронная "
-"почта&gt;]</literal>"
+"<literal>unsubscribe &lt;пакет-с-исходным-кодом&gt; [&lt;адрес-электронной-"
+"почты&gt;]</literal>"
 
 #. type: Content of: <chapter><section><section><variablelist><varlistentry><listitem><para>
 #: resources.dbk:1166
@@ -14295,11 +14558,15 @@ msgid ""
 "<replaceable>sourcepackage</replaceable> using the specified email address "
 "or the sender address if the second argument is left out."
 msgstr ""
+"Удаляет предыдущую подписку на пакет с исходным кодом "
+"<replaceable>пакет-с-исходным-кодом</replaceable>, используя указанный адрес "
+"электронной почты, либо "
+"адрес отправителя в случае, если второй аргумент опущен."
 
 #. type: Content of: <chapter><section><section><variablelist><varlistentry><term>
 #: resources.dbk:1173
 msgid "<literal>unsubscribeall [&lt;email&gt;]</literal>"
-msgstr "<literal>unsubscribeall [&lt;электронная почта&gt;]</literal>"
+msgstr "<literal>unsubscribeall [&lt;адрес-электронной-почты&gt;]</literal>"
 
 #. type: Content of: <chapter><section><section><variablelist><varlistentry><listitem><para>
 #: resources.dbk:1176
@@ -14307,11 +14574,14 @@ msgid ""
 "Removes all subscriptions of the specified email address or the sender "
 "address if the second argument is left out."
 msgstr ""
+"Удаляет все подписки указанного адреса электронной почты, либо адреса "
+"оправителя, "
+"в случае если второй аргумент опущен."
 
 #. type: Content of: <chapter><section><section><variablelist><varlistentry><term>
 #: resources.dbk:1182
 msgid "<literal>which [&lt;email&gt;]</literal>"
-msgstr "<literal>which [&lt;электронная почта&gt;]</literal>"
+msgstr "<literal>which [&lt;адрес-электронной-почты&gt;]</literal>"
 
 #. type: Content of: <chapter><section><section><variablelist><varlistentry><listitem><para>
 #: resources.dbk:1185
@@ -14319,11 +14589,13 @@ msgid ""
 "Lists all subscriptions for the sender or the email address optionally "
 "specified."
 msgstr ""
+"Выводит список всех подписок отправителя, либо указанного адреса "
+"электронной почты."
 
 #. type: Content of: <chapter><section><section><variablelist><varlistentry><term>
 #: resources.dbk:1191
 msgid "<literal>keyword [&lt;email&gt;]</literal>"
-msgstr "<literal>keyword [&lt;электронная почта&gt;]</literal>"
+msgstr "<literal>keyword [&lt;адрес-электронной-почты&gt;]</literal>"
 
 #. type: Content of: <chapter><section><section><variablelist><varlistentry><listitem><para>
 #: resources.dbk:1194
@@ -14332,6 +14604,9 @@ msgid ""
 "keywords, <link linkend=\"pkg-tracking-system\">see above</link>.  Here's a "
 "quick summary:"
 msgstr ""
+"Сообщает вам то, какие ключевые слова вы принимаете.  Объяснение "
+"ключевых слов <link linkend=\"pkg-tracking-system\">см. выше</link>.  Вот "
+"краткое резюме:"
 
 #. type: Content of: <chapter><section><section><variablelist><varlistentry><listitem><itemizedlist><listitem><para>
 #: resources.dbk:1201
@@ -14354,8 +14629,7 @@ msgid ""
 "package"
 msgstr ""
 "<literal>summary</literal>: автоматическая почта с обобщающей информацией о "
-"состоянии "
-"пакета"
+"состоянии пакета"
 
 #. type: Content of: <chapter><section><section><variablelist><varlistentry><listitem><itemizedlist><listitem><para>
 #: resources.dbk:1218
@@ -14422,6 +14696,8 @@ msgid ""
 "<literal>katie-other</literal>: other mails from ftpmasters (override "
 "disparity, etc.)"
 msgstr ""
+"<literal>katie-other</literal>: другие письма от сопровождающих ftp (отменяет "
+"замену и т. д.)"
 
 #. type: Content of: <chapter><section><section><variablelist><varlistentry><listitem><itemizedlist><listitem><para>
 #: resources.dbk:1264
@@ -14435,13 +14711,15 @@ msgid ""
 "<literal>default</literal>: all the other mails (those which aren't "
 "automatic)"
 msgstr ""
+"<literal>default</literal>: все остальные сообщения (те, которые не являются "
+"автоматическими)"
 
 #. type: Content of: <chapter><section><section><variablelist><varlistentry><term>
 #: resources.dbk:1276
 msgid "<literal>keyword &lt;sourcepackage&gt; [&lt;email&gt;]</literal>"
 msgstr ""
-"<literal>keyword &lt;пакет с исходным кодом&gt; [&lt;электронная почта&gt;]<"
-"/literal>"
+"<literal>keyword &lt;пакет-с-исходным-кодом&gt; "
+"[&lt;адрес-электронной-почты&gt;]</literal>"
 
 #. type: Content of: <chapter><section><section><variablelist><varlistentry><listitem><para>
 #: resources.dbk:1279
@@ -14449,13 +14727,17 @@ msgid ""
 "Same as the previous item but for the given source package, since you may "
 "select a different set of keywords for each source package."
 msgstr ""
+"То же, что и предыдущий пункт, но для данного пакета с исходным кодом, "
+"поскольку вы "
+"можете выбрать другой набор ключевых слов для каждого пакета с исходным кодом."
 
 #. type: Content of: <chapter><section><section><variablelist><varlistentry><term>
 #: resources.dbk:1285
 msgid ""
 "<literal>keyword [&lt;email&gt;] {+|-|=} &lt;list of keywords&gt;</literal>"
 msgstr ""
-"<literal>keyword [&lt;email&gt;] {+|-|=} &lt;список ключевых слов&gt;<"
+"<literal>keyword [&lt;адрес-электронной-почты&gt;] {+|-|=} "
+"&lt;список-ключевых-слов&gt;<"
 "/literal>"
 
 #. type: Content of: <chapter><section><section><variablelist><varlistentry><listitem><para>
@@ -14465,6 +14747,11 @@ msgid ""
 "Define the list (=) of accepted keywords.  This changes the default set of "
 "keywords accepted by a user."
 msgstr ""
+"Принимает (+) или отклоняет (-) сообщения, классифицируемые по данным "
+"ключевым словам.  "
+"Определяет список (=) принимаемых ключевых слов.  Изменяет набор ключевых "
+"слов, "
+"по умолчанию принимаемых пользователем."
 
 #. type: Content of: <chapter><section><section><variablelist><varlistentry><term>
 #: resources.dbk:1295
@@ -14472,7 +14759,8 @@ msgid ""
 "<literal>keywordall [&lt;email&gt;] {+|-|=} &lt;list of keywords&gt;</"
 "literal>"
 msgstr ""
-"<literal>keywordall [&lt;email&gt;] {+|-|=} &lt;список ключевых слов&gt;</"
+"<literal>keywordall [&lt;адрес-электронной-почты&gt;] {+|-|=} "
+"&lt;список-ключевых-слов&gt;</"
 "literal>"
 
 #. type: Content of: <chapter><section><section><variablelist><varlistentry><listitem><para>
@@ -14482,6 +14770,11 @@ msgid ""
 "Define the list (=) of accepted keywords.  This changes the set of accepted "
 "keywords of all the currently active subscriptions of a user."
 msgstr ""
+"Принимает (+) или отклоняет (-) сообщения, классифицируемые по данным "
+"ключевым словам.  "
+"Определяет список (=) принимаемых ключевых слов.  Изменяет набор принимаемых "
+"ключевых слов "
+"всех активных в настоящий момент подписок пользователя."
 
 #. type: Content of: <chapter><section><section><variablelist><varlistentry><term>
 #: resources.dbk:1305
@@ -14489,8 +14782,9 @@ msgid ""
 "<literal>keyword &lt;sourcepackage&gt; [&lt;email&gt;] {+|-|=} &lt;list of "
 "keywords&gt;</literal>"
 msgstr ""
-"<literal>keyword &lt;sourcepackage&gt; [&lt;email&gt;] {+|-|=} &lt;список "
-"ключевых слов&gt;</literal>"
+"<literal>keyword &lt;пакет-с-исходным-кодом&gt; "
+"[&lt;адрес-электронной-почты&gt;] {+|-|=} &lt;список-"
+"ключевых-слов&gt;</literal>"
 
 #. type: Content of: <chapter><section><section><variablelist><varlistentry><listitem><para>
 #: resources.dbk:1308
@@ -14498,6 +14792,9 @@ msgid ""
 "Same as previous item but overrides the keywords list for the indicated "
 "source package."
 msgstr ""
+"То же, что и предыдущий пункт, но отменяет список ключевых слов для "
+"обозначенного "
+"пакета с исходным кодом."
 
 #. type: Content of: <chapter><section><section><variablelist><varlistentry><term>
 #: resources.dbk:1314
@@ -14519,6 +14816,11 @@ msgid ""
 "to temporarily subscribe to some packages, for example after having made an "
 "non-maintainer upload."
 msgstr ""
+"Утилита командной строки <command>pts-subscribe</command> (из пакета "
+"<systemitem role=\"package\">devscripts</systemitem>) может быть "
+"полезна для оформления временной подписки на какие-то пакеты, например, после "
+"осуществления "
+"NMU."
 
 #. type: Content of: <chapter><section><section><title>
 #: resources.dbk:1331
@@ -14535,14 +14837,27 @@ msgid ""
 "are <literal>X-Loop</literal>, <literal>X-PTS-Package</literal>, <literal>X-"
 "PTS-Keyword</literal> and <literal>X-Unsubscribe</literal>."
 msgstr ""
+"После оформления подписки на пакет вы будете получить сообщения, отправляемые "
+"на адрес "
+"<literal><replaceable>пакет-с-исходным-кодом</replaceable>@&pts-host;<"
+"/literal>.  "
+"Эти сообщения имеют специальные заголовки для того, чтобы вы могли "
+"отфильтровать их в "
+"специальный почтовый ящик (напр. , с помощью <command>procmail</command>).  "
+"Добавлены следующие "
+"заголовки: <literal>X-Loop</literal>, <literal>X-PTS-Package</literal>, <"
+"literal>X-"
+"PTS-Keyword</literal> и <literal>X-Unsubscribe</literal>."
 
 #. type: Content of: <chapter><section><section><para>
 #: resources.dbk:1341
-#, fuzzy
 msgid ""
 "Here is an example of added headers for a source upload notification on the "
 "<systemitem role=\"package\">dpkg</systemitem> package:"
 msgstr ""
+"Ниже приведён пример добавленных заголовков для оповещения о загрузке "
+"исходного кода для "
+"пакета <systemitem role=\"package\">dpkg</systemitem>:"
 
 #. type: Content of: <chapter><section><section><screen>
 #: resources.dbk:1345
@@ -14571,6 +14886,12 @@ msgid ""
 "the subscribers (and possible co-maintainers) can closely follow the "
 "package's evolution."
 msgstr ""
+"Если вы используете публично доступны репозиторий VCS для сопровождения "
+"вашего пакета "
+"Debian, вы возможно захотите пересылать оповещения о коммитах в PTS, так "
+"чтобы "
+"подписчики (и возможные помощники) могли более внимательно следить за "
+"эволюцией пакета."
 
 #. type: Content of: <chapter><section><section><para>
 #: resources.dbk:1361
