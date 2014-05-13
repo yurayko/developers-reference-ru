@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: po 4a\n"
 "POT-Creation-Date: 2013-05-22 13:23-0400\n"
-"PO-Revision-Date: 2014-05-12 22:16+0200\n"
+"PO-Revision-Date: 2014-05-13 23:21+0200\n"
 "Last-Translator: Lev Lamberov <l.lamberov@gmail.com>\n"
 "Language-Team: ru <debian-l10n-russian@lists.debian.org>\n"
 "Language: ru\n"
@@ -14904,6 +14904,16 @@ msgid ""
 "<literal>debian.org</literal> machine, otherwise you'll have to add the "
 "<literal>X-PTS-Approved: 1</literal> header."
 msgstr ""
+"Когда вы настроите репозиторий VCS на порождение оповещений о коммитах, вам "
+"нужно лишь убедиться, что он отправляет копию этих сообщений на адрес "
+"<literal><replaceable>пакет-с-исходным-кодом</replaceable>_cvs@&pts-host;<"
+"/literal>.  "
+"Только те люди, которые принимают ключевое слово <literal>cvs</literal>, "
+"будут получать "
+"эти оповещения. Заметим, что сообщения должны отправляться с машины "
+"<literal>debian.org</literal>, в противном случае вам следует добавить "
+"заголовок "
+"<literal>X-PTS-Approved: 1</literal>."
 
 #. type: Content of: <chapter><section><section><para>
 #: resources.dbk:1370
@@ -14911,6 +14921,9 @@ msgid ""
 "For Subversion repositories, the usage of svnmailer is recommended.  See "
 "<ulink url=\"&url-alioth-pkg;\" /> for an example on how to do it."
 msgstr ""
+"При использовании репозиториев Subversion рекомендуется использовать "
+"svnmailer.  Пример "
+"того, как это делать, см. в <ulink url=\"&url-alioth-pkg;\" />."
 
 #. type: Content of: <chapter><section><section><title>
 #: resources.dbk:1376
@@ -14929,6 +14942,18 @@ msgid ""
 "package.  Furthermore there's a form that allows easy subscription to the "
 "PTS via email."
 msgstr ""
+"PTS имеет веб-интерфейс по адресу <ulink url=\"http://&pts-host;/\"></ulink>, "
+"в нём собирается множество информации о каждом пакете с исходным кодом.  Там "
+"имеется множество полезных ссылок (BTS, статистика QA, контактная информация, "
+"статус перевода "
+"DDTP, журналы сборки) и собирается большое количество информации из "
+"разные мест (30 последних записей из журнала изменений, статус в тестируемом "
+"выпуске и т. д.).  Это "
+"очень полезный инструмент, если вы хотите знать, что происходит с конкретным "
+"пакетом в "
+"исходным кодом.  Более того, там имеется форма, которая значительно облегчает "
+"подписку на "
+"сообщения PTS."
 
 #. type: Content of: <chapter><section><section><para>
 #: resources.dbk:1388
@@ -14938,8 +14963,8 @@ msgid ""
 "replaceable></literal>."
 msgstr ""
 "Вы можете напрямую перейти на веб-страницу конкретного пакета с исходным "
-"кодом "
-"при помощи URL вида <literal>http://&pts-host;/<replaceable>sourcepackage</"
+"кодом при помощи URL вида <literal>http://&pts-host;/<replaceable>"
+"sourcepackage</"
 "replaceable></literal>."
 
 #. type: Content of: <chapter><section><section><para>
@@ -14952,8 +14977,7 @@ msgid ""
 msgstr ""
 "Данный веб-интерфейс был разработан как портал для разработки "
 "пакетов: вы можете добавлять любое содержание на страницы ваших пакетов.  Вы "
-"можете добавлять "
-"статичную информацию (новости, доступные в течении "
+"можете добавлять статичную информацию (новости, доступные в течении "
 "неопределённого времени)  и новости раздела последних новостей."
 
 #. type: Content of: <chapter><section><section><para>
@@ -14973,7 +14997,7 @@ msgstr ""
 #. type: Content of: <chapter><section><section><itemizedlist><listitem><para>
 #: resources.dbk:1410
 msgid "a link to the upstream web site"
-msgstr "ссылке на веб-сайт основной ветки разработки"
+msgstr "ссылки на веб-сайт основной ветки разработки"
 
 #. type: Content of: <chapter><section><section><itemizedlist><listitem><para>
 #: resources.dbk:1415
@@ -15049,6 +15073,18 @@ msgid ""
 "pseudo-header, then the result is a link to that URL instead of a complete "
 "news item."
 msgstr ""
+"Оба вида новостей создаются сходным образом: вам нужно лишь отправить "
+"сообщение по электронной почте либо на <email>pts-static-news@qa.debian.org<"
+"/email>, либо на "
+"<email>pts-news@qa.debian.org</email>.  Сообщение должно содержать указание "
+"на то, какому "
+"пакету оно предназначается, для этого следует добавить имя пакета с исходным "
+"кодом в заголовок "
+"<literal>X-PTS-Package</literal>, либо в псевдозаголовок <literal>Package</"
+"literal> (как в отчётах BTS).  Если в заголовке "
+"<literal>X-PTS-Url</literal> или в псевдозаголовке <literal>Url</literal> "
+"доступен URL, то в результате вы получите ссылку на этот URL вместо полной "
+"новости."
 
 #. type: Content of: <chapter><section><section><para>
 #: resources.dbk:1482
@@ -15057,6 +15093,10 @@ msgid ""
 "PTS.  The first one adds a link to the viewsvn interface of debian-cd in the "
 "Static information section:"
 msgstr ""
+"Ниже приведены несколько примеров корректных сообщений, используемых для "
+"создания новостей в "
+"PTS.  Первый добавляет ссылку на интерфейс viewsvn для debian-cd в "
+"разделе статичной информации:"
 
 #. type: Content of: <chapter><section><section><screen>
 #: resources.dbk:1487
@@ -15083,6 +15123,11 @@ msgid ""
 "to the PTS so that it is published on the PTS web page of the package.  Note "
 "the use of the BCC field to avoid answers sent to the PTS by mistake."
 msgstr ""
+"Второй пример представляет собой анонс, отправляемый в список рассылки, "
+"который также отправляется "
+"в PTS, то есть он публикуется не веб-странице пакета в PTS.  Обратите "
+"внимание на использование поля BCC для того, чтобы ответы на сообщение не "
+"отправлялись по ошибке в PTS."
 
 #. type: Content of: <chapter><section><section><screen>
 #: resources.dbk:1500
@@ -15120,6 +15165,11 @@ msgid ""
 "that you can do is send a second news item that will deprecate the "
 "information contained in the previous one."
 msgstr ""
+"Дважды подумайте перед тем как добавлять новость в PTS, так как вы не сможете "
+"потом её удалить или отредактировать.  Единственное, что вы можете "
+"сделать &mdash; отправить вторую новость, которая в некотором смысле будет "
+"предполагать, что "
+"информация в предыдущей новости устарела."
 
 #. type: Content of: <chapter><section><title>
 #: resources.dbk:1523
@@ -15136,6 +15186,13 @@ msgid ""
 "bugs by severity, list of available versions in each distribution, testing "
 "status and much more including links to any other useful information."
 msgstr ""
+"Веб-портал QA (гарантия качества) доступен по адресу <ulink url=\"&url-ddpo;"
+"\"></ulink>, на нём отображается таблица с пакетами одного "
+"разработчика (включая те пакеты, у которых в качестве помощников указана "
+"группа).  "
+"Таблица даёт обзор пакетов конкретного разработчика: число "
+"ошибок по их важности, список доступных версий в каждом выпуске, статус "
+"в тестируемом выпуске и множество ссылок на другую полезную информацию."
 
 #. type: Content of: <chapter><section><para>
 #: resources.dbk:1534
@@ -15144,6 +15201,9 @@ msgid ""
 "forget any open bugs, and so that you don't forget which packages are your "
 "responsibility."
 msgstr ""
+"Рекомендуется регулярно просматривать эти данные для своих пакетов, так вы не "
+"забудете об открытых сообщениях об ошибках и не забудете то, за какие пакеты "
+"вы ответственны."
 
 #. type: Content of: <chapter><section><title>
 #: resources.dbk:1541
@@ -15159,6 +15219,14 @@ msgid ""
 "patch manager, project/task managers, file hosting services, mailing lists, "
 "VCS repositories etc.  All these tools are managed via a web interface."
 msgstr ""
+"Alioth является службой Debian, основанной на слегка изменённой версии "
+"ПО FusionForge (которое эволюционировало из SourceForge и GForge). Это "
+"ПО предлагает разработчикам доступ к простым в использовании инструментам, "
+"таким как системы отслеживания ошибок, "
+"ПО для управления заплатами, ПО для управления проектами/задачами, службы "
+"хостинга файлов, списки рассылки, "
+"репозитории VCS и т. д.  Управление всеми этими инструментами осуществляется "
+"через веб-интерфейс."
 
 #. type: Content of: <chapter><section><para>
 #: resources.dbk:1550
@@ -15169,6 +15237,13 @@ msgid ""
 "or its derivatives. It's heavily used by many Debian teams and provides "
 "hosting for all sorts of VCS repositories."
 msgstr ""
+"Это ПО предназначено для того, чтобы предоставить свободным проектам, которые "
+"поддерживаются или ведутся "
+"Debian, облегчения участия внешних разработчиков в проектах, начатых "
+"Debian, а также для помощи проектам, чьими целями являются продвижение Debian "
+"или производных от него дистрибутивов. Оно активно используется многими "
+"командами Debian и предоставляет "
+"хостинг для всех видов репозиториев VCS."
 
 #. type: Content of: <chapter><section><para>
 #: resources.dbk:1557
@@ -15178,10 +15253,8 @@ msgid ""
 "request guest accounts on Alioth."
 msgstr ""
 "Все разработчики Debian автоматически получают учётную запись на Alioth.  Они "
-"могут "
-"активировать ее, используя инструмент восстановления пароля.  Внешние "
-"разработчики могут "
-"запросить гостевые учётные записи на Alioth."
+"могут активировать ее, используя инструмент восстановления пароля.  Внешние "
+"разработчики могут запросить гостевые учётные записи на Alioth."
 
 #. type: Content of: <chapter><section><para>
 #: resources.dbk:1562
@@ -15229,9 +15302,8 @@ msgid ""
 msgstr ""
 "С октября 2002 года HP спонсирует подписку на LWN для всех "
 "заинтересованных разработчиков Debian.  Подробности о том, как получить "
-"доступ к этой "
-"подписке, см. в <ulink url=\"http://&lists-host;/debian-devel-announce/2002/10"
-"/"
+"доступ к этой подписке, см. в <ulink url=\"http://&lists-host;/debian-devel-an"
+"nounce/2002/10/"
 "msg00018.html\"></ulink>."
 
 #. type: Content of: <chapter><section><section><title>
@@ -15275,6 +15347,17 @@ msgid ""
 "packages (<xref linkend=\"porting\"/>); and how and when to do interim "
 "releases of other maintainers' packages (<xref linkend=\"nmu\"/>)."
 msgstr ""
+"Обсуждаемые здесь процедуры включают в себя то, как статьи сопровождающим (<"
+"xref "
+"linkend=\"new-maintainer\"/>); как создавать новые пакеты (<xref linkend="
+"\"newpackage\"/>) и как загружать пакеты (<xref linkend=\"upload\"/>); "
+"как работать с сообщениями об ошибках (<xref linkend=\"bug-handling\"/>); как "
+"перемещать, "
+"удалять или придавать пакетам статус осиротевших пакетов (<xref "
+"linkend=\"archive-manip\"/>); как переносить "
+"пакеты на другие архитектуры (<xref linkend=\"porting\"/>); и то, как и когда "
+"выполнять временные "
+"выпуски пакетов других сопровождающих (<xref linkend=\"nmu\"/>)."
 
 #. type: Content of: <chapter><para>
 #: scope.dbk:23
@@ -15287,6 +15370,15 @@ msgid ""
 "resources which can help maintainers with the quality of their packages "
 "(<xref linkend=\"tools\"/>)."
 msgstr ""
+"Обсуждаемые ресурсы в данном руководстве включают в себя списки рассылки (<"
+"xref "
+"linkend=\"mailing-lists\"/>) и серверы (<xref linkend=\"server-machines\"/"
+">); обсуждается структура архива Debian (<xref linkend="
+"\"archive\"/>); объясняются разные серверы, которые принимают загрузки "
+"пакетов (<xref linkend=\"upload-ftp-master\"/>); также обсуждаются "
+"ресурсы, которые могут помочь сопровождающим контролировать качество своих "
+"пакетов "
+"(<xref linkend=\"tools\"/>)."
 
 #. type: Content of: <chapter><para>
 #: scope.dbk:31
@@ -15297,6 +15389,12 @@ msgid ""
 "such information can be found in the <ulink url=\"&url-debian-policy;"
 "\">Debian Policy Manual</ulink>."
 msgstr ""
+"Должно быть ясно, что данное руководство не содержит обсуждения технических "
+"деталей пактов Debian и технических деталей их создания.  Данное руководство "
+"не содержит подробных сведений о стандартах, которым должно отвечать ПО в "
+"Debian.  Вся эта "
+"информация может быть найдена в <ulink url=\"&url-debian-policy;"
+"\">Руководстве по политике Debian</ulink>."
 
 #. type: Content of: <chapter><para>
 #: scope.dbk:38
@@ -15341,6 +15439,7 @@ msgstr ""
 
 #. type: Content of: <appendix><para>
 #: tools.dbk:18
+#, fuzzy
 msgid ""
 "Some people prefer to use high-level package maintenance tools and some do "
 "not.  Debian is officially agnostic on this issue; any tool which gets the "
@@ -15349,6 +15448,17 @@ msgid ""
 "of maintainership.  Nor is it meant to endorse any particular tool to the "
 "exclusion of a competing tool."
 msgstr ""
+"Некоторые предпочитают использовать высокоуровневые инструменты инструменты "
+"для сопровождения пакетов, некоторые "
+"же нет.  Официально Debian это без разницы; подходит любой инструмент, "
+"которые делает "
+"свою работу.  Следовательно, данный раздел не предполагается для того, чтобы "
+"навязать "
+"всякому то, какие инструменты следует использовать или как следует выполнять "
+"свои обязанности "
+"по сопровождению пакетов.  Также не предполагается рекомендовать какой-либо "
+"конкретный инструмент "
+"вплоть до исключения конкурирующего инструмента."
 
 #. type: Content of: <appendix><para>
 #: tools.dbk:26
@@ -15358,6 +15468,11 @@ msgid ""
 "documentation itself.  You can also see more info with the command "
 "<command>apt-cache show <replaceable>package-name</replaceable></command>."
 msgstr ""
+"Большинство описаний этих пакетов берётся из самих фактических описаний "
+"пакетов.  Дополнительная информация может быть найдена в самой документации "
+"по пакету.  Также вы можете получить дополнительную информацию при помощи "
+"команды "
+"<command>apt-cache show <replaceable>имя-пакета</replaceable></command>."
 
 #. type: Content of: <appendix><section><title>
 #: tools.dbk:32
@@ -15383,6 +15498,14 @@ msgid ""
 "level functionality required to create and manipulate packages; as such, "
 "they are essential for any Debian maintainer."
 msgstr ""
+"<systemitem role=\"package\">dpkg-dev</systemitem> содержит инструменты "
+"(включая <command>dpkg-source</command>), необходимые для распаковки, сборки "
+"и "
+"загрузки пакетов Debian с исходным кодом.  Эти утилиты предоставляют базовую, "
+"низкоуровнемую "
+"функциональность, необходимую для создания пакетов и для манипуляции ими; как "
+"таковые, эти "
+"утилиты являются необходимыми любому сопровождающему Debian."
 
 #. type: Content of: <appendix><section><section><title>
 #: tools.dbk:48
@@ -15398,6 +15521,14 @@ msgid ""
 "interface, an HTML interface, or a dialog interface.  New interfaces can be "
 "added as modules."
 msgstr ""
+"<systemitem role=\"package\">debconf</systemitem> предоставляет единообразный "
+"интерфейс для интерактивной настройки пакетов.  Его пользовательских "
+"интерфейс "
+"независим, что позволяет конечным пользователям настраивать пакеты при помощи "
+"текстового "
+"интерфейса, интерфейса HTML, либо диалогового интерфейса.  Новые варианты "
+"интерфейса могут быть "
+"добавлены в виде модулей."
 
 #. type: Content of: <appendix><section><section><para>
 #: tools.dbk:56
@@ -15417,6 +15548,12 @@ msgid ""
 "<systemitem role=\"package\">debconf</systemitem> is not currently required "
 "by Debian Policy, but that may change in the future."
 msgstr ""
+"Многие считают, что эта система должна использоваться для всех пакетов, "
+"которым "
+"требуется интерактивная настройка; см. <xref linkend=\"bpp-config-mgmt\"/>.  "
+"В настоящее время Политика Debian не требует использовать <systemitem "
+"role=\"package\">debconf</systemitem>, "
+"но это может быть изменено в будущем."
 
 #. type: Content of: <appendix><section><section><title>
 #: tools.dbk:68
@@ -15432,11 +15569,19 @@ msgid ""
 "role=\"package\">fakeroot</systemitem> installed, you can build packages as "
 "a regular user: <literal>dpkg-buildpackage -rfakeroot</literal>."
 msgstr ""
+"<systemitem role=\"package\">fakeroot</systemitem> имитирует привилегии "
+"суперпользователя.  Это позволяет вам собирать пакеты, не имя привилегий "
+"суперпользователя (обычно пакеты "
+"хотят установить файлы, владельцем которых является суперпользователь).  Если "
+"у вас установлен <systemitem "
+"role=\"package\">fakeroot</systemitem>, вы можете собирать пакеты от "
+"лица обычного пользователя: <literal>dpkg-buildpackage -rfakeroot</literal>."
 
 #. type: Content of: <appendix><section><title>
 #: tools.dbk:81
 msgid "Package lint tools"
 msgstr ""
+"Инструменты для проверки пакетов на предмет ошибок и соответствия стандартам"
 
 #. type: Content of: <appendix><section><para>
 #: tools.dbk:83
@@ -15447,6 +15592,13 @@ msgid ""
 "by automatically finding common problems and policy violations in their "
 "packages."
 msgstr ""
+"Согласно свободному онлайн словарю вычислительной техники (FOLDOC), `lint' "
+"является "
+"обработчиком языка Unix C, который выполняет больше проверок кода, чем "
+"обычные компиляторы C.  Инструменты для проверки пакетов помогают "
+"сопровождающим, "
+"автоматически находя распространённые ошибки и нарушения Политики в "
+"пакетах."
 
 #. type: Content of: <appendix><section><section><title>
 #: tools.dbk:89
@@ -15461,6 +15613,11 @@ msgid ""
 "automated checks for many aspects of Debian policy as well as some checks "
 "for common errors."
 msgstr ""
+"<systemitem role=\"package\">lintian</systemitem> анализирует пакеты Debian "
+"и выдаёт информацию об ошибках и нарушениях Политики.  Он содержит "
+"автоматические проверки множества аспектов Политики Debian, а также некоторые "
+"проверки "
+"на наличие распространённых ошибок."
 
 #. type: Content of: <appendix><section><section><para>
 #: tools.dbk:97
@@ -15471,6 +15628,13 @@ msgid ""
 "explanations of what each error or warning means, what its basis in Policy "
 "is, and commonly how you can fix the problem."
 msgstr ""
+"Периодически вам следует получить наиболее свежую версию <systemitem "
+"role=\"package\">lintian</"
+"systemitem> из <literal>нестабильного</literal> выпуска и проверять все ваши "
+"пакеты.  Заметьте, что опция <literal>-i</literal> предоставляет подробное "
+"объяснение того, что означает каждая ошибка или предупреждение, на каком "
+"пункте Политики "
+"они основываются, а иногда и то, как вы можете исправить проблему."
 
 #. type: Content of: <appendix><section><section><para>
 #: tools.dbk:104
@@ -15478,6 +15642,9 @@ msgid ""
 "Refer to <xref linkend=\"sanitycheck\"/> for more information on how and "
 "when to use Lintian."
 msgstr ""
+"Для получения дополнительной информации о том, как и когда использовать "
+"Lintian, "
+"обратитесь к <xref linkend=\"sanitycheck\"/>."
 
 #. type: Content of: <appendix><section><section><para>
 #: tools.dbk:108
