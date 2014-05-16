@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: po 4a\n"
 "POT-Creation-Date: 2013-05-22 13:23-0400\n"
-"PO-Revision-Date: 2014-05-13 23:21+0200\n"
+"PO-Revision-Date: 2014-05-16 22:12+0200\n"
 "Last-Translator: Lev Lamberov <l.lamberov@gmail.com>\n"
 "Language-Team: ru <debian-l10n-russian@lists.debian.org>\n"
 "Language: ru\n"
@@ -6408,6 +6408,21 @@ msgid ""
 "behind &debian-formal;.  Reading the <ulink url=\"&url-gnu-manifesto;\">GNU "
 "Manifesto</ulink> would also be a good idea."
 msgstr ""
+"До того как вы решите зарегистрировать в &debian-formal;, вам необходимо "
+"прочитать "
+"всю доступную информацию в <ulink url=\"&url-newmaint;\">Уголке "
+"нового сопровождающего</ulink>.  Там описаны подробности той подготовки, "
+"которую "
+"вам следует произвести до того, как вы сможете зарегистрироваться для "
+"получения статуса разработчика Debian.  Например, "
+"до подачи заявки вам необходимо прочитать <ulink url=\"&url-social-"
+"contract;\">Общественный договор Debian</ulink>.  Ваша регистрация как "
+"разработчика "
+"предполагает, что вы согласны и ручаетесь придерживаться Общественного "
+"договора Debian; "
+"очень важно, что сопровождающие согласны с ключевыми идеями, стоящими за "
+"&debian-formal;.  Чтение <ulink url=\"&url-gnu-manifesto;\">Манифеста "
+"GNU</ulink> также может быть хорошей идеей."
 
 #. type: Content of: <chapter><section><para>
 #: new-maintainer.dbk:106
@@ -6420,6 +6435,17 @@ msgid ""
 "new maintainers before we can give them accounts on our servers and let them "
 "upload packages."
 msgstr ""
+"Процесс регистрации в качестве разработчика представляет собой процесс "
+"проверки вашей "
+"личности и ваших намерений, а также проверку ваших технических навыков.  "
+"Поскольку число "
+"людей, работающих над &debian-formal;, переросло &number-of-"
+"maintainers;, и поскольку наши системы используются в ряде очень важных мест, "
+"мы "
+"должны быть аккуратны.  Следовательно, нам необходимо проверять "
+"новых сопровождающих до того, как мы предоставим их учётные записи на наших "
+"серверах и позволим им "
+"загружать пакеты."
 
 #. type: Content of: <chapter><section><para>
 #: new-maintainer.dbk:115
@@ -6432,6 +6458,18 @@ msgid ""
 "packages.  If you can help other maintainers by providing further "
 "information on a bug or even a patch, then do so!"
 msgstr ""
+"До того как вы фактически зарегистрируетесь, вам следует показать, что вы "
+"можете выполнять компетентную "
+"работу и быть хорошим участником разработки.  Вы можете показать это, "
+"отправляя заплаты "
+"через систему отслеживания ошибок и работая некоторое время над пакетом, "
+"спонсируемым "
+"существующим разработчиком Debian.  Кроме того, мы ожидаем, что участники "
+"заинтересованы во всём проекте целиком, а не просто в сопровождении своих "
+"собственных "
+"пакетов.  Если мы можете помочь другим сопровождающим, предоставляя "
+"дополнительную "
+"информацию об ошибке или даже заплату, сделайте это!"
 
 #. type: Content of: <chapter><section><para>
 #: new-maintainer.dbk:124
@@ -6447,6 +6485,23 @@ msgid ""
 "case-by-case-basis.  See the <ulink url=\"&url-newmaint-id;\">identification "
 "page</ulink> for more information.)"
 msgstr ""
+"Для регистрации необходимо, чтобы вы были знакомы с философией Debian и "
+"технической документацией.  Более того, вам потребуется ключ GnuPG, которые "
+"должен быть"
+"подписан существующими сопровождающими Debian.  Если ваш ключ GnuPG не ещё "
+"подписан, "
+"вам следует попытаться встретиться с разработчиком Debian лично и подписать у "
+"него "
+"свой ключ.  Имеется <ulink url=\"&url-gpg-coord;\">страница для координации "
+"подписывания "
+"ключа GnuPG</ulink>, которая поможет вам найти разработчика Debian около "
+"вас.  (Если около вас нет разработчиков Debian, может быть разрешён "
+"альтернативный путь "
+"прохождения проверки личности как некоторое абсолютное исключение в "
+"зависимости "
+"от конкретного случая.  Дополнительную информацию см. на <ulink "
+"url=\"&url-newmaint-id;\">странице "
+"установления личности</ulink>.)"
 
 #. type: Content of: <chapter><section><para>
 #: new-maintainer.dbk:137
@@ -6459,6 +6514,17 @@ msgid ""
 "techniques.  See <xref linkend=\"key-maint\"/> for more information on "
 "maintaining your public key."
 msgstr ""
+"Если у вас пока нет ключа OpenPGP, создайте его.  Каждому разработчику "
+"необходим "
+"ключ OpenPGP для подписывания и проверки загрузок пакетов.  Вам следует "
+"прочесть "
+"руководство для ПО, которое вы используете, поскольку оно содержит "
+"большое количество очень важной информации, которая касается безопасности.  "
+"Большая часть проблем безопасности "
+"возникла из-за человеческих ошибок, а не из-за проблем с ПО или каких-то "
+"высокотехнологичных шпионских "
+"штучек.  Дополнительную информацию от сопровождении вашего публичного ключа "
+"см. в <xref linkend=\"key-maint\"/>."
 
 #. type: Content of: <chapter><section><para>
 #: new-maintainer.dbk:145
@@ -6537,6 +6603,9 @@ msgid ""
 "Another possibility is to pipe the key into <command>pgpdump</command>, "
 "which will say something like Public Key Packet - Ver 4."
 msgstr ""
+"Другой возможностью является передача ключа программе <command>pgpdump<"
+"/command>, "
+"которая сообщит что-то вроде Public Key Packet - Ver 4."
 
 #. type: Content of: <chapter><section><para><footnote><para>
 #: new-maintainer.dbk:172
@@ -6555,6 +6624,10 @@ msgid ""
 "greater than 1024 bits</ulink>; there is no reason to use a smaller key, and "
 "doing so would be much less secure.<placeholder type=\"footnote\" id=\"0\"/>"
 msgstr ""
+"Для разработки Debian вам потребуется ключ версии 4. <ulink url=\"http://"
+"lists.debian.org/20090520092534.GG22906@earth.li\">Длина вашего ключа должна "
+"быть больше 1024 бит</ulink>; оснований использовать меньший ключ нет, "
+"это намного менее безопасно.<placeholder type=\"footnote\" id=\"0\"/>"
 
 #. type: Content of: <chapter><section><para>
 #: new-maintainer.dbk:178
@@ -6565,9 +6638,18 @@ msgid ""
 "on how to put your key on the public key servers.  The New Maintainer Group "
 "will put your public key on the servers if it isn't already there."
 msgstr ""
+"Если ваш публичный ключ не размещён как сервере публичных ключей, таком как "
+"&pgp-keyserv;, "
+"прочтите доступную по адресе <ulink url=\"&url-newmaint-id;"
+"\">Шаг 2: Установление личности</ulink> информацию.  Этот документ содержит "
+"инструкции о том, "
+"как поместить ваш ключ на серверы публичных ключей.  Группа новых "
+"сопровождающих "
+"поместит ваш публичный ключ на серверы, если ключ ещё не был перемещён."
 
 #. type: Content of: <chapter><section><para>
 #: new-maintainer.dbk:186
+#, fuzzy
 msgid ""
 "Some countries restrict the use of cryptographic software by their "
 "citizens.  This need not impede one's activities as a Debian package "
@@ -6576,6 +6658,13 @@ msgid ""
 "in a country where use of cryptography even for authentication is forbidden "
 "then please contact us so we can make special arrangements."
 msgstr ""
+"Некоторые страны ограничивают использовании ПО для шифрования своими "
+"гражданами.  Это не должно затруднить вашу деятельность как сопровождающего "
+"пакетов Debian, "
+"тем не менее, поскольку использование продуктов для шифрования для "
+"авторизации, а не в целях зашифровать что-либо.  Если вы живёте в "
+"стране, в которой использование шифрования даже для авторизации, запрещено, "
+"свяжитесь с нами, чтобы мы могли подготовить специальные договорённости."
 
 #. type: Content of: <chapter><section><para>
 #: new-maintainer.dbk:194
@@ -6587,6 +6676,16 @@ msgid ""
 "the past months has to express their belief that you can contribute to "
 "Debian successfully."
 msgstr ""
+"Чтобы подать заявку на получение статуса нового сопровождающего, существующий "
+"разработчик Debian должен "
+"поддержать вашу заявку (<literal>адвокат</literal>).  Далее, вы "
+"должны уже участвовать в Проекте Debian в течении некоторого времени, вы "
+"хотите подать заявку на получение "
+"статуса зарегистрированного разработчика, существующий разработчик, с которым "
+"вы работали несколько последних "
+"месяцев должен выразить свою убеждённость, что вы можете успешно участвовать "
+"в развитии "
+"Проекта Debian."
 
 #. type: Content of: <chapter><section><para>
 #: new-maintainer.dbk:201
@@ -6600,6 +6699,18 @@ msgid ""
 "steps of the New Maintainer process.  You can always check your status on "
 "the <ulink url=\"&url-newmaint-db;\">applications status board</ulink>."
 msgstr ""
+"Когда вы найдёте адвоката, ваш ключ GnuPG будет подписан, и у вас "
+"уже будет опыт участия в Проекте Debian, вы будете готовы подать заявку.  Вы "
+"можете просто "
+"зарегистрироваться на нашей <ulink url=\"&url-newmaint-apply;\">странице "
+"заявок</"
+"ulink>.  После того, как вы авторизуетесь, ваш адвокат должен подтвердить "
+"вашу "
+"заявку.  Когда ваш адвокат завершит этот шаг, вам будет назначен "
+"менеджер заявки, которые пройдёт вместе с вами все необходимые "
+"шаги процесса получения статуса нового сопровождающего.  Вы всегда можете "
+"проверить свой статус в "
+"<ulink url=\"&url-newmaint-db;\">таблице статусов заявок</ulink>."
 
 #. type: Content of: <chapter><section><para>
 #: new-maintainer.dbk:211
@@ -6610,6 +6721,14 @@ msgid ""
 "actually applying.  If you are well prepared, you can save a lot of time "
 "later on."
 msgstr ""
+"Для получения подробных сведений, обратитесь в <ulink url=\"&url-newmaint;\">"
+"Уголок "
+"новых членов Debian</ulink> на веб-сайте Debian.  Убедитесь, что вам "
+"знакомы все необходимые шаги процесса получения статуса нового "
+"сопровождающего до того, "
+"как вы фактически подадите свою заявку.  Если вы будете хорошо подготовлены, "
+"вы сможете сохранить большое "
+"количество времени."
 
 #. type: Content of: <chapter><title>
 #: pkgs.dbk:7
@@ -9916,6 +10035,16 @@ msgid ""
 "literal> architecture, it will be built for each of the other architectures, "
 "amounting to &number-of-arches; more builds."
 msgstr ""
+"Перенос представляет собой сборку пакетов Debian для архитектур, которые "
+"отличаются от архитектуры для которой сопровождающим был изначально "
+"собран двоичный пакет.  Это уникальная и важная работа.  В действительности, "
+"те, кто занимаются переносом, выполняют "
+"большую часть фактической компиляции пакетов Debian.  Например, когда "
+"сопровождающий "
+"загружает (переносимые) пакеты с исходным кодом с двоичными пакетами для "
+"архитектуры <literal>i386</"
+"literal>, двоичные пакеты будут собраны для каждой из оставшихся архитектур, "
+"что равно &number-of-arches; сборкам."
 
 #. type: Content of: <chapter><section><section><title>
 #: pkgs.dbk:1558
@@ -9932,6 +10061,15 @@ msgid ""
 "maintainers — common problems which often stymie porters, and make their "
 "jobs unnecessarily difficult."
 msgstr ""
+"У тех, кто занимается переносом, трудная и необычная задача, поскольку им "
+"необходимо "
+"работать с большим объёмом пакетов.  В идеале каждый пакет с исходным кодом "
+"должен собираться "
+"прямо из коробки.  К сожалению, зачастую это не так.  Данный "
+"раздел содержит список ``ошибочек'', которые часть совершают сопровождающие "
+"Debian — общих проблем, которые ставят в тупик тех, кто занимается переносом, "
+"и делают их "
+"работу неоправданно сложной."
 
 #. type: Content of: <chapter><section><section><para>
 #: pkgs.dbk:1568
@@ -9942,6 +10080,15 @@ msgid ""
 "tolerant of succinct or even unclear bug reports; do your best to hunt down "
 "whatever the problem is."
 msgstr ""
+"В первую очередь (и это самое важное) следует быстро отвечать на сообщения об "
+"ошибках или проблемах, "
+"которые были присланы теми, кто занимается переносом.  Пожалуйста, "
+"обращайтесь с этими людьми вежливо, как будто они "
+"являются вашими помощниками в работе по сопровождению вашего пакета (а они "
+"фактически ими и являются).  Будьте "
+"терпимы к кратким или даже неясным сообщениям об ошибках; приложите все "
+"усилия для того, чтобы выяснить, "
+"в чем состоит проблема."
 
 #. type: Content of: <chapter><section><section><para>
 #: pkgs.dbk:1575
@@ -9950,6 +10097,12 @@ msgid ""
 "<emphasis>packaging bugs</emphasis> in the source packages.  Here is a "
 "checklist of things you should check or be aware of."
 msgstr ""
+"По большей части, почти все проблемы, на которые обращают внимание те, кто "
+"занимает переносом, вызваны "
+"<emphasis>ошибками, допущенными при создании пакетов</emphasis>, в пакетах с "
+"исходным кодом.  Ниже "
+"приведён список того, что вам следует проверить или о чём нужно всегда "
+"помнить."
 
 #. type: Content of: <chapter><section><section><orderedlist><listitem><para>
 #: pkgs.dbk:1582
@@ -9967,6 +10120,24 @@ msgid ""
 "<command>pbuilder</command> program which is provided by the package of the "
 "same name (see <xref linkend=\"pbuilder\"/>)."
 msgstr ""
+"Убедитесь, что ваши настройки <literal>Build-Depends</literal> и <literal>"
+"Build-"
+"Depends-Indep</literal> в <filename>debian/control</filename> выставлены "
+"правильно.  Лучшим способом проверить это является использование пакета <"
+"systemitem role="
+"\"package\">debootstrap</systemitem> для создания на базе <literal>"
+"нестабильного</"
+"literal> выпуска окружения chroot (см. <xref linkend=\"debootstrap\"/>).  "
+"Внутри окружения "
+"chroot установите пакет <systemitem role=\"package\">build-"
+"essential</systemitem> и указанные в <literal>Build-Depends</literal> и/или <"
+"literal>Build-Depends-Indep</"
+"literal> зависимости вашего пакета.  Наконец, попытайтесь "
+"собрать ваш пакет в полученном окружении "
+"chroot.  Эти шаги могут быть автоматизированы, если вы будете использовать "
+"программу "
+"<command>pbuilder</command>, которая входит в пакет "
+"с тем же именем (см. <xref linkend=\"pbuilder\"/>)."
 
 #. type: Content of: <chapter><section><section><orderedlist><listitem><para>
 #: pkgs.dbk:1597
@@ -9974,6 +10145,8 @@ msgid ""
 "If you can't set up a proper chroot, <command>dpkg-depcheck</command> may be "
 "of assistance (see <xref linkend=\"dpkg-depcheck\"/>)."
 msgstr ""
+"Если вы не можете правильно настроить chroot, вам может помочь "
+"<command>dpkg-depcheck</command> (см. <xref linkend=\"dpkg-depcheck\"/>)."
 
 #. type: Content of: <chapter><section><section><orderedlist><listitem><para>
 #: pkgs.dbk:1601
@@ -9981,6 +10154,8 @@ msgid ""
 "See the <ulink url=\"&url-debian-policy;\">Debian Policy Manual</ulink> for "
 "instructions on setting build dependencies."
 msgstr ""
+"Инструкции по настройке сборочных зависимостей см. в "
+"<ulink url=\"&url-debian-policy;\">Руководстве по политике Debian</ulink>."
 
 #. type: Content of: <chapter><section><section><orderedlist><listitem><para>
 #: pkgs.dbk:1607
@@ -9992,6 +10167,15 @@ msgid ""
 "one architecture (such as <literal>i386</literal> or <literal>amd64</"
 "literal>) is usually incorrect."
 msgstr ""
+"Не указывайте в качестве архитектуры отличное от <literal>all</literal> ли "
+"<literal>any</literal> значение, если только вы действительно не имеете это в "
+"виду.  В большинстве случаев "
+"сопровождающие не следуют инструкциям <ulink url=\"&url-debian-"
+"policy;\">Руководства по политике Debian</ulink>.  Установка архитектуры в "
+"значение "
+"только какой-то одной архитектуры (такой как <literal>i386</literal> или <"
+"literal>amd64</"
+"literal>) обычно оказывается неправильным."
 
 #. type: Content of: <chapter><section><section><orderedlist><listitem><para>
 #: pkgs.dbk:1617
@@ -10001,6 +10185,13 @@ msgid ""
 "package unpacks properly.  Then, in there, try building your package from "
 "scratch with <command>dpkg-buildpackage</command>."
 msgstr ""
+"Убедитесь, что ваш пакет с исходным кодом корректен.  Выполните <literal>"
+"dpkg-source -x "
+"<replaceable>пакет</replaceable>.dsc</literal> для того, чтобы убедиться, что "
+"ваш пакет "
+"с исходным кодом распаковывается правильно.  Далее, попытайтесь собрать ваш "
+"пакет с нуля "
+"с помощью <command>dpkg-buildpackage</command>."
 
 #. type: Content of: <chapter><section><section><orderedlist><listitem><para>
 #: pkgs.dbk:1625
@@ -10010,6 +10201,11 @@ msgid ""
 "should be removed by the <literal>clean</literal> target of <filename>debian/"
 "rules</filename>."
 msgstr ""
+"Убедитесь, что в вашем пакете с исходным кодом нет файлов <filename>debian/"
+"files</filename> или <filename>debian/substvars</filename>.  Они "
+"должны быть удалены при помощи цели <literal>clean</literal> из <filename>"
+"debian/"
+"rules</filename>."
 
 #. type: Content of: <chapter><section><section><orderedlist><listitem><para>
 #: pkgs.dbk:1633
@@ -10020,6 +10216,14 @@ msgid ""
 "setup in a special way.  Try building your package on another machine, even "
 "if it's the same architecture."
 msgstr ""
+"Убедитесь, что вам не требуются локально установленные или исправленные "
+"настройки или "
+"программы.  Например, вам никогда не следует вызывать программы из <filename>/"
+"usr/local/bin</filename> и других подобных место.  Попытайтесь не "
+"использовать программы, которые "
+"были настроены каким-то специальным способом.  Попытайтесь собрать ваш пакет "
+"на другой машине, даже "
+"если она принадлежит к той же архитектуре."
 
 #. type: Content of: <chapter><section><section><orderedlist><listitem><para>
 #: pkgs.dbk:1642
@@ -10029,6 +10233,12 @@ msgid ""
 "be aware that any case like this needs manual bootstrapping and cannot be "
 "done by automated package builders."
 msgstr ""
+"Не используйте при сборке пакета какие-либо уже установленные пакеты (это "
+"более конкретный вариант "
+"приведённого выше случая). Конечно, бывают и исключения для этого правила, но "
+"помните, что любой подобный случай требует ручного вмешательства и не может "
+"быть "
+"выполнен автоматическими сборщиками пакетов."
 
 #. type: Content of: <chapter><section><section><orderedlist><listitem><para>
 #: pkgs.dbk:1650
@@ -10038,6 +10248,12 @@ msgid ""
 "you are probably asking for trouble, since different architectures sometimes "
 "standardize on different compilers."
 msgstr ""
+"Если это возможно, не используйте компилятор какой-то конкретной версии.  "
+"Если это невозможно, "
+"то убедитесь, что ваши сборочные зависимости отражают это ограничение, хотя "
+"вы, вероятно, просите о чём-то проблематичном, поскольку разные архитектуры "
+"иногда "
+"основываются на разных компиляторах."
 
 #. type: Content of: <chapter><section><section><orderedlist><listitem><para>
 #: pkgs.dbk:1658
@@ -10049,6 +10265,16 @@ msgid ""
 "the other before.  To test this, try to run <command>dpkg-buildpackage -B</"
 "command>."
 msgstr ""
+"Убедитесь, что ваш файл <filename>debian/rules</filename> содержит отдельные "
+"цели "
+"<literal>binary-arch</literal> и <literal>binary-indep</literal>, "
+"как то требуется в Руководстве по политике Debian.  Убедитесь, что обе цели "
+"работают "
+"независимо друг от друга, то есть, что вы можете вызвать одну цель, не "
+"вызывая "
+"до этого другой.  Для проверки этого, попытайтесь запустить <command>"
+"dpkg-buildpackage -B</"
+"command>."
 
 #. type: Content of: <chapter><section><section><title>
 #: pkgs.dbk:1669
@@ -10065,6 +10291,17 @@ msgid ""
 "get it to compile for the other architecture, you are actually doing a "
 "source NMU, so consult <xref linkend=\"nmu-guidelines\"/> instead."
 msgstr ""
+"Если пакет собирается из коробки для той архитектуры, на которую он должен "
+"быть перенесён, "
+"то вам повезло и ваша работа довольно проста.  Данный раздел касается этого "
+"случая; в разделе "
+"описывается то, как собирать и загружать ваш двоичный пакет так, чтобы он был "
+"правильно "
+"установлен в архив.  Если вам требуется внести изменения в пакет для того, "
+"чтобы "
+"он мог быть скомпилирован для других архитектур, вам будет нужно выполнить "
+"NMU пакета с исходным кодом, поэтому обратитесь к разделу <xref "
+"linkend=\"nmu-guidelines\"/>."
 
 #. type: Content of: <chapter><section><section><para>
 #: pkgs.dbk:1679
@@ -10073,6 +10310,10 @@ msgid ""
 "need to touch any of the files in the source package.  This includes "
 "<filename>debian/changelog</filename>."
 msgstr ""
+"При загрузке тем, кто занимается переносом, изменения исходного кода не "
+"вносятся.  Вам не нужно "
+"трогать какие-либо файлы в пакете с исходным кодом.  Это предполагает и файл "
+"<filename>debian/changelog</filename>."
 
 #. type: Content of: <chapter><section><section><para>
 #: pkgs.dbk:1684
@@ -10084,6 +10325,16 @@ msgid ""
 "of the package, using the <literal>binary-arch</literal> target in "
 "<filename>debian/rules</filename>."
 msgstr ""
+"Можно вызвать <command>dpkg-buildpackage</command> как <literal>dpkg-"
+"buildpackage -B -m<replaceable>porter-email</replaceable></literal>.  "
+"Конечно, "
+"установите ваш адрес электронной почты в качестве значения поля <replaceable>"
+"porter-email</replaceable>.  "
+"При использовании цели <literal>binary-arch</literal> в <filename>"
+"debian/rules</filename> "
+"будет выполнена сборка двоичных пакетов только для зависящих от архитектуры "
+"частей "
+"пакета."
 
 #. type: Content of: <chapter><section><section><para>
 #: pkgs.dbk:1693
@@ -10094,6 +10345,15 @@ msgid ""
 "have it signed conveniently, or use the remote signing mode of <command>dpkg-"
 "sig</command>."
 msgstr ""
+"Если вы работаете на машине Debian для того, чтобы заниматься переносом, и "
+"вам локально требуется "
+"подписать вашу загрузку для того, чтобы она была принята в архив, вы можете "
+"запустить "
+"<command>debsign</command>, указав ваш файл <filename>.changes</filename> в "
+"целях "
+"удобства, файл будет подписан, либо вы можете использовать удалённый режим "
+"подписывания командой <command>dpkg-"
+"sig</command>."
 
 #. type: Content of: <chapter><section><section><section><title>
 #: pkgs.dbk:1700
@@ -15643,8 +15903,7 @@ msgid ""
 "when to use Lintian."
 msgstr ""
 "Для получения дополнительной информации о том, как и когда использовать "
-"Lintian, "
-"обратитесь к <xref linkend=\"sanitycheck\"/>."
+"Lintian, обратитесь к <xref linkend=\"sanitycheck\"/>."
 
 #. type: Content of: <appendix><section><section><para>
 #: tools.dbk:108
@@ -15654,6 +15913,12 @@ msgid ""
 "the latest <command>lintian</command> output for the whole development "
 "distribution (<literal>unstable</literal>)."
 msgstr ""
+"Также вы можете посмотреть обзор всех проблем, о которых было сообщено "
+"Lintian для "
+"ваших пакетов, по адресу <ulink url=\"&url-lintian;\"></ulink>.  Эти отчёты "
+"содержат "
+"наиболее свежий вывод <command>lintian</command> для всего разрабатываемого "
+"выпуска (<literal>нестабильного</literal> выпуска)."
 
 #. type: Content of: <appendix><section><section><title>
 #: tools.dbk:116
@@ -15671,11 +15936,22 @@ msgid ""
 "control file.  Of course, some of the changes it reports will be all right, "
 "but it can help you prevent various accidents."
 msgstr ""
+"<command>debdiff</command> (из пакета <systemitem role=\"package"
+"\">devscripts</systemitem>, <xref linkend=\"devscripts\"/>)  "
+"сравнивает списки файлов и управляющие файлы двух пакетов.  Это простая "
+"проверка на наличие регрессий, поскольку она позволяет вам заметить, что "
+"число двоичных "
+"пакетов изменилось с момента последней загрузки, либо если что-то было "
+"изменено в "
+"управляющем файле.  Конечно, некоторые изменения, о которых сообщает эта "
+"утилита, не являются "
+"чем-то плохим, но она может помочь вам предотвратить различные случайные "
+"проблемы."
 
 #. type: Content of: <appendix><section><section><para>
 #: tools.dbk:127
 msgid "You can run it over a pair of binary packages:"
-msgstr ""
+msgstr "Вы можете запустить её, указав два двоичных пакета:"
 
 #. type: Content of: <appendix><section><section><screen>
 #: tools.dbk:130
@@ -15686,7 +15962,7 @@ msgstr "debdiff package_1-1_arch.deb package_2-1_arch.deb\n"
 #. type: Content of: <appendix><section><section><para>
 #: tools.dbk:133
 msgid "Or even a pair of changes files:"
-msgstr ""
+msgstr "Или даже два файла changes:"
 
 #. type: Content of: <appendix><section><section><screen>
 #: tools.dbk:136
@@ -15706,7 +15982,7 @@ msgstr ""
 #. type: Content of: <appendix><section><title>
 #: tools.dbk:148
 msgid "Helpers for <filename>debian/rules</filename>"
-msgstr ""
+msgstr "Помощники для <filename>debian/rules</filename>"
 
 #. type: Content of: <appendix><section><para>
 #: tools.dbk:150
@@ -15715,6 +15991,10 @@ msgid ""
 "filename> files easier.  See <xref linkend=\"helper-scripts\"/> for more "
 "information about why these might or might not be desired."
 msgstr ""
+"Инструменты сборки пакетов делают написание файла <filename>debian/rules</"
+"filename> значительно проще.  Дополнительную информацию о том, почему "
+"желательно или "
+"не желательно использовать их, см. в <xref linkend=\"helper-scripts\"/>."
 
 #. type: Content of: <appendix><section><section><title>
 #: tools.dbk:156
@@ -15731,6 +16011,16 @@ msgid ""
 "files into your package, compress files, fix file permissions, and integrate "
 "your package with the Debian menu system."
 msgstr ""
+"<systemitem role=\"package\">debhelper</systemitem> представляет собой набор "
+"программ, которые могут использовать в <filename>debian/rules</filename> для "
+"автоматизации "
+"распространённых задач, связанных со сборкой двоичных пакетов Debian.  <"
+"systemitem role="
+"\"package\">debhelper</systemitem> включает в себя программы для установки "
+"различных "
+"файлов в ваши пакеты, сжатия файлов, исправления прав доступа к файлам, а "
+"также интеграции "
+"вашего пакета в систему меню Debian."
 
 #. type: Content of: <appendix><section><section><para>
 #: tools.dbk:166
@@ -15740,6 +16030,12 @@ msgid ""
 "manner.  As such, it allows more fine-grained control than some of the other "
 "debian/rules tools."
 msgstr ""
+"В отличии от других подходов, <systemitem role=\"package\">debhelper<"
+"/systemitem> "
+"разбит на несколько небольших и простых команд, которые работают "
+"заодно.  Как таковой, этот подход позволяет осуществлять более тщательное "
+"управление, чем то "
+"предоставляет другими инструментами для debian/rules."
 
 #. type: Content of: <appendix><section><section><para>
 #: tools.dbk:172
@@ -15748,6 +16044,11 @@ msgid ""
 "systemitem> add-on packages, too transient to document.  You can see the "
 "list of most of them by doing <literal>apt-cache search ^dh-</literal>."
 msgstr ""
+"Имеется ряд небольших дополнительных пакетов <systemitem role=\"package\">"
+"debhelper</"
+"systemitem>, которые слишком мелки, чтобы описывать их здесь.  Вы можете "
+"посмотреть "
+"список этих программ, выполнив <literal>apt-cache search ^dh-</literal>."
 
 #. type: Content of: <appendix><section><section><title>
 #: tools.dbk:179
@@ -15764,6 +16065,15 @@ msgid ""
 "\"package\">debmake</systemitem> and its template files use <command>dh_*</"
 "command> programs from <systemitem role=\"package\">debhelper</systemitem>."
 msgstr ""
+"Пакет <systemitem role=\"package\">dh-make</systemitem> содержит "
+"<command>dh_make</command>, программу, которая создаёт основу файлов, "
+"которые необходимы для сборки пакета Debian из дерева исходного кода.  Как то "
+"предполагается "
+"в названии этой программы, <command>dh_make</command> является новой версией "
+"<systemitem role="
+"\"package\">debmake</systemitem>, её файлы-шаблоны используют программы <"
+"command>dh_*</"
+"command> из <systemitem role=\"package\">debhelper</systemitem>."
 
 #. type: Content of: <appendix><section><section><para>
 #: tools.dbk:189
@@ -15774,6 +16084,13 @@ msgid ""
 "generated files and make the package entirely functional and Policy-"
 "compliant."
 msgstr ""
+"Хотя файлы rules, порождаемые <command>dh_make</command>, вообще-то "
+"являются достаточной основой для создания рабочего пакета, они всё равно "
+"представляют "
+"собой лишь основу: на сопровождающем всё ещё лежит груз задачи по тонкой "
+"настройке "
+"порождённых файлов и сборке пакета, целиком соответствующего Политике и "
+"работающего."
 
 #. type: Content of: <appendix><section><section><title>
 #: tools.dbk:197
@@ -15789,19 +16106,32 @@ msgid ""
 "making ``meta-packages'', which are packages whose only purpose is to depend "
 "on other packages."
 msgstr ""
+"<systemitem role=\"package\">equivs</systemitem> представляет собой ещё один "
+"пакет для "
+"создания пакетов.  Часто он предлагается для локального использования, если "
+"вам нужно сделать "
+"пакет просто для удовлетворения зависимостей.  Также он иногда используется "
+"при "
+"создании ``метапакетов'', это пакеты, чья цель состоит лишь в том, чтобы "
+"зависеть от "
+"других пакетов."
 
 #. type: Content of: <appendix><section><title>
 #: tools.dbk:210
 msgid "Package builders"
-msgstr "Сборщики пакета"
+msgstr "Сборщики пакетов"
 
 #. type: Content of: <appendix><section><para>
 #: tools.dbk:212
+#, fuzzy
 msgid ""
 "The following packages help with the package building process, general "
 "driving <command>dpkg-buildpackage</command> as well as handling supporting "
 "tasks."
 msgstr ""
+"Следующие пакеты помогают в процессе сборки пакета, по сути "
+"управляя <command>dpkg-buildpackage</command>, а также решая задачи по "
+"поддержке."
 
 #. type: Content of: <appendix><section><section><title>
 #: tools.dbk:216
@@ -15816,6 +16146,11 @@ msgid ""
 "build a Debian package from the CVS repository, and helps in integrating "
 "upstream changes into the repository."
 msgstr ""
+"<systemitem role=\"package\">cvs-buildpackage</systemitem> предоставляет "
+"возможность введения или импорта пакетов Debian с исходным кодом в "
+"репозиторий CVS, "
+"сборки пакета Debian из репозитория CVS, а также помогает в интеграции "
+"изменений из основной ветки разработке в репозиторий."
 
 #. type: Content of: <appendix><section><section><para>
 #: tools.dbk:224
@@ -15826,6 +16161,12 @@ msgid ""
 "possibly <literal>experimental</literal> distributions, along with the other "
 "benefits of a version control system."
 msgstr ""
+"Эти утилиты предоставляют инфраструктуру для облегчения использования CVS "
+"сопровождающими Debian.  Это позволяет хранить отдельные ветки CVS "
+"пакета для <literal>стабильного</literal>, <literal>нестабильного</literal> и "
+"возможно <literal>экспериментального</literal> выпусков, а также иметь все "
+"другие "
+"преимущества системы контроля версий."
 
 #. type: Content of: <appendix><section><section><title>
 #: tools.dbk:233
@@ -15840,6 +16181,12 @@ msgid ""
 "filesystem.  By base system, we mean the bare minimum of packages required "
 "to operate and install the rest of the system."
 msgstr ""
+"Пакет <systemitem role=\"package\">debootstrap</systemitem> и соответствующий "
+"сценарий "
+"позволяют вам произвести начальную установку базовой системы Debian в любую "
+"часть файловой системы.  Под базовой системой мы подразумеваем минимальное "
+"число пакетов, необходимых для "
+"работы и установки остальной системы."
 
 #. type: Content of: <appendix><section><section><para>
 #: tools.dbk:241
@@ -15849,6 +16196,11 @@ msgid ""
 "dependencies.  Or you can test how your package behaves when installed into "
 "a bare base system.  Chroot builders use this package; see below."
 msgstr ""
+"Иметь подобную систему весьма полезно.  Например, вы можете "
+"сделать <command>chroot</command> в эту систему и проверить ваши сборочные "
+"зависимости.  Либо вы можете проверить то, как ведут себя ваши пакеты при "
+"установке на "
+"базовую систему.  Сборщики chroot используют этот пакет; см. об этом ниже."
 
 #. type: Content of: <appendix><section><section><title>
 #: tools.dbk:249
@@ -15864,6 +16216,12 @@ msgid ""
 "unnecessary and wrong build dependencies will not exist in the resulting "
 "package."
 msgstr ""
+"<systemitem role=\"package\">pbuilder</systemitem> создаёт систему в chroot "
+"и собирает пакет внутри chroot.  Это полезно для проверки того, то "
+"сборочные зависимости пакета указаны верно, а также для того, чтобы "
+"убедиться, что "
+"ненужных и неправильных сборочных зависимостей в получившемся "
+"пакете нет."
 
 #. type: Content of: <appendix><section><section><para>
 #: tools.dbk:257
@@ -15872,6 +16230,9 @@ msgid ""
 "which goes even further by doing the build within a User Mode Linux "
 "environment."
 msgstr ""
+"С ним связан пакет <systemitem role=\"package\">pbuilder-uml</systemitem>, "
+"он в некотором смысле идёт ещё дальше, осуществляя сборку в окружении "
+"User Mode Linux."
 
 #. type: Content of: <appendix><section><section><title>
 #: tools.dbk:264
@@ -15889,11 +16250,22 @@ msgid ""
 "for more information, and <ulink url=\"&url-buildd;\"></ulink> to see the "
 "system in action."
 msgstr ""
+"<systemitem role=\"package\">sbuild</systemitem> представляет собой другой "
+"автоматизированный "
+"сборщик.  Он также может использовать окружения chroot.  Он может "
+"использоваться как "
+"отдельно, так и как часть сетевого, распределённого окружения.  В последнем "
+"случае он является частью системы, используемой теми, кто занимается "
+"переносом, для сборки двоичных пакетов "
+"для всех доступных архитектур.  Дополнительную информацию см. в <xref "
+"linkend=\"wanna-build\"/>, "
+"систему в действии можно посмотреть по адресу "
+"<ulink url=\"&url-buildd;\"></ulink>."
 
 #. type: Content of: <appendix><section><title>
 #: tools.dbk:278
 msgid "Package uploaders"
-msgstr "Загружающие пакеты"
+msgstr "ПО для загрузки пакетов"
 
 #. type: Content of: <appendix><section><para>
 #: tools.dbk:280
@@ -15901,6 +16273,8 @@ msgid ""
 "The following packages help automate or simplify the process of uploading "
 "packages into the official archive."
 msgstr ""
+"Следующие пакеты помогут автоматизировать или упростить процесс загрузки "
+"пакетов в официальный архив."
 
 #. type: Content of: <appendix><section><section><title>
 #: tools.dbk:284
@@ -15915,6 +16289,12 @@ msgid ""
 "upload, and to send mail about the upload of a package.  You can configure "
 "it for new upload locations or methods."
 msgstr ""
+"<systemitem role=\"package\">dupload</systemitem> представляет собой пакет и "
+"сценарий "
+"для автоматической загрузки пакетов Debian в архив Debian, для записи журнала "
+"загрузки, а также отправки сообщений электронной почты о загрузке пакета.  Вы "
+"можете настроить "
+"его на использование новых мест или методов загрузки."
 
 #. type: Content of: <appendix><section><section><title>
 #: tools.dbk:294
@@ -15931,6 +16311,14 @@ msgid ""
 "and checksums before uploading, and the possibility of running "
 "<command>dinstall</command> in dry-run mode after the upload."
 msgstr ""
+"Пакет и сценарий <systemitem role=\"package\">dput</systemitem> выполняет по "
+"большей части "
+"то же, что и <systemitem role=\"package\">dupload</systemitem>, "
+"но по-другому.  Он имеет некоторые дополнительные возможности по сравнению с "
+"<systemitem role=\"package"
+"\">dupload</systemitem>, такие как способность проверять подпись GnuPG и "
+"контрольные суммы до загрузки, а также возможность запуска "
+"<command>dinstall</command> в холостом режиме после загрузки."
 
 #. type: Content of: <appendix><section><section><title>
 #: tools.dbk:306
@@ -15944,6 +16332,9 @@ msgid ""
 "\"package\">dput</systemitem>, <xref linkend=\"dput\"/>) helps in removing "
 "files from the ftp upload directory."
 msgstr ""
+"Сценарий <command>dcut</command> (часть пакета <systemitem role="
+"\"package\">dput</systemitem>, <xref linkend=\"dput\"/>) помогает удалять "
+"файлы из каталога загрузки на ftp."
 
 #. type: Content of: <appendix><section><title>
 #: tools.dbk:316
@@ -15957,6 +16348,12 @@ msgid ""
 "changelog entries or signature lines and looking up bugs in Emacs to making "
 "use of the newest and official <filename>config.sub</filename>."
 msgstr ""
+"Следующие инструменты помогают автоматизировать различные задачи по "
+"сопровождению пакетов от "
+"добавления записей в журнал изменений или строк подписи и поиска ошибок в "
+"Emacs до использования "
+"наиболее свежего и исключительно официального файла <filename>config.sub<"
+"/filename>."
 
 #. type: Content of: <appendix><section><section><title>
 #: tools.dbk:323
@@ -15978,6 +16375,24 @@ msgid ""
 "to remotely sign a package prior to upload, which is nice when the machine "
 "you build the package on is different from where your GPG keys are."
 msgstr ""
+"<systemitem role=\"package\">devscripts</systemitem> представляет собой "
+"пакет, содержащий "
+"обёртки и инструменты, которые весьма полезны для сопровождения ваших пакетов "
+"Debian.  К примеру, в нём имеются сценарии <command>debchange</command> и "
+"<command>dch</command>, которые управляют вашим файлом <filename>"
+"debian/changelog</"
+"filename> из командной строки, <command>debuild</command>, который "
+"представляет собой обёртку вокруг <command>dpkg-buildpackage</command>.  "
+"Утилита <command>bts</"
+"command> также очень полезна для обновления статуса сообщений об ошибках из "
+"командной строки.  <command>uscan</command> может использоваться для "
+"отслеживания новых "
+"версий основной ветки разработки для ваших пакетов.  <command>debrsign<"
+"/command> может использоваться "
+"для выполнения удалённого подписывания вашего пакета до его загрузки, что "
+"очень удобно если машина, "
+"на которой вы собрали ваш пакет, отличается от той, где находятся ваши ключи "
+"GPG."
 
 #. type: Content of: <appendix><section><section><para>
 #: tools.dbk:339
@@ -15986,6 +16401,9 @@ msgid ""
 "<manvolnum>1</manvolnum> </citerefentry> manual page for a complete list of "
 "available scripts."
 msgstr ""
+"Полный список доступных сценариев см. в руководстве "
+"<citerefentry> <refentrytitle>devscripts</refentrytitle> "
+"<manvolnum>1</manvolnum> </citerefentry>."
 
 #. type: Content of: <appendix><section><section><title>
 #: tools.dbk:346
@@ -16001,6 +16419,13 @@ msgid ""
 "<filename>config.sub</filename> and <filename>config.guess</filename> files "
 "which are known to work on all Debian ports."
 msgstr ""
+"<systemitem role=\"package\">autotools-dev</systemitem> включает в себя "
+"лучшие "
+"практики для тех, кто сопровождает пакеты, использующие <command>autoconf</"
+"command> и/или <command>automake</command>.  Также в этом пакете содержаться "
+"канонические "
+"файлы <filename>config.sub</filename> и <filename>config.guess</filename>, "
+"которые, как это известно, работают на всех переносах Debian."
 
 #. type: Content of: <appendix><section><section><title>
 #: tools.dbk:357
@@ -16015,6 +16440,11 @@ msgid ""
 "package while it was unpacked (e.g., files in <filename>/etc</filename> were "
 "modified), the new package will inherit the changes."
 msgstr ""
+"<command>dpkg-repack</command> создаёт пакет Debian из пакета, "
+"который уже был установлен.  Если в пакете были произведены какие-либо "
+"изменения "
+"в то время когда он был распакован (напр., были изменены "
+"файлы в <filename>/etc</filename>), новый пакет наследует все изменения."
 
 #. type: Content of: <appendix><section><section><para>
 #: tools.dbk:365
@@ -16024,6 +16454,12 @@ msgid ""
 "available elsewhere, or to save the current state of a package before you "
 "upgrade it."
 msgstr ""
+"Эта утилита позволяет легко копировать пакеты с одного компьютера на другой, "
+"либо заново создавать пакеты, которые были установлены в вашей системе, но "
+"более "
+"нигде не доступны, либо для сохранения текущего состояния пакета до того, как "
+"вы "
+"его обновите."
 
 #. type: Content of: <appendix><section><section><title>
 #: tools.dbk:372
@@ -16037,6 +16473,10 @@ msgid ""
 "formats, including Debian, RPM (RedHat), LSB (Linux Standard Base), Solaris, "
 "and Slackware packages."
 msgstr ""
+"<command>alien</command> преобразует пакеты между различными форматами "
+"пакетов, включая пакеты Debian, RPM (RedHat), LSB (Linux Standard Base), "
+"Solaris, "
+"и Slackware."
 
 #. type: Content of: <appendix><section><section><title>
 #: tools.dbk:381
@@ -16050,6 +16490,11 @@ msgid ""
 "sums.  Note that not all packages have MD5 sums, since they aren't required "
 "by Policy."
 msgstr ""
+"<command>debsums</command> проверяет установленные пакеты, сравнивая их с "
+"контрольной "
+"суммой MD5.  Заметьте, что не все пакеты имеют контрольную сумму MD5, "
+"поскольку это не требуется "
+"Политикой."
 
 #. type: Content of: <appendix><section><section><title>
 #: tools.dbk:389
@@ -16065,6 +16510,13 @@ msgid ""
 "are handy functions for listing a package's current bugs, and for finalizing "
 "the latest entry in a <filename>debian/changelog</filename> file."
 msgstr ""
+"<systemitem role=\"package\">dpkg-dev-el</systemitem> является пакетом Emacs "
+"lisp, "
+"который предоставляет помощь в редактировании некоторых файлов в "
+"каталоге <filename>debian</filename> вашего пакета.  Например, в этом пакете "
+"имеются полезные функции для вывода списка текущих ошибок пакета, а также для "
+"завершения "
+"последней записи в файле <filename>debian/changelog</filename>."
 
 #. type: Content of: <appendix><section><section><title>
 #: tools.dbk:400
@@ -16079,6 +16531,11 @@ msgid ""
 "command under <command>strace</command> to determine all the packages that "
 "were used by the said command."
 msgstr ""
+"<command>dpkg-depcheck</command> (из пакета <systemitem role=\"package"
+"\">devscripts</systemitem>, <xref linkend=\"devscripts\"/>) запускает "
+"команду в окружении <command>strace</command> для определения всех пакетов, "
+"которые "
+"используются вызванной командой."
 
 #. type: Content of: <appendix><section><section><para>
 #: tools.dbk:408
@@ -16088,6 +16545,11 @@ msgid ""
 "build process through <command>dpkg-depcheck</command> will provide you with "
 "a good first approximation of the build-dependencies.  For example:"
 msgstr ""
+"Для пакетов Debian это весьма полезно, если вам необходимо сформировать "
+"строку "
+"<literal>Build-Depends</literal> для вашего нового пакета: запуск "
+"процесса сборки через <command>dpkg-depcheck</command> предоставит вам "
+"приблизительный список сборочных зависимостей.  Например:"
 
 #. type: Content of: <appendix><section><section><screen>
 #: tools.dbk:414
@@ -16104,10 +16566,10 @@ msgid ""
 "to run other programs."
 msgstr ""
 "<command>dpkg-depcheck</command> также может использоваться для проверки "
-"зависимостей "
-"времени исполнения, особенно в том случае, если ваш пакет использует <"
-"citerefentry> "
-"<refentrytitle>exec</refentrytitle> <manvolnum>2</manvolnum> </citerefentry> "
+"зависимостей времени исполнения, особенно в том случае, если ваш пакет "
+"использует <"
+"citerefentry> <refentrytitle>exec</refentrytitle> <manvolnum>2</manvolnum> <"
+"/citerefentry> "
 "для запуска других программ."
 
 #. type: Content of: <appendix><section><section><para>
@@ -16144,8 +16606,8 @@ msgid ""
 "replaceable>, based on architecture <replaceable>X</replaceable>."
 msgstr ""
 "<systemitem role=\"package\">quinn-diff</systemitem> используется для "
-"обнаружения "
-"отличий одной архитектуры от другой.  Например, эта утилита может сообщить "
+"обнаружения отличий одной архитектуры от другой.  Например, эта утилита может "
+"сообщить "
 "вам, какие пакеты следует перенести на архитектуру <replaceable>Y</"
 "replaceable> на основе архитектуры <replaceable>X</replaceable>."
 
@@ -16164,10 +16626,9 @@ msgid ""
 "shlibdeps</command> is enhanced to support cross-compiling."
 msgstr ""
 "<systemitem role=\"package\">dpkg-cross</systemitem> является инструментом "
-"для "
-"установки библиотек и заголовочных файлов для перекрёстной компиляции схожим "
-"с "
-"<systemitem role=\"package\">dpkg</systemitem> способом.  Более того, "
+"для установки библиотек и заголовочных файлов для перекрёстной компиляции "
+"схожим "
+"с <systemitem role=\"package\">dpkg</systemitem> способом.  Более того, "
 "функциональность "
 "<command>dpkg-buildpackage</command> и <command>dpkg-"
 "shlibdeps</command> была улучшена в плане поддержки перекрёстной компиляции."
