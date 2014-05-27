@@ -5495,7 +5495,7 @@ msgid ""
 "</author> <author> <firstname>Ian</firstname> <surname>Jackson</surname> </"
 "author>"
 msgstr ""
-"<author> <othername>Команда Справочника разработчика</othername> &email-"
+"<author> <othername>Авторы «Справочника разработчика»</othername> &email-"
 "devel-ref; </author> <author> <firstname>Андреас</firstname> <surname>Барт</"
 "surname> </author> <author> <firstname>Адам</firstname> <surname>Ди Карло</"
 "surname> </author> <author> <firstname>Рафаэль</firstname> <surname>Герцог</"
@@ -5569,7 +5569,7 @@ msgstr ""
 "Копия Стандартной общественной лицензии GNU доступна в &file-GPL; в "
 "дистрибутиве &debian-formal;, либо во Всемирной паутине на <ulink url=\"&url-"
 "gpl;\">веб-сайте GNU</ulink>.  Также вы можете получить печатную версию, "
-"обратившись по адресу &fsf-addr;."
+"обратившись по адресу: &fsf-addr;."
 
 #.  TODO: Maybe better: "This document has originally been written
 #. in English.  Translations into different languages are available." 
@@ -5585,7 +5585,7 @@ msgstr ""
 "<ulink url=\"developers-reference.ru.pdf\">pdf-версию</ulink>.  Данная "
 "страница также доступна на <ulink url=\"index.html\">английском</ulink>, "
 "<ulink url=\"index.fr.html\">французском</ulink>, <ulink url=\"index.de.html"
-"\">немецком</ulink> и <ulink url=\"index.ja.html\">японском</ulink> языках."
+"\">немецком</ulink>, <ulink url=\"index.ru.html\">русском</ulink> и <ulink url=\"index.ja.html\">японском</ulink> языках."
 
 #. type: Content of: <chapter><title>
 #: l10n.dbk:7
